@@ -37,10 +37,10 @@ span {
 	vertical-align: 20px;
 }
 
-ul :hover {
+/* ul :hover {
 	background: var(--fColor);
 	color: white;
-}
+} */
 
 .list-header {
 	width: 100%;
