@@ -1,0 +1,23 @@
+/* 主题色 */
+:root {
+	--fColor: #4C51B1;
+	--sColor: #6D6D6D;
+}
+/* 使用方法var(--fColor); */
+
+
+
+/* Iconfont矢量图标CSS样式 */
+.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+	color: white;
+}
+/* 		<!-- Iconfont矢量图标库 -->
+		<script src="http://at.alicdn.com/t/font_1306353_exkcfta643.js" type="text/javascript"></script>
+		 <svg class="icon" aria-hidden="true">
+		 	<use xlink:href="#icon-logo"></use>
+		 </svg>*/
