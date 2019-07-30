@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>搜索筛选</title>
+		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css">
+		<style type="text/css">
+			/* 在线连接阿里妈妈的矢量图库用symbol方法 */
+			.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+		</style>
+		<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			startList = function() {
+				if (document.all && document.getElementById) {
+					navRoot = document.getElementById("menu2");
+					var allli = navRoot.getElementsByTagName("li")
+					for (i = 0; i < allli.length; i++) {
+						node = allli[i];
+						node.onmouseover = function() {
+							this.className += " current";
+						}
+						node.onmouseout = function() {
+							this.className = this.className.replace(" current", "");
+						}
+					}
+				}
+
+			}
+			window.onload = startList;
+			//--><!]]>
+		</script>
+		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_cayoehnv9o.js"></script>
+		<base target="_blank">
+
+
+	</head>
+	<body>
+		<div class="box-shadow-vertical" style="position: static fixed;width:100%;">
+			<table width="100%" height="" border="0" cellpadding="0" cellspacing="0">
+				<!-- 搜索-->
+				<tr>
+					<td>
+						<div>
+							<div class="searcontent clearfix">
+				<tr>
+					<td style="text-align:center;" ;>
+						<input type="text" style="padding-left:20px;  font-size:50px;" placeholder="您想找点啥呢">
+					</td>
+					<td class="item1">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="margin-left:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
+								<use xlink:href="#icon-sousuo"></use>
+								<!--添加图库的图  -->
+							</svg>
+						</a>
+					</td>
+					<td class="item2">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="margin-right:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
+								<use xlink:href="#icon-zhankai"></use>
+							</svg>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<div class="sxzl" id="menus">
+				<ul>
+					<li><a href="#" style="font-size: 40px;color:#4C51B1;">类别</a>
+						<ul>
+							<li><a href="#">无</a></li>
+							<li><a href="#">学习</a>
+								<ul>
+									<li><a href="#">文具</a></li>
+									<li><a href="#">课本</a></li>
+									<li><a href="#">习题</a></li>
+								</ul>
+							</li>
+							<li><a href="#">数码</a>
+								<ul>
+									<li><a href="#">电脑</a></li>
+									<li><a href="#">手机</a></li>
+									<li><a href="#">配饰</a></li>
+								</ul>
+							</li>
+							<li><a href="#">日用</a>
+								<ul>
+									<li><a href="#">洗护</a></li>
+									<li><a href="#">清洁</a></li>
+									<li><a href="#">护理</a></li>
+								</ul>
+							</li>
+							<li><a href="#">运动</a>
+								<ul>
+									<li><a href="#">运动服饰</a></li>
+									<li><a href="#">运动器械</a></li>
+									<li><a href="#">运动装备</a></li>
+								</ul>
+							</li>
+							<li><a href="#">服饰</a>
+								<ul>
+									<li><a href="#">女装</a></li>
+									<li><a href="#">男装</a></li>
+									<li><a href="#">童装</a></li>
+								</ul>
+							</li>
+							<li><a href="#">食品</a>
+								<ul>
+									<li><a href="#">坚果</a></li>
+									<li><a href="#">熟食</a></li>
+									<li><a href="#">饮品</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" style="font-size: 40px;color:#4C51B1;">折旧度</a>
+						<ul>
+							<li><a href="#">九成</a></li>
+							<li><a href="#">八成</a></li>
+							<li><a href="#">七成</a></li>
+							<li><a href="#">六成</a></li>
+							<li><a href="#">五成</a></li>
+							<li><a href="#">四成</a></li>
+							<li><a href="#">三成</a></li>
+							<li><a href="#">二成</a></li>
+							<li><a href="#">一成</a></li>
+						</ul>
+					</li>
+					<li><a href="#" style="font-size: 40px;color:#4C51B1;">最低价</a>
+						<ul>
+							<li><input type="text" style="list-style: none;border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+"></li>
+
+						</ul>
+					</li>
+
+					<li><a href="#" style="font-size: 40px;color:#4C51B1;">最高价</a></li>
+				</ul>
+				<p>
+					<div class="suoxiao">
+						<svg class="icon" aria-hidden="true" style="color:#666666;margin-left:800px;opacity:0.2; font-size:50px;">
+							<use xlink:href="#icon-shousuo"></use>
+							<!--添加图库的图片-->
+						</svg>
+					</div>
+				</p>
+
+			</div>
+		</div>
+		<div class="logo" style="margin-top: 200px;">
+			<!-- logo -->
+			<svg class="icon" aria-hidden="true" style="color:#666666;margin-left:25%; opacity:0.2; font-size:500px;">
+				<use xlink:href="#icon-logo"></use>
+				<!--添加图库的图片-->
+			</svg>
+		</div>
+
+	</body>
+</html>
