@@ -36,12 +36,6 @@ span {
 	margin-left: 30px;
 	vertical-align: 20px;
 }
-
-.ul-liu:hover {
-	background: var(--fColor);
-	color: white;
-} */
-
 .list-header {
 	width: 100%;
 	border: 1px solid 0;
@@ -60,14 +54,18 @@ span {
 	-webkit-box-shadow: 0px 8px 20px #3333333a;
 	box-shadow: 0px 8px 20px #3333333a;
 }
+.list-item:hover {
+	background: var(--fColor);
+	color: white;
+} 
 
-.container {
+.container-liu {
 	width: 100%;
 	height: 100%;
 }
 
 /* 通知界面 */
-.container1 {
+.container1-liu {
 	border: 0 solid black;
 	position: relative;
 	left: auto;
@@ -124,7 +122,7 @@ span {
 	clear: both;
 }
 /* 搜索页面 */
-* {
+{
 	margin: 0;
 	padding: 0;
 }
@@ -192,7 +190,6 @@ a {
 .icon .item2 a:hover {
 	background-color: #6D6D6D14;
 	color: #fff;
-	;
 
 }
 
@@ -212,9 +209,10 @@ li {
 /* 最高热度搜索 */
  .list-item2 {
 	float: left;
-	margin-left: 20%;
+	
 	list-style: none;
 	font-size: 20px;
+	/* margin-left: 20%; */
 	margin: 10px 0px 50px 30px;
 	height: 30px;
 	line-height: 30px;
@@ -223,7 +221,7 @@ li {
 
 .list-item2 a {
 	padding: 0 20px;
-	font-color: var(--fColor);
+	color: var(--fColor);
 	font-weight: bold;
 	margin-bottom: 20px;
 	height: 60px; 
