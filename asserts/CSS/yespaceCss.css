@@ -279,7 +279,52 @@ li {
 .sxzl ul li a:hover {
 	color: var(--fColor);
 }
-
+b {
+	position: absolute;
+	top: 90px;
+	right: 20px;
+	/*width: 10px;
+	height: 10px;*/
+	border-width: 20px;
+	border-style: solid dashed dashed;
+	border-color: #FFFFFF transparent transparent;
+}
+.trf:hover{
+	border-color: #4C51B1 transparent transparent;
+	transform: rotate(180deg);
+	transform-origin: 50% 25%;
+	transition: transform .2s ease-in;
+}
+.trf:hover{
+	display: block;
+}
+#sortout:hover{
+	background-color: #4C51B1;
+	color: #FFFFFF;
+	border-right: 4px solid #4C51B1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#lowers:hover{
+	background-color: #4C51B1;
+	color: #FFFFFF;
+	border-right: 4px solid #4C51B1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#food,#botm {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#menu1 ul li a {
+	background: #4C51B1;
+	color:#FFFFFF;
+	position: relative;
+}
+#menu1 ul li  a:hover{
+	background:#FFFFFF ;
+	color: #4C51B1;
+}
 .sxzl ul li ul {
 	position: absolute;
 	display: none;
@@ -344,6 +389,8 @@ li {
 #menus ul li ul li:hover ul {
 	display: block;
 }
+
+/* 搜索结果为电脑展开前的界面 */
 .centerarea{
 	
 	border: 10px solid #ccc;
@@ -369,4 +416,23 @@ li {
 	opacity:1; 
 	font-size:40px;
 	margin-top: 20px;
+}
+.middlefu {
+	position: absolute;
+	left:550px;
+	width:400px;
+	/* background:#0f0; */
+	margin-left:10px;
+}
+.middlefu img{
+	height:200px ;
+	width: 200px;
+	margin-top:90px ;
+}
+.rightfu{
+	position: absolute;
+	left:1000px;
+	width: 390px;
+	background:#000;
+	margin-left:10px;
 }
