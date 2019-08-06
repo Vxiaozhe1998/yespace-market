@@ -5,7 +5,32 @@
 }
 /* 使用方法var(--fColor); */
 
+/* 顶部常驻栏样式 */
+.top-header {
+	background-color: var(--fColor);
+}
 
+/* 顶栏固定 */
+.sticky-top {
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+}
+.partnerLogo { 
+/*    width: 100%; 
+    height: 100px; */
+    stroke: white; 
+    fill: white;
+} 
+/* 布局CSS */
+/* Div水平垂直居中 */
+.father{position:fixed;width:100%;height:100%;top:0;left:0;}
+.son{position: absolute;top:0;left:0;bottom:0;right:0;width:50%;height:50%;margin:auto;}
+
+.index-zhe{
+	background-color: white;
+	border-radius: 3vw;
+}
 
 /* Iconfont矢量图标CSS样式 */
 .icon {
@@ -266,8 +291,12 @@ li {
 .sxzl ul li a {
 	width: 175px;
 	height: 65px;
+<<<<<<< HEAD
 	margin-right: 5px;
 	margin-top: 30px;
+=======
+	margin:0px auto;
+>>>>>>> a1abf07c9733aad06131251420df6943d54cf955
 	text-align: center;
 	line-height: 65px;
 	display: inline-block;
@@ -447,7 +476,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .leftfu ul li svg{
 	color:var(--fColor); 
-	float:left
+	float:left;
 	opacity:1; 
 	font-size:40px;
 	margin-top: 20px;
