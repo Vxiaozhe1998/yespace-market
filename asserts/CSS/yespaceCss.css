@@ -3,8 +3,30 @@
 	--fColor: #4C51B1;
 	--sColor: #6D6D6D;
 }
-/* 使用方法var(--fColor); */
 
+/* 使用方法var(--fColor); */
+.footer-zhe {
+	position: sticky;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	z-index: 9999;
+}
+/* 阴影样式 */
+/* 底部阴影 */
+.bottom-shadow {
+	-moz-box-shadow: 0px -3px 11px -6px #333333;
+	-webkit-box-shadow: 0px -3px 11px -6px #333333;
+	box-shadow: 0px -3px 11px -6px #333333;
+}
+/* 顶部阴影 */
+.top-shadow{
+	-moz-box-shadow:0px 3px 11px -6px #333333;
+ -webkit-box-shadow:0px 3px 11px -6px #333333;
+ box-shadow:0px 3px 11px -6px #333333;
+}
 /* 顶部常驻栏样式 */
 .top-header {
 	background-color: var(--fColor);
@@ -16,18 +38,36 @@
 	top: 0;
 	z-index: 1020;
 }
-.partnerLogo { 
-/*    width: 100%; 
+
+.partnerLogo {
+	/*    width: 100%; 
     height: 100px; */
-    stroke: white; 
-    fill: white;
-} 
+	stroke: white;
+	fill: white;
+}
+
 /* 布局CSS */
 /* Div水平垂直居中 */
-.father{position:fixed;width:100%;height:100%;top:0;left:0;}
-.son{position: absolute;top:0;left:0;bottom:0;right:0;width:50%;height:50%;margin:auto;}
+.father {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
 
-.index-zhe{
+.son {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	margin: auto;
+}
+
+.index-zhe {
 	background-color: white;
 	border-radius: 3vw;
 }
@@ -41,12 +81,13 @@
 	overflow: hidden;
 	color: white;
 }
+
 /* 		<!-- Iconfont矢量图标库 -->
 		<script src="http://at.alicdn.com/t/font_1306353_exkcfta643.js" type="text/javascript"></script>
 		 <svg class="icon" aria-hidden="true">
 		 	<use xlink:href="#icon-logo"></use>
 		 </svg>*/
-		 
+
 /*刘楠*/
 * {
 	margin: 0;
@@ -61,6 +102,7 @@ span {
 	margin-left: 30px;
 	vertical-align: 20px;
 }
+
 .list-header {
 	width: 100%;
 	border: 1px solid 0;
@@ -75,14 +117,12 @@ span {
 	line-height: 100px;
 	border: 2px solid var(--fColor);
 	padding-left: 30px;
-	-moz-box-shadow: 0px 8px 20px #3333333a;
-	-webkit-box-shadow: 0px 8px 20px #3333333a;
-	box-shadow: 0px 8px 20px #3333333a;
 }
+
 .list-item:hover {
 	background: var(--fColor);
 	color: white;
-} 
+}
 
 .container-liu {
 	width: 100%;
@@ -107,9 +147,6 @@ span {
 	background-color: var(--fColor);
 	margin-top: 100px;
 	display: inline-block;
-	-moz-box-shadow: 0px 8px 20px #3333333a;
-	-webkit-box-shadow: 0px 8px 20px #3333333a;
-	box-shadow: 0px 8px 20px #3333333a;
 }
 
 .circle {
@@ -138,7 +175,7 @@ span {
 	font-size: xx-large;
 	line-height: 50px;
 	position: relative;
-	color:#fff;
+	color: #fff;
 }
 
 .word::after {
@@ -146,13 +183,9 @@ span {
 	display: block;
 	clear: both;
 }
-/* 搜索页面 这里是傅文雅的CSS!*/
-{
-	margin: 0;
-	padding: 0;
-}
 
-background-color: var(--fColor);
+/* 搜索页面 这里是傅文雅的CSS!*/
+
 
 ul,li {
 	list-style: none;
@@ -163,15 +196,15 @@ a {
 }
 
 /* 搜索框设置 */
-.searcontent clearfix {
+.searcontent {
 	width: 100%;
-	height: 100px;
-	background-color: #CCCCCC;
+	/* height: 100px; */
+	background-color: white;
 	border: solid 1px #ccc;
-	margin-bottom: 25pxs;
-	position: fixed;
-	top: 0px;
-	z-index: 1000;
+/* 	position: -ms-device-fixed; */
+/* 	position: sticky;
+	top: 0;
+	z-index: 1020; */
 }
 
 /* 搜索框设置 */
@@ -188,19 +221,47 @@ a {
 	border-top-right-radius: 100px;
 	outline: none;
 }
-
+.list-item2 a {
+	padding: 0 20px;
+	color: var(--fColor);
+	font-weight: bold;
+	margin-bottom: 20px;
+	height: 60px;
+	background: #6D6D6D14;
+	display: inline-block;
+	/*把a变成行级块*/
+	border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 60px;
+	/* margin-bottom: 5px; */
+}
+/*当鼠标移动会变色：*/
+.sxzl ul li a {
+	width: 175px;
+	height: 65px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 65px;
+	display: inline-block;
+	border-right: 0px solid #ccc;
+	background: #eee;
+	border-radius: 10px;
+	color: #000;
+}
+.sxzl ul li ul li a {
+	font-size: 35px;
+	margin-top: 5px;
+	border-right: none;
+	border-top: 1px dotted #ccc;
+	background: #f5f5f5;
+}
 /* 引入按钮 设置 */
 .icon .item1 a {
 	padding: 25px 10px 0 10px;
 	height: 100px;
 	display: inline-block;
 	/*把a变成行级块*/
-
-}
-
-.icon .item1 a:hover {
-	background-color: #6D6D6D14;
-	color: #fff;
 
 }
 
@@ -211,6 +272,23 @@ a {
 	/*把a变成行级块*/
 
 }
+
+.list-item2 a:hover {
+	background-color: var(--fColor);
+	color: #fff;
+}
+
+.sxzl ul li a:hover {
+	color: var(--fColor);
+}
+
+.icon .item1 a:hover {
+	background-color: #6D6D6D14;
+	color: #fff;
+
+}
+
+
 
 .icon .item2 a:hover {
 	background-color: #6D6D6D14;
@@ -232,9 +310,9 @@ li {
 }
 
 /* 最高热度搜索 */
- .list-item2 {
+.list-item2 {
 	float: left;
-	
+
 	list-style: none;
 	font-size: 20px;
 	/* margin-left: 20%; */
@@ -242,35 +320,6 @@ li {
 	height: 30px;
 	line-height: 30px;
 	/* border:1px solid black;显示黑色边框 */
-}
-
-.list-item2 a {
-	padding: 0 20px;
-	color: var(--fColor);
-	font-weight: bold;
-	margin-bottom: 20px;
-	height: 60px; 
-	background: #6D6D6D14;
-	display: inline-block;
-	/*把a变成行级块*/
-	border-radius: 10px;
-	text-decoration: none;
-	text-align: center;
-	line-height: 60px;
-	margin-bottom: 5px;
-}
-
-.box-shadow-vertical {
-	-moz-box-shadow: 0px 6px 10px #3333333C;
-	-webkit-box-shadow: 0px 6px 10px #3333333C;
-	box-shadow: 0px 6px 10px #3333333C;
-	margin-bottom: 100px;
-}
-
-/*当鼠标移动会变色：*/
-.list-item2 a:hover {
-	background-color: var(--fColor);
-	color: #fff;
 }
 
 /* 筛选种类 设置*/
@@ -288,22 +337,8 @@ li {
 	margin-left: 5px;
 }
 
-.sxzl ul li a {
-	width: 175px;
-	height: 65px;
-	margin:0px auto;
-	text-align: center;
-	line-height: 65px;
-	display: inline-block;
-	border-right: 0px solid #ccc;
-	background: #eee;
-	border-radius: 10px;
-	color: #000;
-}
 
-.sxzl ul li a:hover {
-	color: var(--fColor);
-}
+
 b {
 	position: absolute;
 	top: 90px;
@@ -314,41 +349,55 @@ b {
 	border-style: solid dashed dashed;
 	border-color: #FFFFFF transparent transparent;
 }
-.trf:hover{
+
+.trf:hover {
 	border-color: #4C51B1 transparent transparent;
 	transform: rotate(180deg);
 	transform-origin: 50% 25%;
 	transition: transform .2s ease-in;
-}
-.trf:hover{
 	display: block;
 }
-#sortout:hover{
+
+
+#sortout:hover {
 	background-color: #4C51B1;
 	color: #FFFFFF;
 	border-right: 4px solid #4C51B1;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-#lowers:hover{
+
+#lowers:hover {
 	background-color: #4C51B1;
 	color: #FFFFFF;
 	border-right: 4px solid #4C51B1;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-#food,#botm {
+
+#food,
+#botm {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
 #menu1 ul li a {
 	background: #4C51B1;
-	color:#FFFFFF;
+	color: #FFFFFF;
 	position: relative;
 }
-#menu1 ul li  a:hover{
-	background:#FFFFFF ;
+
+#menu1 ul li a:hover {
+	background: #FFFFFF;
 	color: #4C51B1;
+}
+.bottom ul li {
+	width: 196px;
+	float: left;
+	height: 33px;
+	display: inline;
+	/*--li本来是块级元素，这条css就使li变为内联（行内）元素，从而达到横向排列--*/
+	margin-bottom: 0px;
 }
 .sxzl ul li ul {
 	position: absolute;
@@ -359,13 +408,7 @@ b {
 	float: none;
 }
 
-.sxzl ul li ul li a {
-	font-size: 35px;
-	margin-top: 5px;
-	border-right: none;
-	border-top: 1px dotted #ccc;
-	background: #f5f5f5;
-}
+
 
 .sxzl ul li:hover ul {
 	display: block;
@@ -374,52 +417,47 @@ b {
 .sxzl ul li ul li:hover ul {
 	display: block;
 }
-.bottom ul li{
-	width:196px;
-	float:left;
-	height:33px;
-	display:inline;/*--li本来是块级元素，这条css就使li变为内联（行内）元素，从而达到横向排列--*/
-	margin-bottom: 0px;
-}
+
+
+
 /* input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	/* 去除滑块的默认样式 */
-	/* margin-top: 300px; */
+/* margin-top: 300px; */
 /* 	height: 100%;
 	width: 100px;
 	background: var(--fColor);
 	border-radius: 50 %;
-} */ */
-
-#menus ul li ul li ul {
+} */
+*/ #menus ul li ul li ul {
 	display: none;
 	border-bottom: none;
 	position: relative;
 	left: 180px;
 	top: 0px;
 	width: 100px;
-	
+
 	/*margin-left: 100px;
 	margin-top: 50px;*/
 }
-
+#menus ul li:hover ul {
+	display: block;
+}
 #menus ul li:hover ul li ul {
 	display: none;
 }
 
-#menus ul li:hover ul {
-	display: block;
-}
+
 
 #menus ul li ul li:hover ul {
 	display: block;
 }
 
 /* 搜索结果为电脑展开前的界面 */
-.centerarea{
-	
+.centerarea {
+
 	border: 10px solid #ccc;
-	margin:150px auto;
+	margin: 150px auto;
 	margin-top: 150px;
 	width: 60%;
 	height: 300px;
@@ -427,37 +465,42 @@ b {
 	/* margin: 5% 5% 5% 5% ; */
 	overflow: hidden;
 }
+
 .leftfu {
 	position: absolute;
-	width:100px;
+	width: 100px;
 	margin-left: 10px;
-	background:#fff;
+	background: #fff;
 	height: 300px;
 	border-radius: 80px;
 }
-.leftfu ul li svg{
-	color:var(--fColor); 
-	float:left;
-	opacity:1; 
-	font-size:40px;
+
+.leftfu ul li svg {
+	color: var(--fColor);
+	float: left;
+	opacity: 1;
+	font-size: 40px;
 	margin-top: 20px;
 }
+
 .middlefu {
 	position: absolute;
-	left:550px;
-	width:400px;
+	left: 550px;
+	width: 400px;
 	/* background:#0f0; */
-	margin-left:10px;
+	margin-left: 10px;
 }
-.middlefu img{
-	height:200px ;
+
+.middlefu img {
+	height: 200px;
 	width: 200px;
-	margin-top:90px ;
+	margin-top: 90px;
 }
-.rightfu{
+
+.rightfu {
 	position: absolute;
-	left:1000px;
+	left: 1000px;
 	width: 390px;
-	background:#000;
-	margin-left:10px;
+	background: #000;
+	margin-left: 10px;
 }
