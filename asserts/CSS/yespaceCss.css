@@ -96,10 +96,10 @@
 
 /* 消息总界面 */
 span {
-	line-height: 125px;
+	/* line-height: 125px; */
 	font-weight: bold;
 	font-size: 40px;
-	margin-left: 30px;
+	/* margin-left: 30px; */
 	vertical-align: 20px;
 }
 
@@ -185,6 +185,13 @@ span {
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
+<<<<<<< HEAD
+=======
+*{
+	margin: 0;
+	padding: 0;
+}
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 
 
 ul,li {
@@ -309,8 +316,13 @@ li {
 	list-style: none;
 }
 
+<<<<<<< HEAD
 /* 最高热度搜索 */
 .list-item2 {
+=======
+/* 最高热度搜索 和 历史搜索*/
+ .list-item2 {
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 	float: left;
 
 	list-style: none;
@@ -326,7 +338,7 @@ li {
 .sxzl {
 	border: 0px solid #ccc;
 	border-right: none;
-	margin: 5% 5% 20% 10%;
+	margin: 5% 10% 20% 6%;
 	overflow: hidden;
 	float: left;
 	/* margin: 100px 0 0 300px; */
@@ -334,11 +346,34 @@ li {
 
 .sxzl ul li {
 	float: left;
-	margin-left: 5px;
+	margin-left: 0px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+.sxzl ul li a {
+	width: 175px;
+	height: 65px;
+<<<<<<< HEAD
+	margin-right: 5px;
+	margin-top: 30px;
+=======
+	margin:0px auto;
+>>>>>>> a1abf07c9733aad06131251420df6943d54cf955
+	text-align: center;
+	line-height: 65px;
+	display: inline-block;
+	border-right: 4px solid #EEEEEE;
+	background: #eeeeee;
+	color:#4C51B1;
+}
+
+/*#menu2 ul li a{
+	border-radius: 15px;
+}*/
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 b {
 	position: absolute;
 	top: 90px;
@@ -391,6 +426,7 @@ b {
 	background: #FFFFFF;
 	color: #4C51B1;
 }
+<<<<<<< HEAD
 .bottom ul li {
 	width: 196px;
 	float: left;
@@ -399,6 +435,9 @@ b {
 	/*--li本来是块级元素，这条css就使li变为内联（行内）元素，从而达到横向排列--*/
 	margin-bottom: 0px;
 }
+=======
+
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 .sxzl ul li ul {
 	position: absolute;
 	display: none;
@@ -408,16 +447,30 @@ b {
 	float: none;
 }
 
+<<<<<<< HEAD
 
+=======
+.sxzl ul li ul li a {
+	font-size: 35px;
+	margin-top: 0px;
+	border-right: 0px;
+	border-top: 0px dotted #ccc;
+	background: #f5f5f5;
+	border: 2px solid #4C51B1;
+	position: relative;
+}
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 
 .sxzl ul li:hover ul {
 	display: block;
+	
 }
 
 .sxzl ul li ul li:hover ul {
 	display: block;
 }
 
+<<<<<<< HEAD
 
 
 /* input[type=range]::-webkit-slider-thumb {
@@ -430,12 +483,65 @@ b {
 	border-radius: 50 %;
 } */
 */ #menus ul li ul li ul {
+=======
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	/* 去除滑块的默认样式 */
+	/* margin-top: 300px; */
+	height: 100%;
+	width: 100px;
+	background: var(--fColor);
+	border-radius: 50 %;
+}
+/*#menus {
+	width: 100px;
+	border: 1px solid #cccccc;
+	margin-top: 20px;
+}*/
+
+/*#menus ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}*/
+
+/*#menus ul li {
+	background: #eeeeee;
+	padding: 0px 24px;
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #cccccc;
+	position: relative;
+}*/
+
+/*#menus ul li ul {
+	display: none;
+	border: 1px solid #cccccc;
+	border-bottom: none;
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	width: 100px;
+}*/
+
+/*#menus ul li ul li {
+	background: #eeeeee;
+	padding: 0px 24px;
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #cccccc;
+	position: relative;
+}*/
+
+#menus ul li ul li ul {
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 	display: none;
 	border-bottom: none;
 	position: relative;
-	left: 180px;
+	/*left: 100px;*/
 	top: 0px;
 	width: 100px;
+<<<<<<< HEAD
 
 	/*margin-left: 100px;
 	margin-top: 50px;*/
@@ -443,6 +549,11 @@ b {
 #menus ul li:hover ul {
 	display: block;
 }
+=======
+	/*margin-left: 80px;
+	margin-top: 70px;*/
+}
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 #menus ul li:hover ul li ul {
 	display: none;
 }
@@ -460,7 +571,7 @@ b {
 	margin: 150px auto;
 	margin-top: 150px;
 	width: 60%;
-	height: 300px;
+	height: 400px;
 	border-radius: 80px;
 	/* margin: 5% 5% 5% 5% ; */
 	overflow: hidden;
