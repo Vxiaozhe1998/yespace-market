@@ -2,20 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>搜索筛选</title>
 		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css">
-		<style type="text/css">
-			/* 在线连接阿里妈妈的矢量图库用symbol方法 */
-			.icon {
-				width: 1em;
-				height: 1em;
-				vertical-align: -0.15em;
-				fill: currentColor;
-				overflow: hidden;
-			}
-		</style>
+	<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
 		<script type="text/javascript">
-			<!--//--><![CDATA[//><!--
 			startList = function() {
 				if (document.all && document.getElementById) {
 					navRoot = document.getElementById("menu2");
@@ -33,7 +24,6 @@
 
 			}
 			window.onload = startList;
-			//--><!]]>
 		</script>
 		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_cayoehnv9o.js"></script>
 		<base target="_blank">
@@ -41,32 +31,23 @@
 
 	</head>
 	<body>
-		<div class="box-shadow-vertical" style="position: static fixed;width:100%;height: 300px;">
-			<table width="100%" height="" border="0" cellpadding="0" cellspacing="0">
-				<!-- 搜索-->
-				<div>
-							<div class="searcontent clearfix">
-				<tr>
-					<td style="text-align:center;" ;>
-						<input type="text" style="padding-left:20px;  font-size:50px;" placeholder="您想找点啥呢">
-					</td>
-					<td class="item1">
-						<a href="#">
-							<svg class="icon" aria-hidden="true" style="margin-left:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
+		<div class="" style="width:100%;height: 300px;">
+			<!-- 搜索框 -->
+			<nav class="searcontent top-shadow sticky-top" style="width: 100%;">
+				<div class="container-fluid">
+					<div class="row" >
+						<div class="col-8"><input type="text" style="padding-left:5vw; font-size:5vw;margin: 1vw 0rem;height: 11vw;width: 100%;" placeholder="您想找点啥呢"></div>
+						<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
 								<use xlink:href="#icon-sousuo"></use>
-								<!--添加图库的图  -->
-							</svg>
-						</a>
-					</td>
-					<td class="item2">
-						<a href="#">
-							<svg class="icon" aria-hidden="true" style="margin-right:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
-								<use xlink:href="#icon-zhankai"></use>
-							</svg>
-						</a>
-					</td>
-				</tr>
-			</table>
+							</svg></div>
+						<div class="col-2"><a href="searchsx.html">
+								<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
+									<use xlink:href="#icon-zhankai"></use>
+								</svg>
+							</a></div>
+					</div>
+				</div>
+			</nav>
 			<div class="sxzl" id="menus">
 				<div class="sxzl" id="menus" >
 				<ul id="menu1">

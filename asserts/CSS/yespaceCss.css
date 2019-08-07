@@ -316,15 +316,10 @@ li {
 	list-style: none;
 }
 
-<<<<<<< HEAD
 /* 最高热度搜索 */
-.list-item2 {
-=======
-/* 最高热度搜索 和 历史搜索*/
- .list-item2 {
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
-	float: left;
 
+ .list-item2 {
+	float: left;
 	list-style: none;
 	font-size: 20px;
 	/* margin-left: 20%; */
@@ -349,19 +344,13 @@ li {
 	margin-left: 0px;
 }
 
-<<<<<<< HEAD
 
-
-=======
 .sxzl ul li a {
 	width: 175px;
 	height: 65px;
-<<<<<<< HEAD
 	margin-right: 5px;
 	margin-top: 30px;
-=======
 	margin:0px auto;
->>>>>>> a1abf07c9733aad06131251420df6943d54cf955
 	text-align: center;
 	line-height: 65px;
 	display: inline-block;
@@ -373,7 +362,7 @@ li {
 /*#menu2 ul li a{
 	border-radius: 15px;
 }*/
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
+
 b {
 	position: absolute;
 	top: 90px;
@@ -426,7 +415,7 @@ b {
 	background: #FFFFFF;
 	color: #4C51B1;
 }
-<<<<<<< HEAD
+
 .bottom ul li {
 	width: 196px;
 	float: left;
@@ -435,9 +424,7 @@ b {
 	/*--li本来是块级元素，这条css就使li变为内联（行内）元素，从而达到横向排列--*/
 	margin-bottom: 0px;
 }
-=======
 
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 .sxzl ul li ul {
 	position: absolute;
 	display: none;
@@ -447,9 +434,9 @@ b {
 	float: none;
 }
 
-<<<<<<< HEAD
 
-=======
+
+
 .sxzl ul li ul li a {
 	font-size: 35px;
 	margin-top: 0px;
@@ -459,7 +446,7 @@ b {
 	border: 2px solid #4C51B1;
 	position: relative;
 }
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
+
 
 .sxzl ul li:hover ul {
 	display: block;
@@ -470,7 +457,6 @@ b {
 	display: block;
 }
 
-<<<<<<< HEAD
 
 
 /* input[type=range]::-webkit-slider-thumb {
@@ -482,8 +468,7 @@ b {
 	background: var(--fColor);
 	border-radius: 50 %;
 } */
-*/ #menus ul li ul li ul {
-=======
+ #menus ul li ul li ul {
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	/* 去除滑块的默认样式 */
@@ -534,14 +519,14 @@ input[type=range]::-webkit-slider-thumb {
 }*/
 
 #menus ul li ul li ul {
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
+
 	display: none;
 	border-bottom: none;
 	position: relative;
 	/*left: 100px;*/
 	top: 0px;
 	width: 100px;
-<<<<<<< HEAD
+
 
 	/*margin-left: 100px;
 	margin-top: 50px;*/
@@ -549,11 +534,7 @@ input[type=range]::-webkit-slider-thumb {
 #menus ul li:hover ul {
 	display: block;
 }
-=======
-	/*margin-left: 80px;
-	margin-top: 70px;*/
-}
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
+
 #menus ul li:hover ul li ul {
 	display: none;
 }
