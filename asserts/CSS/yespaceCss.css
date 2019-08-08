@@ -294,9 +294,8 @@ li {
 <<<<<<< HEAD
 	margin-right: 5px;
 	margin-top: 30px;
-=======
+
 	margin:0px auto;
->>>>>>> a1abf07c9733aad06131251420df6943d54cf955
 	text-align: center;
 	line-height: 65px;
 	display: inline-block;
@@ -420,12 +419,11 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea{
 	
 	border: 1px solid #ccc;
-	margin:150px auto;
-	margin-top: 150px;
+	/* margin:150px auto; */
 	width: 80%;
 	height: 330px;
 	border-radius: 80px;
-	/* margin: 5% 5% 5% 5% ; */
+	margin: 5% 5% 5% 5% ;
 	overflow: hidden;
 }
 .leftfu {
@@ -474,13 +472,15 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea2{
 	
 	border: 1px solid #ccc;
-	margin:150px auto;
-	margin-top: 150px;
+	/* position: relative; */
+	/* float: left; */
+	margin:100px auto;
+	/* margin-top: 100px; */
 	width: 70%;
 	min-height:200px;
-	height: 1000px;
+	height: 1100px;
 	border-radius: 80px;
-	/* margin: 5% 5% 5% 5% ; */
+	margin: 5% 5% 5% 5% ;
 	overflow: hidden;
 }
 .leftfu2 {
@@ -516,5 +516,8 @@ input[type=range]::-webkit-slider-thumb {
 	/* margin-top:90px ; */
 	margin-bottom: 10px;
 }
+input[type=checkbox] {
+-webkit-transform: scale(1.5); /* Safari and Chrome */
 
+}
 	
