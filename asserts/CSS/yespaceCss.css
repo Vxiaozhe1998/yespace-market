@@ -42,12 +42,20 @@
 	border-radius: 50%;
 	position: absolute;
 }
+<<<<<<< HEAD
 
 /* 阴影 */
 .shadow {
 	-moz-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+=======
+/* 顶部阴影 */
+.top-shadow{
+	-moz-box-shadow:0px 3px 11px -6px #333333;
+	-webkit-box-shadow:0px 3px 11px -6px #333333;
+	box-shadow:0px 3px 11px -6px #333333;
+>>>>>>> a0f1f5b4b736452d33f0eb18d3b6887dee81c088
 }
 
 /* 顶部常驻栏样式 */
@@ -152,8 +160,8 @@ span {
 	height: 100%;
 }
 
-/* 通知界面 */
-.container1-liu {
+/* 通知界面Message-inform */
+.container-inform-liu {
 	border: 0 solid black;
 	position: relative;
 	left: auto;
@@ -164,8 +172,7 @@ span {
 
 .dialog-box {
 	border: 0 solid black;
-	width: 100%;
-	/* height: 400px; */
+	/* width: 100%; */
 	border-radius: 75px;
 	background-color: var(--fColor);
 	margin-top: 100px;
@@ -180,7 +187,6 @@ span {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	position: relative;
-
 }
 
 .head-photo {
@@ -193,7 +199,6 @@ span {
 .word {
 	float: left;
 	width: 72%;
-	/* height: 300px; */
 	margin: 45px 50px 45px 190px;
 	font-size: xx-large;
 	line-height: 50px;
@@ -207,11 +212,32 @@ span {
 	clear: both;
 }
 
+/* 个人对话框Message-dialog */
+.container-dialog-liu{
+	border: 1px solid black;
+	position: relative;
+	left: auto;
+	right: auto;
+	width: 100%;
+}
+
+
 /* 搜索页面 这里是傅文雅的CSS!*/
+<<<<<<< HEAD
 <<<<<<< HEAD=======* {
 	margin: 0;
 	padding: 0;
 }
+=======
+/* <<<<<<< HEAD
+=======
+*{
+	margin: 0;
+	padding: 0;
+}
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
+ */
+>>>>>>> a0f1f5b4b736452d33f0eb18d3b6887dee81c088
 
 >>>>>>>3218028e42976c674fca7dadab505e2753ef55a7 ul,
 li {
