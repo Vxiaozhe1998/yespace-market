@@ -42,27 +42,18 @@
 	border-radius: 50%;
 	position: absolute;
 }
-<<<<<<< HEAD
+
 
 /* 阴影 */
 .shadow {
 	-moz-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
-=======
-/* 顶部阴影 */
-.top-shadow{
-	-moz-box-shadow:0px 3px 11px -6px #333333;
-	-webkit-box-shadow:0px 3px 11px -6px #333333;
-	box-shadow:0px 3px 11px -6px #333333;
->>>>>>> a0f1f5b4b736452d33f0eb18d3b6887dee81c088
 }
-
 /* 顶部常驻栏样式 */
-.top-header {
+.top-header{
 	background-color: var(--fColor);
 }
-
 /* 顶栏固定 */
 .sticky-top {
 	position: sticky;
@@ -223,23 +214,7 @@ span {
 
 
 /* 搜索页面 这里是傅文雅的CSS!*/
-<<<<<<< HEAD
-<<<<<<< HEAD=======* {
-	margin: 0;
-	padding: 0;
-}
-=======
-/* <<<<<<< HEAD
-=======
-*{
-	margin: 0;
-	padding: 0;
-}
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
- */
->>>>>>> a0f1f5b4b736452d33f0eb18d3b6887dee81c088
 
->>>>>>>3218028e42976c674fca7dadab505e2753ef55a7 ul,
 li {
 	list-style: none;
 }
