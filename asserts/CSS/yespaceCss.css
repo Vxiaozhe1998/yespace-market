@@ -10,56 +10,35 @@
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
-	height: 100px;
+	height: 50px;
 	background-color: white;
 	z-index: 9999;
 }
-
-.background-footer {
-	background-color: white;
-
+/* 阴影样式 */
+/* 底部阴影 */
+.bottom-shadow {
+	-moz-box-shadow: 0px -3px 11px -6px #333333;
+	-webkit-box-shadow: 0px -3px 11px -6px #333333;
+	box-shadow: 0px -3px 11px -6px #333333;
 }
-
-/* 底部样式 */
-.footer-bot {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	width: 100%;
-	height: 10rem;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	filter: drop-shadow(0px -1px 11px #33333333)
-}
-
-.footer-bot:before {
-	bottom: 0;
-	width: 15rem;
-	height: 15rem;
-	content: "";
-	background-color: white;
-	border-radius: 50%;
-	position: absolute;
-}
-
-
-/* 阴影 */
-.shadow {
-	-moz-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
-	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
-	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+/* 顶部阴影 */
+.top-shadow{
+	-moz-box-shadow:0px 3px 11px -6px #333333;
+	-webkit-box-shadow:0px 3px 11px -6px #333333;
+	box-shadow:0px 3px 11px -6px #333333;
 }
 /* 顶部常驻栏样式 */
-.top-header{
+.top-header {
 	background-color: var(--fColor);
 }
+
 /* 顶栏固定 */
 .sticky-top {
 	position: sticky;
 	top: 0;
 	z-index: 1020;
 }
+
 .partnerLogo {
 	/*    width: 100%; 
     height: 100px; */
@@ -100,7 +79,7 @@
 	vertical-align: -0.15em;
 	fill: currentColor;
 	overflow: hidden;
-	color: var(--fColor);
+	color: white;
 }
 
 /* 		<!-- Iconfont矢量图标库 -->
@@ -139,16 +118,16 @@ span {
 	border: 2px solid var(--fColor);
 	padding-left: 30px;
 }
+
 .list-item:hover {
 	background: var(--fColor);
 	color: white;
-
+}
 
 .container-liu {
 	width: 100%;
 	height: 100%;
 }
-
 
 /* 通知界面Message-inform */
 .container-inform-liu {
@@ -162,12 +141,11 @@ span {
 
 .dialog-box {
 	border: 0 solid black;
-	
+	/* width: 100%; */
 	border-radius: 75px;
 	background-color: var(--fColor);
 	margin-top: 100px;
 	display: inline-block;
-	
 }
 
 .circle {
@@ -190,12 +168,11 @@ span {
 .word {
 	float: left;
 	width: 72%;
-
 	margin: 45px 50px 45px 190px;
 	font-size: xx-large;
 	line-height: 50px;
 	position: relative;
-
+	color: #fff;
 }
 
 .word::after {
@@ -215,8 +192,16 @@ span {
 
 
 /* 搜索页面 这里是傅文雅的CSS!*/
+/* <<<<<<< HEAD
+=======
+*{
+	margin: 0;
+	padding: 0;
+}
+>>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
+ */
 
-li {
+ul,li {
 	list-style: none;
 }
 
@@ -225,13 +210,13 @@ a {
 }
 
 /* 搜索框设置 */
-/*.searcontent {*/
+.searcontent {
 	width: 100%;
 	/* height: 100px; */
 	background-color: white;
 	border: solid 1px #ccc;
-	/* 	position: -ms-device-fixed; */
-	/* 	position: sticky;
+/* 	position: -ms-device-fixed; */
+/* 	position: sticky;
 	top: 0;
 	z-index: 1020; */
 }
@@ -250,7 +235,6 @@ a {
 	border-top-right-radius: 100px;
 	outline: none;
 }
-
 .list-item2 a {
 	padding: 0 20px;
 	color: var(--fColor);
@@ -266,7 +250,6 @@ a {
 	line-height: 60px;
 	/* margin-bottom: 5px; */
 }
-
 /*当鼠标移动会变色：*/
 .sxzl ul li a {
 	width: 175px;
@@ -280,7 +263,6 @@ a {
 	border-radius: 10px;
 	color: #000;
 }
-
 .sxzl ul li ul li a {
 	font-size: 35px;
 	margin-top: 5px;
@@ -288,7 +270,6 @@ a {
 	border-top: 1px dotted #ccc;
 	background: #f5f5f5;
 }
-
 /* 引入按钮 设置 */
 .icon .item1 a {
 	padding: 25px 10px 0 10px;
@@ -342,10 +323,9 @@ li {
 	list-style: none;
 }
 
-
 /* 最高热度搜索 */
 
-.list-item2 {
+ .list-item2 {
 	float: left;
 	list-style: none;
 	font-size: 20px;
@@ -375,19 +355,15 @@ li {
 .sxzl ul li a {
 	width: 175px;
 	height: 65px;
-
 	margin-right: 5px;
 	margin-top: 30px;
-
-	margin:0px auto;
-
 	margin:0px auto;
 	text-align: center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
 	background: #eeeeee;
-
+	color:#4C51B1;
 }
 
 /*#menu2 ul li a{
@@ -410,7 +386,6 @@ b {
 	transform: rotate(180deg);
 	transform-origin: 50% 25%;
 	transition: transform .2s ease-in;
-
 	display: block;
 }
 
@@ -431,18 +406,17 @@ b {
 	border-top-right-radius: 10px;
 }
 
-
-#food,#botm {
+#food,
+#botm {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 
 #menu1 ul li a {
 	background: #4C51B1;
-
+	color: #FFFFFF;
 	position: relative;
 }
-
 
 #menu1 ul li a:hover {
 	background: #FFFFFF;
@@ -466,6 +440,10 @@ b {
 .sxzl ul li ul li {
 	float: none;
 }
+
+
+
+
 .sxzl ul li ul li a {
 	font-size: 35px;
 	margin-top: 0px;
@@ -475,16 +453,20 @@ b {
 	border: 2px solid #4C51B1;
 	position: relative;
 }
+
+
 .sxzl ul li:hover ul {
 	display: block;
-
+	
 }
 
 .sxzl ul li ul li:hover ul {
 	display: block;
 }
 
- input[type=range]::-webkit-slider-thumb {
+
+
+/* input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	/* 去除滑块的默认样式 */
 /* margin-top: 300px; */
@@ -492,137 +474,132 @@ b {
 	width: 100px;
 	background: var(--fColor);
 	border-radius: 50 %;
-}*/
-#menus ul li ul li ul {
-	input[type=range]::-webkit-slider-thumb {
-		-webkit-appearance: none;
-		/* 去除滑块的默认样式 */
-		/* margin-top: 300px; */
-		height: 100%;
-		width: 100px;
-		background: var(--fColor);
-		border-radius: 50 %;
-	}
-
-	/*#menus {
+} */
+ #menus ul li ul li ul {
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	/* 去除滑块的默认样式 */
+	/* margin-top: 300px; */
+	height: 100%;
+	width: 100px;
+	background: var(--fColor);
+	border-radius: 50 %;
+}
+/*#menus {
 	width: 100px;
 	border: 1px solid #cccccc;
 	margin-top: 20px;
 }*/
 
+/*#menus ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}*/
+
+/*#menus ul li {
+	background: #eeeeee;
+	padding: 0px 24px;
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #cccccc;
+	position: relative;
+}*/
+
+/*#menus ul li ul {
+	display: none;
+	border: 1px solid #cccccc;
+	border-bottom: none;
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	width: 100px;
+}*/
+
+/*#menus ul li ul li {
+	background: #eeeeee;
+	padding: 0px 24px;
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #cccccc;
+	position: relative;
+}*/
+
+#menus ul li ul li ul {
+
+	display: none;
+	border-bottom: none;
+	position: relative;
+	/*left: 100px;*/
+	top: 0px;
+	width: 100px;
+
+
+	/*margin-left: 100px;
+	margin-top: 50px;*/
+}
+#menus ul li:hover ul {
+	display: block;
+}
+
+#menus ul li:hover ul li ul {
+	display: none;
+}
 
 
 
-
-
-	
-
-		
-
+#menus ul li ul li:hover ul {
+	display: block;
+}
 
 /* 搜索结果为电脑展开前的界面 */
-.centerarea{
-	
-	border: 1px solid #ccc;
-	/* margin:150px auto; */
-	width: 80%;
-	height: 330px;
+.centerarea {
+
+	border: 10px solid #ccc;
+	margin: 150px auto;
+	margin-top: 150px;
+	width: 60%;
+	height: 400px;
 	border-radius: 80px;
-	margin: 5% 5% 5% 5% ;
+	/* margin: 5% 5% 5% 5% ; */
 	overflow: hidden;
 }
+
 .leftfu {
 	position: absolute;
-	width:20%;
+	width: 100px;
 	margin-left: 10px;
-	background:#fff;
-	height: 280px;
+	background: #fff;
+	height: 300px;
 	border-radius: 80px;
-	margin-top: 40px;
 }
-.leftfu ul li svg{
-	color:var(--fColor); 
-	float:left;
-	opacity:1; 
-	font-size:50px;
-	/* margin-top: 20px; */
+
+.leftfu ul li svg {
+	color: var(--fColor);
+	float: left;
+	opacity: 1;
+	font-size: 40px;
+	margin-top: 20px;
 }
 
 .middlefu {
 	position: absolute;
-	/* left:500px; */
-	width:40%;
-	margin-left:150px;
+	left: 550px;
+	width: 400px;
+	/* background:#0f0; */
+	margin-left: 10px;
 }
-.middlefu img{
-	height:200px ;
-	width: 300px;
-	margin-top:90px ;
-}
-.rightfu{
-	position: absolute;
-	margin-top: 90px;
-	left:920px;
+
+.middlefu img {
 	height: 200px;
-	width: 40%;
-	/* background:#666; */
-	margin-left:10px;
-	font-size:30px;
-}
-.chakanfu{
-	font-size: 20px;
-	background:#666;
-	border-radius: 80px;
-}
-.centerarea2{
-	
-	border: 1px solid #ccc;
-	/* position: relative; */
-	/* float: left; */
-	margin:100px auto;
-	/* margin-top: 100px; */
-	width: 70%;
-	min-height:200px;
-	height: 1100px;
-	border-radius: 80px;
-	margin: 5% 5% 5% 5% ;
-	overflow: hidden;
-}
-.leftfu2 {
-	position: absolute;
-	width:20%;
-	margin-left: 10px;
-	background:#fff;
-	height: 280px;
-	border-radius: 80px;
-	margin-top: 40px;
-}
-.leftfu2 ul li svg{
-	color:var(--fColor); 
-	float:left;
-	opacity:1; 
-	font-size:50px;
-	margin-left: 10px;
-	margin-top: 20px;
-}
-
-.middlefu2 {
-	position: absolute;
-	/* left:500px; */
-	width:60%;
-	margin-left:150px;
+	width: 200px;
 	margin-top: 90px;
-	font-size: 30px;
-	
 }
-.middlefu2 img{
-	height:200px ;
-	width: 300px;
-	/* margin-top:90px ; */
-	margin-bottom: 10px;
-}
-input[type=checkbox] {
--webkit-transform: scale(1.5); /* Safari and Chrome */
 
+.rightfu {
+	position: absolute;
+	left: 1000px;
+	width: 390px;
+	background: #000;
+	margin-left: 10px;
 }
-	
