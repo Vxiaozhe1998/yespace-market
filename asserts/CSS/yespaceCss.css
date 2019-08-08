@@ -3,30 +3,8 @@
 	--fColor: #4C51B1;
 	--sColor: #6D6D6D;
 }
-
 /* 使用方法var(--fColor); */
-.footer-zhe {
-	position: sticky;
-	left: 0px;
-	bottom: 0px;
-	width: 100%;
-	height: 50px;
-	background-color: white;
-	z-index: 9999;
-}
-/* 阴影样式 */
-/* 底部阴影 */
-.bottom-shadow {
-	-moz-box-shadow: 0px -3px 11px -6px #333333;
-	-webkit-box-shadow: 0px -3px 11px -6px #333333;
-	box-shadow: 0px -3px 11px -6px #333333;
-}
-/* 顶部阴影 */
-.top-shadow{
-	-moz-box-shadow:0px 3px 11px -6px #333333;
-	-webkit-box-shadow:0px 3px 11px -6px #333333;
-	box-shadow:0px 3px 11px -6px #333333;
-}
+
 /* 顶部常驻栏样式 */
 .top-header {
 	background-color: var(--fColor);
@@ -38,36 +16,18 @@
 	top: 0;
 	z-index: 1020;
 }
-
-.partnerLogo {
-	/*    width: 100%; 
+.partnerLogo { 
+/*    width: 100%; 
     height: 100px; */
-	stroke: white;
-	fill: white;
-}
-
+    stroke: white; 
+    fill: white;
+} 
 /* 布局CSS */
 /* Div水平垂直居中 */
-.father {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
+.father{position:fixed;width:100%;height:100%;top:0;left:0;}
+.son{position: absolute;top:0;left:0;bottom:0;right:0;width:50%;height:50%;margin:auto;}
 
-.son {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 50%;
-	height: 50%;
-	margin: auto;
-}
-
-.index-zhe {
+.index-zhe{
 	background-color: white;
 	border-radius: 3vw;
 }
@@ -81,13 +41,12 @@
 	overflow: hidden;
 	color: white;
 }
-
 /* 		<!-- Iconfont矢量图标库 -->
 		<script src="http://at.alicdn.com/t/font_1306353_exkcfta643.js" type="text/javascript"></script>
 		 <svg class="icon" aria-hidden="true">
 		 	<use xlink:href="#icon-logo"></use>
 		 </svg>*/
-
+		 
 /*刘楠*/
 * {
 	margin: 0;
@@ -102,7 +61,6 @@ span {
 	/* margin-left: 30px; */
 	vertical-align: 20px;
 }
-
 .list-header {
 	width: 100%;
 	border: 1px solid 0;
@@ -117,20 +75,22 @@ span {
 	line-height: 100px;
 	border: 2px solid var(--fColor);
 	padding-left: 30px;
+	-moz-box-shadow: 0px 8px 20px #3333333a;
+	-webkit-box-shadow: 0px 8px 20px #3333333a;
+	box-shadow: 0px 8px 20px #3333333a;
 }
-
 .list-item:hover {
 	background: var(--fColor);
 	color: white;
-}
+} 
 
 .container-liu {
 	width: 100%;
 	height: 100%;
 }
 
-/* 通知界面Message-inform */
-.container-inform-liu {
+/* 通知界面 */
+.container1-liu {
 	border: 0 solid black;
 	position: relative;
 	left: auto;
@@ -141,11 +101,15 @@ span {
 
 .dialog-box {
 	border: 0 solid black;
-	/* width: 100%; */
+	width: 100%;
+	/* height: 400px; */
 	border-radius: 75px;
 	background-color: var(--fColor);
 	margin-top: 100px;
 	display: inline-block;
+	-moz-box-shadow: 0px 8px 20px #3333333a;
+	-webkit-box-shadow: 0px 8px 20px #3333333a;
+	box-shadow: 0px 8px 20px #3333333a;
 }
 
 .circle {
@@ -156,6 +120,7 @@ span {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	position: relative;
+
 }
 
 .head-photo {
@@ -168,11 +133,12 @@ span {
 .word {
 	float: left;
 	width: 72%;
+	/* height: 300px; */
 	margin: 45px 50px 45px 190px;
 	font-size: xx-large;
 	line-height: 50px;
 	position: relative;
-	color: #fff;
+	color:#fff;
 }
 
 .word::after {
@@ -180,18 +146,13 @@ span {
 	display: block;
 	clear: both;
 }
-
-/* 个人对话框Message-dialog */
-.container-dialog-liu{
-	border: 1px solid black;
-	position: relative;
-	left: auto;
-	right: auto;
-	width: 100%;
+/* 搜索页面 这里是傅文雅的CSS!*/
+*{
+	margin: 0;
+	padding: 0;
 }
 
-
-/* 搜索页面 这里是傅文雅的CSS!*/
+background-color: var(--fColor);
 
 ul,li {
 	list-style: none;
@@ -202,14 +163,15 @@ a {
 }
 
 /* 搜索框设置 */
-
-.searcontent {
+.searcontent clearfix {
 	width: 100%;
-
-	background-color: white;
+	height: 100px;
+	background-color: #CCCCCC;
 	border: solid 1px #ccc;
-	
-	
+	margin-bottom: 25pxs;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
 }
 
 /* 搜索框设置 */
@@ -226,47 +188,19 @@ a {
 	border-top-right-radius: 100px;
 	outline: none;
 }
-.list-item2 a {
-	padding: 0 20px;
-	color: var(--fColor);
-	font-weight: bold;
-	margin-bottom: 20px;
-	height: 60px;
-	background: #6D6D6D14;
-	display: inline-block;
-	/*把a变成行级块*/
-	border-radius: 10px;
-	text-decoration: none;
-	text-align: center;
-	line-height: 60px;
-	/* margin-bottom: 5px; */
-}
-/*当鼠标移动会变色：*/
-.sxzl ul li a {
-	width: 175px;
-	height: 65px;
-	margin: 0px auto;
-	text-align: center;
-	line-height: 65px;
-	display: inline-block;
-	border-right: 0px solid #ccc;
-	background: #eee;
-	border-radius: 10px;
-	color: #000;
-}
-.sxzl ul li ul li a {
-	font-size: 35px;
-	margin-top: 5px;
-	border-right: none;
-	border-top: 1px dotted #ccc;
-	background: #f5f5f5;
-}
+
 /* 引入按钮 设置 */
 .icon .item1 a {
 	padding: 25px 10px 0 10px;
 	height: 100px;
 	display: inline-block;
 	/*把a变成行级块*/
+
+}
+
+.icon .item1 a:hover {
+	background-color: #6D6D6D14;
+	color: #fff;
 
 }
 
@@ -277,23 +211,6 @@ a {
 	/*把a变成行级块*/
 
 }
-
-.list-item2 a:hover {
-	background-color: var(--fColor);
-	color: #fff;
-}
-
-.sxzl ul li a:hover {
-	color: var(--fColor);
-}
-
-.icon .item1 a:hover {
-	background-color: #6D6D6D14;
-	color: #fff;
-
-}
-
-
 
 .icon .item2 a:hover {
 	background-color: #6D6D6D14;
@@ -314,11 +231,10 @@ li {
 	list-style: none;
 }
 
-/* 最高热度搜索 */
-
-
+/* 最高热度搜索 和 历史搜索*/
  .list-item2 {
 	float: left;
+	
 	list-style: none;
 	font-size: 20px;
 	/* margin-left: 20%; */
@@ -326,6 +242,35 @@ li {
 	height: 30px;
 	line-height: 30px;
 	/* border:1px solid black;显示黑色边框 */
+}
+
+.list-item2 a {
+	padding: 0 20px;
+	color: var(--fColor);
+	font-weight: bold;
+	margin-bottom: 20px;
+	height: 60px; 
+	background: #6D6D6D14;
+	display: inline-block;
+	/*把a变成行级块*/
+	border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 5px;
+}
+
+.box-shadow-vertical {
+	-moz-box-shadow: 0px 6px 10px #3333333C;
+	-webkit-box-shadow: 0px 6px 10px #3333333C;
+	box-shadow: 0px 6px 10px #3333333C;
+	margin-bottom: 100px;
+}
+
+/*当鼠标移动会变色：*/
+.list-item2 a:hover {
+	background-color: var(--fColor);
+	color: #fff;
 }
 
 /* 筛选种类 设置*/
@@ -343,12 +288,13 @@ li {
 	margin-left: 0px;
 }
 
-
 .sxzl ul li a {
 	width: 175px;
 	height: 65px;
+<<<<<<< HEAD
 	margin-right: 5px;
 	margin-top: 30px;
+
 	margin:0px auto;
 	text-align: center;
 	line-height: 65px;
@@ -361,7 +307,6 @@ li {
 /*#menu2 ul li a{
 	border-radius: 15px;
 }*/
-
 b {
 	position: absolute;
 	top: 90px;
@@ -372,57 +317,41 @@ b {
 	border-style: solid dashed dashed;
 	border-color: #FFFFFF transparent transparent;
 }
-
-.trf:hover {
+.trf:hover{
 	border-color: #4C51B1 transparent transparent;
 	transform: rotate(180deg);
 	transform-origin: 50% 25%;
 	transition: transform .2s ease-in;
+}
+.trf:hover{
 	display: block;
 }
-
-
-#sortout:hover {
+#sortout:hover{
 	background-color: #4C51B1;
 	color: #FFFFFF;
 	border-right: 4px solid #4C51B1;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-
-#lowers:hover {
+#lowers:hover{
 	background-color: #4C51B1;
 	color: #FFFFFF;
 	border-right: 4px solid #4C51B1;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-
-
-#food,
-#botm {
+#food,#botm {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-
 #menu1 ul li a {
 	background: #4C51B1;
-	color: #FFFFFF;
+	color:#FFFFFF;
 	position: relative;
 }
-
-#menu1 ul li a:hover {
-	background: #FFFFFF;
+#menu1 ul li  a:hover{
+	background:#FFFFFF ;
 	color: #4C51B1;
-}
-
-.bottom ul li {
-	width: 196px;
-	float: left;
-	height: 33px;
-	display: inline;
-	/*--li本来是块级元素，这条css就使li变为内联（行内）元素，从而达到横向排列--*/
-	margin-bottom: 0px;
 }
 
 .sxzl ul li ul {
@@ -443,19 +372,16 @@ b {
 	border: 2px solid #4C51B1;
 	position: relative;
 }
+
 .sxzl ul li:hover ul {
 	display: block;
-
+	
 }
 
 .sxzl ul li ul li:hover ul {
 	display: block;
 }
 
- input[type=range]::-webkit-slider-thumb {
-
-} */
- #menus ul li ul li ul {
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	/* 去除滑块的默认样式 */
@@ -465,122 +391,133 @@ input[type=range]::-webkit-slider-thumb {
 	background: var(--fColor);
 	border-radius: 50 %;
 }
-/*#menus {
-	width: 100px;
-	border: 1px solid #cccccc;
-	margin-top: 20px;
-}*/
 
-/*#menus ul {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-}*/
-
-/*#menus ul li {
-	background: #eeeeee;
-	padding: 0px 24px;
-	height: 26px;
-	line-height: 26px;
-	border-bottom: 1px solid #cccccc;
-	position: relative;
-}*/
-
-/*#menus ul li ul {
-	display: none;
-	border: 1px solid #cccccc;
-	border-bottom: none;
-	position: absolute;
-	left: 100px;
-	top: 0px;
-	width: 100px;
-}*/
-
-/*#menus ul li ul li {
-	background: #eeeeee;
-	padding: 0px 24px;
-	height: 26px;
-	line-height: 26px;
-	border-bottom: 1px solid #cccccc;
-	position: relative;
-}*/
 
 #menus ul li ul li ul {
-
 	display: none;
 	border-bottom: none;
 	position: relative;
 	/*left: 100px;*/
 	top: 0px;
 	width: 100px;
-
-
-
-	/*margin-left: 100px;
-	margin-top: 50px;*/
+	/*margin-left: 80px;
+	margin-top: 70px;*/
 }
-#menus ul li:hover ul {
-	display: block;
-}
-
 #menus ul li:hover ul li ul {
 	display: none;
 }
 
-
+#menus ul li:hover ul {
+	display: block;
+}
 
 #menus ul li ul li:hover ul {
 	display: block;
 }
 
 /* 搜索结果为电脑展开前的界面 */
-.centerarea {
-
-	border: 10px solid #ccc;
-	margin: 150px auto;
-	margin-top: 150px;
-	width: 60%;
-	height: 400px;
+.centerarea{
+	
+	border: 1px solid #ccc;
+	/* margin:150px auto; */
+	width: 80%;
+	height: 330px;
 	border-radius: 80px;
-	/* margin: 5% 5% 5% 5% ; */
+	margin: 5% 5% 5% 5% ;
 	overflow: hidden;
 }
-
 .leftfu {
 	position: absolute;
-	width: 100px;
+	width:20%;
 	margin-left: 10px;
-	background: #fff;
-	height: 300px;
+	background:#fff;
+	height: 280px;
 	border-radius: 80px;
+	margin-top: 40px;
 }
-
-.leftfu ul li svg {
-	color: var(--fColor);
-	float: left;
-	opacity: 1;
-	font-size: 40px;
-	margin-top: 20px;
+.leftfu ul li svg{
+	color:var(--fColor); 
+	float:left;
+	opacity:1; 
+	font-size:50px;
+	/* margin-top: 20px; */
 }
 
 .middlefu {
 	position: absolute;
-	left: 550px;
-	width: 400px;
-	/* background:#0f0; */
-	margin-left: 10px;
+	/* left:500px; */
+	width:40%;
+	margin-left:150px;
 }
-
-.middlefu img {
-	height: 200px;
-	width: 200px;
-	margin-top: 90px;
+.middlefu img{
+	height:200px ;
+	width: 300px;
+	margin-top:90px ;
 }
-
-.rightfu {
+.rightfu{
 	position: absolute;
-	left: 1000px;
-	width: 390px;
-	background: #000;
-	margin-left: 10px;
+	margin-top: 90px;
+	left:920px;
+	height: 200px;
+	width: 40%;
+	/* background:#666; */
+	margin-left:10px;
+	font-size:30px;
 }
+.chakanfu{
+	font-size: 20px;
+	background:#666;
+	border-radius: 80px;
+}
+.centerarea2{
+	
+	border: 1px solid #ccc;
+	/* position: relative; */
+	/* float: left; */
+	margin:100px auto;
+	/* margin-top: 100px; */
+	width: 70%;
+	min-height:200px;
+	height: 1100px;
+	border-radius: 80px;
+	margin: 5% 5% 5% 5% ;
+	overflow: hidden;
+}
+.leftfu2 {
+	position: absolute;
+	width:20%;
+	margin-left: 10px;
+	background:#fff;
+	height: 280px;
+	border-radius: 80px;
+	margin-top: 40px;
+}
+.leftfu2 ul li svg{
+	color:var(--fColor); 
+	float:left;
+	opacity:1; 
+	font-size:50px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.middlefu2 {
+	position: absolute;
+	/* left:500px; */
+	width:60%;
+	margin-left:150px;
+	margin-top: 90px;
+	font-size: 30px;
+	
+}
+.middlefu2 img{
+	height:200px ;
+	width: 300px;
+	/* margin-top:90px ; */
+	margin-bottom: 10px;
+}
+input[type=checkbox] {
+-webkit-transform: scale(1.5); /* Safari and Chrome */
+
+}
+	

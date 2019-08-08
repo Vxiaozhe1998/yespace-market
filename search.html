@@ -3,41 +3,62 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>搜索🔍</title>
 		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css">
 		<!-- <link rel="stylesheet" href="../Search/css/reset2.css"> -->
-		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
+		<style type="text/css">
+			/* 在线连接阿里妈妈的矢量图库 */
+			.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+		</style>
 		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_cayoehnv9o.js"></script>
-		<!-- <base target="_blank"> -->
+		<base target="_blank">
 
 
 	</head>
 
 	<body>
 		<!-- 搜索框 -->
-		<nav class="searcontent shadow sticky-top" style="width: 100%;">
-			<div class="container-fluid">
-				<div class="row" >
-					<div class="col-8"><input type="text" style="padding-left:5vw; font-size:5vw;margin: 1vw 0rem;height: 11vw;width: 100%;" placeholder="您想找点啥呢"></div>
-					<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
-							<use xlink:href="#icon-sousuo"></use>
-						</svg></div>
-					<div class="col-2"><a href="searchsx.html">
-							<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
-								<use xlink:href="#icon-zhankai"></use>
-							</svg>
-						</a></div>
-				</div>
-			</div>
-		</nav>
+		<div>
+			<div class="searcontent clearfix" style=" position:fixed;width:100%;box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
+				<table class="icon" style="text-align:center; width:100%;AutoSizeColumnsMode:Fill">
+					<tr>
+						<td style="text-align:center margin-bottom:20%" ;>
+							<input type="text" style="padding-left:20px;  font-size:50px;" placeholder="您想找点啥呢">
+						</td>
+						<td class="item1">
+							<a href="#">
 
-		<table style="width: 100%;" align="center">
+								<svg class="icon" aria-hidden="true" style="margin-left:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
+									<use xlink:href="#icon-sousuo"></use>
+
+									<!--添加图库的图��-->
+								</svg>
+							</a>
+						</td>
+						<td class="item2">
+							<a href="searchsx.html">
+								<svg class="icon" aria-hidden="true" style="margin-right:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
+									<use xlink:href="#icon-zhankai"></use>
+								</svg>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<table>
 			<tr>
 				<td>
-					<div class="history">
-						<ul>
-							<li style="font-size:40px;margin-left:15%;margin-top: 5vw;">历史搜索</li><!-- 历史搜索 -->
+					<div class="history" ">
+						<ul >
+						<li style="font-size:40px;margin-left:20%;margin-top:140px;">历史搜索</li><!-- 历史搜索 -->
 						</ul>
 						<ul style="margin-left:15%">
 							<li class="list-item2">
@@ -58,9 +79,9 @@
 					<div class="tophot">
 						<!-- 最高搜索热度 -->
 						<ul>
-							<li style="font-size:40px;margin-left:15%;">最高热度搜索</li>
+							<li style="font-size:40px;margin-left:20%;">最高热度搜索</li>
 						</ul>
-						<ul style="margin-left:15% ">
+						<ul  style="margin-left:15% ">
 							<li class="list-item2" style="font-size:35px;">
 								<a href="#"> 心理学</a>
 							</li>
@@ -76,15 +97,17 @@
 			</tr>
 			<tr>
 				<td>
-					<div class="logo" align="center">
+					<div class="logo" style="margin-top: 200px;">
 						<a href="search.html">
-							<svg class="icon" aria-hidden="true" style="color:#666666;opacity:0.2; font-size:500px;">
-								<use xlink:href="#icon-logo"></use>
-							</svg>
+						<svg class="icon" aria-hidden="true" style="color:#666666;margin-left:40%; opacity:0.2; font-size:500px;">
+							<use xlink:href="#icon-logo"></use>
+						</svg>
 						</a>
 					</div>
 				</td>
 			</tr>
+
+			</div>
 
 		</table>
 
@@ -93,7 +116,51 @@
 
 
 		<!-- 底面 from张哲-->
-
+		<div class="bottom">
+			<ul>
+				<li>
+					<div class="zhuye" style="margin-top: 200px; ">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor); opacity:1; font-size:100px;">
+								<use xlink:href="#icon-zhuye"></use>
+							</svg></a>
+							
+					</div>
+				</li>
+				<li>
+					<div class="sousuo" style="margin-top: 200px; ">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="color:#000; opacity:0.8; font-size:100px;">
+								<use xlink:href="#icon-sousuo"></use>
+							</svg></a>
+					</div>
+				</li>
+				<li>
+					<div class="xinzeng" style="margin-top: 150px;">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor); opacity:1; font-size:150px;">
+								<use xlink:href="#icon-xinzeng"></use>
+							</svg></a>
+					</div>
+				</li>
+				<li>
+					<div class="xiaoxi" style="margin-top: 200px; ">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor); opacity:1; font-size:100px;">
+								<use xlink:href="#icon-xiaoxi"></use>
+							</svg></a>
+					</div>
+				</li>
+				<li>
+					<div class="wode" style="margin-top: 200px; ">
+						<a href="#">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor); opacity:1; font-size:100px;margin-right=0px;">
+								<use xlink:href="#icon-wode"></use>
+							</svg></a>
+					</div>
+				</li>
+			</ul>
+		</div>
 
 	</body>
 </html>
