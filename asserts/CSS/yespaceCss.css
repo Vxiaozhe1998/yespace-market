@@ -214,13 +214,6 @@ span {
 
 
 /* 搜索页面 这里是傅文雅的CSS!*/
-*{
-	margin: 0;
-	padding: 0;
-}
-
-background-color: var(--fColor);
-
 ul,li {
 	list-style: none;
 }
@@ -236,11 +229,13 @@ a {
 	background-color: #CCCCCC;
 	border: solid 1px #ccc;
 	margin-bottom: 25pxs;
-	position: fixed;
+	position:sticky;
 	top: 0px;
 	z-index: 1000;
 }
-
+.search{
+	background-color: white;
+}
 /* 搜索框设置 */
 [type="text"] {
 	width: 85%;
@@ -255,7 +250,60 @@ a {
 	border-top-right-radius: 100px;
 	outline: none;
 }
+.list-item2 a {
+	padding: 0 20px;
+	color: var(--fColor);
+	font-weight: bold;
+	margin-bottom: 20px;
+	height: 60px; 
+	background: #6D6D6D14;
+	display: inline-block;
+	/*把a变成行级块*/
+	border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 60px;
+}
+/* 筛选种类 设置*/
+.sxzl {
+	border: 0px solid #ccc;
+	border-right: none;
+	/* margin: 5% 10% 20% 6%; */
+	overflow: hidden;
+	/* float: left; */
+	width: 100%;
+	/* margin: 100px 0 0 300px; */
+}
 
+.sxzl ul li {
+	float: left;
+	margin-left: 0px;
+}
+
+.sxzl ul li a {
+	width: 175px;
+	height: 65px;
+	margin-right: 5px;
+	/* margin:0px auto; */
+	margin-top: 30px;
+
+	
+	text-align: center;
+	line-height: 65px;
+	display: inline-block;
+	border-right: 4px solid #EEEEEE;
+	background: #eeeeee;
+	color:#4C51B1;
+}
+.sxzl ul li ul li a {
+	font-size: 35px;
+	margin-top: 0px;
+	border-right: 0px;
+	border-top: 0px dotted #ccc;
+	background: #f5f5f5;
+	border: 2px solid #4C51B1;
+	position: relative;
+}
 /* 引入按钮 设置 */
 .icon .item1 a {
 	padding: 25px 10px 0 10px;
@@ -264,13 +312,6 @@ a {
 	/*把a变成行级块*/
 
 }
-
-.icon .item1 a:hover {
-	background-color: #6D6D6D14;
-	color: #fff;
-
-}
-
 .icon .item2 a {
 	padding: 25px 10px 0 10px;
 	height: 100px;
@@ -278,6 +319,18 @@ a {
 	/*把a变成行级块*/
 
 }
+/*当鼠标移动会变色：*/
+.list-item2 a:hover {
+	background-color: var(--fColor);
+	color: #fff;
+}
+
+.icon .item1 a:hover {
+	background-color: #6D6D6D14;
+	color: #fff;
+
+}
+
 
 .icon .item2 a:hover {
 	background-color: #6D6D6D14;
@@ -290,12 +343,6 @@ a {
 	content: "";
 	display: block;
 	clear: both;
-}
-
-
-
-li {
-	list-style: none;
 }
 
 /* 最高热度搜索 和 历史搜索*/
@@ -311,21 +358,7 @@ li {
 	/* border:1px solid black;显示黑色边框 */
 }
 
-.list-item2 a {
-	padding: 0 20px;
-	color: var(--fColor);
-	font-weight: bold;
-	margin-bottom: 20px;
-	height: 60px; 
-	background: #6D6D6D14;
-	display: inline-block;
-	/*把a变成行级块*/
-	border-radius: 10px;
-	text-decoration: none;
-	text-align: center;
-	line-height: 60px;
-	margin-bottom: 5px;
-}
+
 
 .box-shadow-vertical {
 	-moz-box-shadow: 0px 6px 10px #3333333C;
@@ -334,41 +367,8 @@ li {
 	margin-bottom: 100px;
 }
 
-/*当鼠标移动会变色：*/
-.list-item2 a:hover {
-	background-color: var(--fColor);
-	color: #fff;
-}
 
-/* 筛选种类 设置*/
-.sxzl {
-	border: 0px solid #ccc;
-	border-right: none;
-	margin: 5% 10% 20% 6%;
-	overflow: hidden;
-	float: left;
-	/* margin: 100px 0 0 300px; */
-}
 
-.sxzl ul li {
-	float: left;
-	margin-left: 0px;
-}
-
-.sxzl ul li a {
-	width: 175px;
-	height: 65px;
-	margin-right: 5px;
-	margin-top: 30px;
-
-	margin:0px auto;
-	text-align: center;
-	line-height: 65px;
-	display: inline-block;
-	border-right: 4px solid #EEEEEE;
-	background: #eeeeee;
-	color:#4C51B1;
-}
 
 /*#menu2 ul li a{
 	border-radius: 15px;
@@ -388,10 +388,9 @@ b {
 	transform: rotate(180deg);
 	transform-origin: 50% 25%;
 	transition: transform .2s ease-in;
+		display: block;
 }
-.trf:hover{
-	display: block;
-}
+
 #sortout:hover{
 	background-color: #4C51B1;
 	color: #FFFFFF;
@@ -406,6 +405,7 @@ b {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
+
 #food,#botm {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -429,15 +429,7 @@ b {
 	float: none;
 }
 
-.sxzl ul li ul li a {
-	font-size: 35px;
-	margin-top: 0px;
-	border-right: 0px;
-	border-top: 0px dotted #ccc;
-	background: #f5f5f5;
-	border: 2px solid #4C51B1;
-	position: relative;
-}
+
 
 .sxzl ul li:hover ul {
 	display: block;
@@ -473,9 +465,9 @@ input[type=range]::-webkit-slider-thumb {
 	display: none;
 }
 
-#menus ul li:hover ul {
+/* #menus ul li:hover ul {
 	display: block;
-}
+} */
 
 #menus ul li ul li:hover ul {
 	display: block;
@@ -546,7 +538,7 @@ input[type=range]::-webkit-slider-thumb {
 	min-height:200px;
 	height: 1100px;
 	border-radius: 80px;
-	margin: 5% 5% 5% 5% ;
+	/* margin: 5% 5% 5% 5% ; */
 	overflow: hidden;
 }
 .leftfu2 {
