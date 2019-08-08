@@ -10,23 +10,46 @@
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
-	height: 50px;
+	height: 100px;
 	background-color: white;
 	z-index: 9999;
 }
-/* 阴影样式 */
-/* 底部阴影 */
-.bottom-shadow {
-	-moz-box-shadow: 0px -3px 11px -6px #333333;
-	-webkit-box-shadow: 0px -3px 11px -6px #333333;
-	box-shadow: 0px -3px 11px -6px #333333;
+
+.background-footer {
+	background-color: white;
+
 }
-/* 顶部阴影 */
-.top-shadow{
-	-moz-box-shadow:0px 3px 11px -6px #333333;
- -webkit-box-shadow:0px 3px 11px -6px #333333;
- box-shadow:0px 3px 11px -6px #333333;
+
+/* 底部样式 */
+.footer-bot {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 10rem;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	filter: drop-shadow(0px -1px 11px #33333333)
 }
+
+.footer-bot:before {
+	bottom: 0;
+	width: 15rem;
+	height: 15rem;
+	content: "";
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+}
+
+/* 阴影 */
+.shadow {
+	-moz-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+}
+
 /* 顶部常驻栏样式 */
 .top-header {
 	background-color: var(--fColor);
@@ -79,7 +102,7 @@
 	vertical-align: -0.15em;
 	fill: currentColor;
 	overflow: hidden;
-	color: white;
+	color: var(--fColor);
 }
 
 /* 		<!-- Iconfont矢量图标库 -->
@@ -185,16 +208,13 @@ span {
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
-<<<<<<< HEAD
-=======
-*{
+<<<<<<< HEAD=======* {
 	margin: 0;
 	padding: 0;
 }
->>>>>>> 3218028e42976c674fca7dadab505e2753ef55a7
 
-
-ul,li {
+>>>>>>>3218028e42976c674fca7dadab505e2753ef55a7 ul,
+li {
 	list-style: none;
 }
 
@@ -208,8 +228,8 @@ a {
 	/* height: 100px; */
 	background-color: white;
 	border: solid 1px #ccc;
-/* 	position: -ms-device-fixed; */
-/* 	position: sticky;
+	/* 	position: -ms-device-fixed; */
+	/* 	position: sticky;
 	top: 0;
 	z-index: 1020; */
 }
@@ -228,6 +248,7 @@ a {
 	border-top-right-radius: 100px;
 	outline: none;
 }
+
 .list-item2 a {
 	padding: 0 20px;
 	color: var(--fColor);
@@ -243,6 +264,7 @@ a {
 	line-height: 60px;
 	/* margin-bottom: 5px; */
 }
+
 /*当鼠标移动会变色：*/
 .sxzl ul li a {
 	width: 175px;
@@ -256,6 +278,7 @@ a {
 	border-radius: 10px;
 	color: #000;
 }
+
 .sxzl ul li ul li a {
 	font-size: 35px;
 	margin-top: 5px;
@@ -263,6 +286,7 @@ a {
 	border-top: 1px dotted #ccc;
 	background: #f5f5f5;
 }
+
 /* 引入按钮 设置 */
 .icon .item1 a {
 	padding: 25px 10px 0 10px;
@@ -318,7 +342,7 @@ li {
 
 /* 最高热度搜索 */
 
- .list-item2 {
+.list-item2 {
 	float: left;
 	list-style: none;
 	font-size: 20px;
@@ -350,13 +374,13 @@ li {
 	height: 65px;
 	margin-right: 5px;
 	margin-top: 30px;
-	margin:0px auto;
+	margin: 0px auto;
 	text-align: center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
 	background: #eeeeee;
-	color:#4C51B1;
+	color: #4C51B1;
 }
 
 /*#menu2 ul li a{
@@ -450,7 +474,7 @@ b {
 
 .sxzl ul li:hover ul {
 	display: block;
-	
+
 }
 
 .sxzl ul li ul li:hover ul {
@@ -468,29 +492,30 @@ b {
 	background: var(--fColor);
 	border-radius: 50 %;
 } */
- #menus ul li ul li ul {
-input[type=range]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	/* 去除滑块的默认样式 */
-	/* margin-top: 300px; */
-	height: 100%;
-	width: 100px;
-	background: var(--fColor);
-	border-radius: 50 %;
-}
-/*#menus {
+#menus ul li ul li ul {
+	input[type=range]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		/* 去除滑块的默认样式 */
+		/* margin-top: 300px; */
+		height: 100%;
+		width: 100px;
+		background: var(--fColor);
+		border-radius: 50 %;
+	}
+
+	/*#menus {
 	width: 100px;
 	border: 1px solid #cccccc;
 	margin-top: 20px;
 }*/
 
-/*#menus ul {
+	/*#menus ul {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
 }*/
 
-/*#menus ul li {
+	/*#menus ul li {
 	background: #eeeeee;
 	padding: 0px 24px;
 	height: 26px;
@@ -499,7 +524,7 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 }*/
 
-/*#menus ul li ul {
+	/*#menus ul li ul {
 	display: none;
 	border: 1px solid #cccccc;
 	border-bottom: none;
@@ -509,7 +534,7 @@ input[type=range]::-webkit-slider-thumb {
 	width: 100px;
 }*/
 
-/*#menus ul li ul li {
+	/*#menus ul li ul li {
 	background: #eeeeee;
 	padding: 0px 24px;
 	height: 26px;
@@ -518,81 +543,82 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 }*/
 
-#menus ul li ul li ul {
+	#menus ul li ul li ul {
 
-	display: none;
-	border-bottom: none;
-	position: relative;
-	/*left: 100px;*/
-	top: 0px;
-	width: 100px;
+		display: none;
+		border-bottom: none;
+		position: relative;
+		/*left: 100px;*/
+		top: 0px;
+		width: 100px;
 
 
-	/*margin-left: 100px;
+		/*margin-left: 100px;
 	margin-top: 50px;*/
-}
-#menus ul li:hover ul {
-	display: block;
-}
+	}
 
-#menus ul li:hover ul li ul {
-	display: none;
-}
+	#menus ul li:hover ul {
+		display: block;
+	}
+
+	#menus ul li:hover ul li ul {
+		display: none;
+	}
 
 
 
-#menus ul li ul li:hover ul {
-	display: block;
-}
+	#menus ul li ul li:hover ul {
+		display: block;
+	}
 
-/* 搜索结果为电脑展开前的界面 */
-.centerarea {
+	/* 搜索结果为电脑展开前的界面 */
+	.centerarea {
 
-	border: 10px solid #ccc;
-	margin: 150px auto;
-	margin-top: 150px;
-	width: 60%;
-	height: 400px;
-	border-radius: 80px;
-	/* margin: 5% 5% 5% 5% ; */
-	overflow: hidden;
-}
+		border: 10px solid #ccc;
+		margin: 150px auto;
+		margin-top: 150px;
+		width: 60%;
+		height: 400px;
+		border-radius: 80px;
+		/* margin: 5% 5% 5% 5% ; */
+		overflow: hidden;
+	}
 
-.leftfu {
-	position: absolute;
-	width: 100px;
-	margin-left: 10px;
-	background: #fff;
-	height: 300px;
-	border-radius: 80px;
-}
+	.leftfu {
+		position: absolute;
+		width: 100px;
+		margin-left: 10px;
+		background: #fff;
+		height: 300px;
+		border-radius: 80px;
+	}
 
-.leftfu ul li svg {
-	color: var(--fColor);
-	float: left;
-	opacity: 1;
-	font-size: 40px;
-	margin-top: 20px;
-}
+	.leftfu ul li svg {
+		color: var(--fColor);
+		float: left;
+		opacity: 1;
+		font-size: 40px;
+		margin-top: 20px;
+	}
 
-.middlefu {
-	position: absolute;
-	left: 550px;
-	width: 400px;
-	/* background:#0f0; */
-	margin-left: 10px;
-}
+	.middlefu {
+		position: absolute;
+		left: 550px;
+		width: 400px;
+		/* background:#0f0; */
+		margin-left: 10px;
+	}
 
-.middlefu img {
-	height: 200px;
-	width: 200px;
-	margin-top: 90px;
-}
+	.middlefu img {
+		height: 200px;
+		width: 200px;
+		margin-top: 90px;
+	}
 
-.rightfu {
-	position: absolute;
-	left: 1000px;
-	width: 390px;
-	background: #000;
-	margin-left: 10px;
-}
+	.rightfu {
+		position: absolute;
+		left: 1000px;
+		width: 390px;
+		background: #000;
+		margin-left: 10px;
+	}
