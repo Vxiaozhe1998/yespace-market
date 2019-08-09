@@ -294,7 +294,7 @@ a {
 
 .sxzl ul li {
 	float: left;
-	margin-left: 0px;
+	margin-left: 10%;
 }
 
 .sxzl ul li a {
@@ -494,9 +494,11 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea{
 	
 	border: 1px solid #ccc;
-	/* margin:150px auto; */
-	width: 80%;
-	height: 330px;
+	/* position: relative; */
+	/* float: left; */
+	margin:100px auto;
+	/* margin-top: 100px; */
+	width: 70%;
 	border-radius: 80px;
 	margin: 5% 5% 5% 5% ;
 	overflow: hidden;
@@ -547,16 +549,18 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea2{
 	
 	border: 1px solid #ccc;
-	/* position: relative; */
-	/* float: left; */
+	position: relative;
+	float: left;
+    left: 20%;
 	margin:100px auto;
 	/* margin-top: 100px; */
 	width: 70%;
-	min-height:200px;
+	min-height:500px;
 	height: 1100px;
 	border-radius: 80px;
 	/* margin: 5% 5% 5% 5% ; */
 	overflow: hidden;
+	/* height:auto; */
 }
 .leftfu2 {
 	position: absolute;
@@ -583,14 +587,16 @@ input[type=range]::-webkit-slider-thumb {
 	margin-left:150px;
 	margin-top: 90px;
 	font-size: 30px;
+	height:80%;
 	
 }
 .middlefu2 img{
-	height:200px ;
-	width: 300px;
+	height:28% ;
+	width: 90%;
 	/* margin-top:90px ; */
 	margin-bottom: 10px;
-}
+	
+/* }改变多选框大小 */
 input[type=checkbox] {
 -webkit-transform: scale(1.5); /* Safari and Chrome */
 
