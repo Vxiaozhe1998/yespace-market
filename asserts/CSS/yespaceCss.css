@@ -164,15 +164,15 @@ span {
 .dialog-box {
 	border: 0 solid black;
 	/* width: 100%; */
-	border-radius: 75px;
+	border-radius: 60px;
 	background-color: var(--fColor);
 	margin-top: 100px;
 	display: inline-block;
 }
 
 .circle {
-	width: 150px;
-	height: 150px;
+	width: 120px;
+	height: 120px;
 	background-color: #fff;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -183,20 +183,32 @@ span {
 .head-photo {
 	position: absolute;
 	z-index: 1;
-	top: 15px;
-	left: 15px;
 }
-
-.word {
+.bell-liu{
+	font-size: 104px;
+	color: var(--fColor);
+	margin: 8px;
+}
+.word-left-liu{
 	float: left;
-	width: 72%;
-	margin: 45px 50px 45px 190px;
-	font-size: xx-large;
-	line-height: 50px;
+	width: 75%;
+	margin: 30px 40px 30px 160px;
+	font-size: 40px;
+	line-height: 60px;
 	position: relative;
 	color: #fff;
+	font-weight: 900;
 }
-
+.word-right-liu{
+	float: left;
+	width: 75%;
+	margin: 30px 160px 30px 40px;
+	font-size: 40px;
+	line-height: 60px;
+	position: relative;
+	color: var(--fColor);
+	font-weight: 900;
+}
 .word::after {
 	content: "";
 	display: block;
@@ -205,13 +217,18 @@ span {
 
 /* 个人对话框Message-dialog */
 .container-dialog-liu{
-	border: 1px solid black;
+	border: 0 solid black;
 	position: relative;
 	left: auto;
 	right: auto;
 	width: 100%;
 }
-
+.id_img-liu{
+		width: 100%;
+		fill: currentColor;
+		border-radius: 50%;
+		background-size: contain;
+}
 
 /* 搜索页面 这里是傅文雅的CSS!*/
 ul,li {
