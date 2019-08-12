@@ -51,6 +51,9 @@
 	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 }
+.shadow-irreguler{
+	filter: drop-shadow(0px -1px 11px #33333333)
+}
 /* 顶部常驻栏样式 */
 .top-header{
 	background-color: var(--fColor);
@@ -95,6 +98,10 @@
 	border-radius: 3vw;
 }
 
+.float-instruction{
+	border-radius: 3vw;
+	overflow: hidden;
+}
 /* Iconfont矢量图标CSS样式 */
 .icon {
 	width: 1em;
