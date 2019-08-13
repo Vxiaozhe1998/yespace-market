@@ -30,7 +30,7 @@
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
-	height:8vw;
+	height:12vw;
 	background-color: white;
 	display: flex;
 	justify-content: center;
@@ -38,18 +38,22 @@
 	filter: drop-shadow(0px -1px 11px #33333333)
 }
 .container-bar-index{
-	margin-bottom: 12vw;
+	margin-bottom: 18vw;
 }
 .footer-bot:before {
 	bottom: 0;
-	width: 12vw;
-	height: 12vw;
+	width: 18vw;
+	height: 18vw;
 	content: "";
 	background-color: white;
 	border-radius: 50%;
 	position: absolute;
 }
-
+input[type='checkbox']{
+	width:4vw;
+	height:4vw;
+	vertical-align: bottom;
+}
 
 /* 阴影 */
 .shadow {
