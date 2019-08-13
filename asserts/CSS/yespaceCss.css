@@ -441,6 +441,7 @@ b {
 .sxzl ul li ul {
 	position: absolute;
 	display: none;
+	margin-left: -18px;
 }
 
 .sxzl ul li ul li {
@@ -475,7 +476,7 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 	/*left: 100px;*/
 	top: 0px;
-	width: 100px;
+	width: 183px;
 	/*margin-left: 80px;
 	margin-top: 70px;*/
 }
