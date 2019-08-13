@@ -1,3 +1,4 @@
+<!-- 主页 -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,9 +12,11 @@
 		<script src="asserts/js/Yespacejs.js" type="text/javascript"></script>
 		<script src="asserts/js/jquery.min.js" type="text/javascript"></script>
 		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
 		<title>悠悦跳蚤市场</title>
 	</head>
 	<body>
+		<!-- 固定顶栏 -->
 		<nav class="top-header sticky-top shadow">
 			<div class="container-fluid">
 				<div class="row">
@@ -38,7 +41,7 @@
 				</div>
 			</div>
 		</nav>
-		<div>
+		<div class="container-bar-index">
 			<a style="font-size:3vw;">
 				尊敬的信息科学与工程学院：
 				您好！
@@ -63,38 +66,62 @@
 
 			</a>
 		</div>
+		<!-- 固定底栏 -->
 		<div class="footer-bot">
 			<div class="container-fluid" >
 				<div class="row" >
-					<div class="col-2" style="height:8vw" align="center" id="home" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top: 1vw;color: black;">
-							<use xlink:href="#icon-zhuye"></use>
+					<div class="col-2"  align="center" id="home" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;color: black;">							
+						<use xlink:href="#icon-zhuye"></use>
 						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
 					</div>
-					<div class="col-2" style="height:8vw" align="center" id="search" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top:1vw;">
+					<div class="col-2" align="center" id="search" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
 							<use xlink:href="#icon-sousuo"></use>
 						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
 					</div>
 					<div class="col-4"></div>
-					<div style="height:8vw;position: fixed;width: 100%; bottom:4vw;justify-content: center;" align="center" id="publish" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 12vw;">
+					<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
 							<use xlink:href="#icon-xinzeng"></use>
 						</svg>
 					</div>
-					<div class="col-2" style="height:8vw" align="center" id="message" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top:1vw;">
+					<div class="col-2"  align="center" id="message" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
 							<use xlink:href="#icon-xiaoxi"></use>
 						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
 					</div>
-					<div class="col-2" style="height:8vw" align="center" id="mine" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top:1vw;">
+					<div class="col-2" align="center" id="mine" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
 							<use xlink:href="#icon-wode"></use>
 						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
+		<!-- 浮动说明 -->
+		<div class="father" style="z-index: 9999;" id="instruction-first" >
+			<div style="width: 50%;height: 50%;background: white;" class="son float-instruction shadow-irreguler">
+				<div style="width: 100%;height: 0 auto; background-color: var(--fColor);">
+					<div class="container-fluid" style="padding: 0rem;">
+						<div class="row" style="padding: 0rem;margin: 0;">
+							<div class="col-8" align="center" style="padding:0rem;color: white;font-weight: bold;font-size: 4vw;" >
+							这里替换文本
+							</div>
+							<div class="col-4" align="right" style="padding-right: 3vw">
+								<svg class="icon" aria-hidden="true" style="font-size: 6vw;color: white;" onclick="close_instruction('instruction-first')">
+									<use xlink:href="#icon-guanbi"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="height: 90%;width: 90%;margin-top: 7vw;" class="son">
+					这里是提示内容
+				</div>
+			</div>
+		</div>
+		
+		
 	</body>
 </html>
