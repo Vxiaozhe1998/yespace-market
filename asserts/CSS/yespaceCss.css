@@ -228,6 +228,7 @@ span {
 	left: auto;
 	right: auto;
 	width: 100%;
+	margin-bottom: 16vw;
 }
 .id_img-liu{
 		width: 100%;
@@ -236,35 +237,29 @@ span {
 		background-size: contain;
 }
 .bottom-liu{
-	/* position: relative; */
-	bottom: 0px;
 	position: sticky;
-	/* position: sticky;
-	position: relative;
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
-	height:8vw;
+	height:16vw;
 	background-color: white;
 	display: flex;
 	justify-content: center;
-	filter不规则图形模糊样式
-	filter: drop-shadow(0px -1px 11px #33333333) */
+	/* filter不规则图形模糊样式 */
+	filter: drop-shadow(0px -1px 11px #33333333);
 }
 .input-liu{
 	border-radius: 40%;
 	position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
 	width: 80%;
 	height:8vw;
 	background-color: white;
 	border: 0 solid black;
 	border-radius: 60px;
-	background-color: var(--fColor);
-	margin-top: 100px;
-	/* display: inline-block; */
+	display: inline-block;
 }
 /* 搜索页面 这里是傅文雅的CSS!*/
 ul,li {
