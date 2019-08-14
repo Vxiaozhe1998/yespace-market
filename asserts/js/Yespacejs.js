@@ -1,12 +1,46 @@
+jQuery(document).ready(function() {
+	/*
+	 * Replace all SVG images with inline SVG
+	 */
+	jQuery('img.svg').each(function() {
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		jQuery.get(imgURL, function(data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = jQuery(data).find('svg');
+
+			// Add replaced image's ID to the new SVG
+			if (typeof imgID !== 'undefined') {
+				$svg = $svg.attr('id', imgID);
+			}
+			// Add replaced image's classes to the new SVG
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			}
+
+			// Remove any invalid XML tags as per http://validator.w3.org
+			$svg = $svg.removeAttr('xmlns:a');
+
+			// Replace image with new SVG
+			$img.replaceWith($svg);
+		});
+
+	});
+});
+
 /*关闭提示框*/
 function close_instruction(instruction_id) {
 	var div_first = document.getElementById(instruction_id);
 	div_first.style.display = "none";
-}
-function open_instruction(canshu){
+};
+
+function open_instruction(canshu) {
 	var div_first = document.getElementById(canshu);
 	div_first.style.display = "block";
-}
+};
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
 	var area = "曲阜师范大学";
@@ -52,7 +86,7 @@ window.onload = function() {
 		strHTML += "</label>";
 		div_pay_way.innerHTML = strHTML;
 	}
-}
+};
 /*区域判定函数*/
 function area_true(area) {
 	if (area == "曲阜师范大学") {
@@ -60,5 +94,4 @@ function area_true(area) {
 	} else {
 		return false;
 	}
-
-}
+};
