@@ -1,0 +1,680 @@
+/* 主题色 */
+:root {
+	--fColor: #4C51B1;
+	--sColor: #6D6D6D;
+}
+
+/* 使用方法var(--fColor); */
+.footer-zhe {
+	position: sticky;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	z-index: 9999;
+}
+
+/* 加载中默认颜色 */
+.progress-zhe {
+	fill: var(--fColor);
+	width: 100%;
+}
+
+.container-zhe {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.background-footer {
+	background-color: white;
+
+}
+
+/* 底部样式 */
+.footer-bot {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 12vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	/* filter不规则图形模糊样式 */
+	filter: drop-shadow(0px -1px 11px #33333333)
+}
+
+.container-bar-index {
+	margin-bottom: 18vw;
+}
+
+.footer-bot:before {
+	bottom: 0;
+	width: 18vw;
+	height: 18vw;
+	content: "";
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+}
+
+input[type='checkbox'] {
+	width: 4vw;
+	height: 4vw;
+	vertical-align: bottom;
+}
+
+/* 通知样式 */
+.tip-css {
+	color: var(--fColor);
+	font-size: 3vw;
+	font-weight: bold;
+	overflow: auto;
+}
+
+/* 阴影 */
+.shadow {
+	-moz-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
+}
+
+.shadow-irreguler {
+	filter: drop-shadow(0px -1px 11px #33333333)
+}
+
+/* 顶部常驻栏样式 */
+.top-header {
+	background-color: var(--fColor);
+}
+
+/* 顶栏固定 */
+.sticky-top {
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+}
+
+.partnerLogo {
+	/*    width: 100%; 
+    height: 100px; */
+	stroke: white;
+	fill: white;
+}
+
+/* 布局CSS */
+/* Div水平垂直居中 */
+.father {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.son {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	margin: auto;
+}
+
+/* 自定义滚动条 */
+.box {
+	float: left;
+	width: 150px;
+	height: 250px;
+	margin: 0 40px 40px 0;
+	border: 1px solid #eee;
+}
+
+.box6 {
+	overflow-y: scroll;
+}
+
+.box6::-webkit-scrollbar {
+	width: 10px;
+}
+
+.box6::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: white;
+	/* border: 1px solid var(--fColor); */
+}
+
+.box6::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: var(--fColor);
+}
+
+
+
+.index-zhe {
+	background-color: white;
+	border-radius: 3vw;
+}
+
+.float-instruction {
+	border-radius: 3vw;
+	overflow: hidden;
+}
+
+/* Iconfont矢量图标CSS样式 */
+.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+	color: var(--fColor);
+}
+
+/* 		<!-- Iconfont矢量图标库 -->
+		<script src="http://at.alicdn.com/t/font_1306353_exkcfta643.js" type="text/javascript"></script>
+		 <svg class="icon" aria-hidden="true">
+		 	<use xlink:href="#icon-logo"></use>
+		 </svg>*/
+
+/*刘楠*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 消息总界面 Message-index*/
+.container-index-liu {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 16vw;
+}
+
+span {
+	/* line-height: 125px; */
+	font-weight: bold;
+	font-size: 40px;
+	/* margin-left: 30px; */
+	vertical-align: 20px;
+}
+
+.list-header {
+	width: 100%;
+	border: 1px solid 0;
+	height: 125px;
+}
+
+.list-item {
+	list-style: none;
+	height: 125px;
+	width: 100%;
+	line-height: 100px;
+	border: 2px solid var(--fColor);
+}
+
+.list-item:hover {
+	background: var(--fColor);
+	color: white;
+}
+
+/* 通知界面Message-inform */
+.container-inform-liu {
+	border: 0 solid black;
+	position: relative;
+	left: auto;
+	right: auto;
+	margin-left: 95px;
+	margin-right: 95px;
+}
+
+.dialog-box {
+	border: 0 solid black;
+	/* width: 100%; */
+	border-radius: 60px;
+	background-color: var(--fColor);
+	margin-top: 100px;
+	display: inline-block;
+}
+
+.circle {
+	width: 120px;
+	height: 120px;
+	background-color: #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	position: relative;
+}
+
+.head-photo {
+	position: absolute;
+}
+
+.bell-liu {
+	font-size: 104px;
+	color: var(--fColor);
+	margin: 8px;
+}
+
+.word-left-liu {
+	float: left;
+	width: 75%;
+	margin: 30px 40px 30px 160px;
+	font-size: 40px;
+	line-height: 60px;
+	position: relative;
+	color: #fff;
+	font-weight: 900;
+}
+
+.word-right-liu {
+	float: left;
+	width: 75%;
+	margin: 30px 160px 30px 40px;
+	font-size: 40px;
+	line-height: 60px;
+	position: relative;
+	color: var(--fColor);
+	font-weight: 900;
+}
+
+.word::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 个人对话框Message-dialog */
+.container-dialog-liu {
+	border: 0 solid black;
+	position: relative;
+	left: auto;
+	right: auto;
+	width: 100%;
+	margin-bottom: 16vw;
+}
+
+.id_img-liu {
+	width: 100%;
+	fill: currentColor;
+	border-radius: 50%;
+	background-size: contain;
+}
+
+.bottom-liu {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 26vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	/* filter不规则图形模糊样式 */
+	filter: drop-shadow(0px -1px 11px #33333333);
+}
+
+.input-liu {
+	border-radius: 40%;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 8vw;
+	background-color: white;
+	border: 0 solid black;
+	border-radius: 60px;
+	display: inline-block;
+	margin-top: 100px;
+}
+
+/* 搜索页面 这里是傅文雅的CSS!*/
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 搜索框设置 */
+.searcontent clearfix {
+	width: 100%;
+	height: 100px;
+	background-color: #CCCCCC;
+	border: solid 1px #ccc;
+	margin-bottom: 25pxs;
+	position: sticky;
+	top: 0px;
+	z-index: 1000;
+}
+
+.search {
+	background-color: white;
+}
+
+/* 搜索框设置 */
+[type="text"] {
+	width: 85%;
+	height: 80px;
+	border: #666666 1px solid;
+	float: left;
+	margin-left: 10%;
+	margin-top: 15px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	outline: none;
+}
+
+.list-item2 a {
+	padding: 0 20px;
+	color: var(--fColor);
+	font-weight: bold;
+	margin-bottom: 20px;
+	height: 60px;
+	background: #6D6D6D14;
+	display: inline-block;
+	/*把a变成行级块*/
+	border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 60px;
+}
+
+/* 筛选种类 设置*/
+.sxzl {
+	border: 0px solid #ccc;
+	border-right: none;
+	/* margin: 5% 10% 20% 6%; */
+	overflow: hidden;
+	/* float: left; */
+	width: 100%;
+	/* margin: 100px 0 0 300px; */
+}
+
+.sxzl ul li {
+	float: left;
+	margin-left: 10%;
+}
+
+.sxzl ul li a {
+	width: 175px;
+	height: 65px;
+	margin-right: 5px;
+	/* margin:0px auto; */
+	margin-top: 30px;
+	text-align: center;
+	line-height: 65px;
+	display: inline-block;
+	border-right: 4px solid #EEEEEE;
+	background: #eeeeee;
+	color: #4C51B1;
+}
+
+.sxzl ul li ul li a {
+	font-size: 35px;
+	margin-top: 0px;
+	border-right: 0px;
+	border-top: 0px dotted #ccc;
+	background: #f5f5f5;
+	border: 2px solid #4C51B1;
+	position: relative;
+}
+
+/* 引入按钮 设置 */
+.icon .item1 a {
+	padding: 25px 10px 0 10px;
+	height: 100px;
+	display: inline-block;
+	/*把a变成行级块*/
+}
+
+.icon .item2 a {
+	padding: 25px 10px 0 10px;
+	height: 100px;
+	display: inline-block;
+	/*把a变成行级块*/
+}
+
+/*当鼠标移动会变色：*/
+.list-item2 a:hover {
+	background-color: var(--fColor);
+	color: #fff;
+}
+
+.icon .item1 a:hover {
+	background-color: #6D6D6D14;
+	color: #fff;
+}
+
+.icon .item2 a:hover {
+	background-color: #6D6D6D14;
+	color: #fff;
+}
+
+.nav::after {
+	/*清空浮动流 三件套必须记住！！！*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 最高热度搜索 和 历史搜索*/
+.list-item2 {
+	float: left;
+	list-style: none;
+	font-size: 20px;
+	/* margin-left: 20%; */
+	margin: 10px 0px 50px 30px;
+	height: 30px;
+	line-height: 30px;
+	/* border:1px solid black;显示黑色边框 */
+}
+
+.box-shadow-vertical {
+	-moz-box-shadow: 0px 6px 10px #3333333C;
+	-webkit-box-shadow: 0px 6px 10px #3333333C;
+	box-shadow: 0px 6px 10px #3333333C;
+	margin-bottom: 100px;
+}
+
+b {
+	position: absolute;
+	top: 90px;
+	right: 20px;
+	border-width: 20px;
+	border-style: solid dashed dashed;
+	border-color: #FFFFFF transparent transparent;
+}
+
+.trf:hover {
+	border-color: #4C51B1 transparent transparent;
+	transform: rotate(180deg);
+	transform-origin: 50% 25%;
+	transition: transform .2s ease-in;
+	display: block;
+}
+
+#sortout:hover {
+	background-color: #4C51B1;
+	color: #FFFFFF;
+	border-right: 4px solid #4C51B1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#lowers:hover {
+	background-color: #4C51B1;
+	color: #FFFFFF;
+	border-right: 4px solid #4C51B1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#food,
+#botm {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#menu1 ul li a {
+	background: #4C51B1;
+	color: #FFFFFF;
+	position: relative;
+}
+
+#menu1 ul li a:hover {
+	background: #FFFFFF;
+	color: #4C51B1;
+}
+
+.sxzl ul li ul {
+	position: absolute;
+	display: none;
+}
+
+.sxzl ul li ul li {
+	float: none;
+}
+
+.sxzl ul li:hover ul {
+	display: block;
+}
+
+.sxzl ul li ul li:hover ul {
+	display: block;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 100%;
+	width: 100px;
+	background: var(--fColor);
+	border-radius: 50 %;
+}
+
+#menus ul li ul li ul {
+	display: none;
+	border-bottom: none;
+	position: relative;
+	top: 0px;
+	width: 100px;
+}
+
+#menus ul li:hover ul li ul {
+	display: none;
+}
+
+#menus ul li ul li:hover ul {
+	display: block;
+}
+
+/* 搜索结果为电脑展开前的界面 */
+.centerarea {
+	border: 1px solid #ccc;
+	/* margin: 100px auto; */
+	width: 70%;
+	border-radius: 80px;
+	margin: 5%;
+	overflow: hidden;
+}
+
+.leftfu {
+	position: absolute;
+	width: 20%;
+	margin-left: 10px;
+	background: #fff;
+	height: 280px;
+	border-radius: 80px;
+	margin-top: 40px;
+}
+
+.leftfu ul li svg {
+	color: var(--fColor);
+	float: left;
+	opacity: 1;
+	font-size: 50px;
+}
+
+.middlefu {
+	position: absolute;
+	width: 40%;
+	margin-left: 150px;
+}
+
+.middlefu img {
+	height: 200px;
+	width: 300px;
+	margin-top: 90px;
+}
+
+.rightfu {
+	position: absolute;
+	margin-top: 90px;
+	left: 920px;
+	height: 200px;
+	width: 40%;
+	margin-left: 10px;
+	font-size: 30px;
+}
+
+.chakanfu {
+	font-size: 20px;
+	background: #666;
+	border-radius: 80px;
+}
+
+.centerarea2 {
+	border: 1px solid #ccc;
+	position: relative;
+	float: left;
+	left: 20%;
+	margin: 100px auto;
+	width: 70%;
+	min-height: 500px;
+	height: 1100px;
+	border-radius: 80px;
+	overflow: hidden;
+}
+
+.leftfu2 {
+	position: absolute;
+	width: 20%;
+	margin-left: 10px;
+	background: #fff;
+	height: 280px;
+	border-radius: 80px;
+	margin-top: 40px;
+}
+
+.leftfu2 ul li svg {
+	color: var(--fColor);
+	float: left;
+	opacity: 1;
+	font-size: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.middlefu2 {
+	position: absolute;
+	width: 60%;
+	margin-left: 150px;
+	margin-top: 90px;
+	font-size: 30px;
+	height: 80%;
+}
+
+.middlefu2 img {
+	height: 28%;
+	width: 90%;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,73 @@
+<!-- 新增主页面 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS库 -->
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css" />
+		<!-- JS库 -->
+				<script src="asserts/js/jquery.min.js" type="text/javascript"></script>
+		<script src="asserts/js/Yespacejs.js" type="text/javascript"></script>
+		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
+		<title>发布商品</title>
+	</head>
+	<body>
+		<!-- 发布页顶栏 -->
+		<nav class="top-header sticky-top shadow" >
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" align="center" style="vertical-align:bottom;">
+						<svg class="icon" aria-hidden="true" style="font-size: 10vw;color: white;">
+							<use xlink:href="#icon-fanhui"></use>
+						</svg>
+					</div>
+					<div class="col-8" style="height: 0 auto;color: white;font-size: 6vw;font-weight: bold;justify-content: center;" align="center">
+							发布物品
+					</div>
+					<div class="col-2"></div>
+				</div>
+			</div>
+		</nav>
+		<!-- 详情页 -->
+		<!-- 默认物件添加：进入本页面会默认添加一件物品参数，需要用户在此添加物品 -->
+		<div style="padding-left: 5vw;padding-right: 5vw;padding-top: 5vw;">
+			<!-- 交易方式 -->
+			<a style="color: var(--fColor);font-weight: bold;font-size: 4vw;">请选择您本次支持的交易方式：</a>
+			<div class="container-fluid" id="pay-way" style="width: 100%; background-color: lightyellow;height: 10000px;" onload="pay_way()">
+				
+				<img class="svg progress-zhe" src="asserts/img/spinner.svg"/>
+			
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="father" style="z-index: 9999;display: none;" id="instruction-second" >
+			<div style="background: white;" class="son float-instruction shadow-irreguler">
+				<div style="width: 100%;height: 0 auto; background-color: var(--fColor);">
+					<div class="container-fluid" style="padding: 0rem;">
+						<div class="row" style="padding: 0rem;margin: 0;">
+							<div class="col-10" align="center" style="padding:0rem;color: white;font-weight: bold;font-size: 4vw;" >
+							为什么无法选择？
+							</div>
+							<div class="col-2" align="right" style="padding-right: 3vw">
+								<svg class="icon" aria-hidden="true" style="font-size: 6vw;color: white;" onclick="close_instruction('instruction-second')">
+									<use xlink:href="#icon-guanbi"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="height: 70%;width: 90%;margin-top: 6vw;" class="son box6 tip-css"  >
+					您当前区域暂未部署悠悦易存产品或由于您未选择您的高校系统无法判断您的区域是否部署悠悦易存产品，您暂时无法使用平台交易。
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
