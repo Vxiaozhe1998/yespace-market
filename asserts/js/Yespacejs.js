@@ -30,7 +30,7 @@ jQuery(document).ready(function() {
 		});
 
 	});
-});
+})
 
 /*关闭提示框*/
 function close_instruction(instruction_id) {
@@ -40,7 +40,7 @@ function close_instruction(instruction_id) {
 function open_instruction(canshu) {
 	var div_first = document.getElementById(canshu);
 	div_first.style.display = "block";
-};
+}
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
 	var area = "曲阜师范大学";
@@ -86,7 +86,7 @@ window.onload = function() {
 		strHTML += "</label>";
 		div_pay_way.innerHTML = strHTML;
 	}
-};
+}
 /*区域判定函数*/
 function area_true(area) {
 	if (area == "曲阜师范大学") {
@@ -94,23 +94,31 @@ function area_true(area) {
 	} else {
 		return false;
 	}
-};
+}
 /*个人对话框添加图片语音上拉弹出框MEssage-dialog*/
-var content_liu = 1;
+var content_liu = false;
 function show_liu() {
+	// alert(content_liu);
+	var xinzeng=document.getElementById("xinzeng-liu");
 	var markliu = document.getElementsByClassName('mark-liu')[0];
 	var bottomliu = document.getElementsByClassName('bottom-liu')[0];
+	var fColor=document.getElementById("tupian").style.color;
+	var sColor=document.getElementById("yuyin").style.color;
+	// alert(fColor);
+	// alert(sColor);
 	// var cdliu = document.getElementsByClassName('container-dialog-liu')[0];
 	if (content_liu) {
 		markliu.style.display = "none";
-		bottomliu.style.height = "16vw";
+		// bottomliu.style.height = "16vw";
 		// cdliu.style.margin-bottom = "16vw";
-		content_liu = 0;
+		xinzeng.style.color=sColor;
+		content_liu = false;
 	} else {
 		markliu.style.display = "";
-		bottomliu.style.height = "26vw";
+		// bottomliu.style.height = "26vw";
 		// cdliu.style.margin-bottom = "26vw";
-		content_liu = 1;
+		xinzeng.style.color=fColor;
+		content_liu = true;
 	}
 }
 /*长按出现语音条*/
