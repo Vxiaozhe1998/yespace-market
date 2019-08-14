@@ -297,7 +297,7 @@ li {
 }
 
 a {
-	text-decoration: none;
+	text-decoration:none;
 }
 
 /* 搜索框设置 */
@@ -320,7 +320,7 @@ a {
 [type="text"] {
 	width: 85%;
 	height: 80px;
-	border: #666666 1px solid;
+	border: #666666 3px solid;
 	float: left;
 	margin-left: 10%;
 	margin-top: 15px;
@@ -352,9 +352,8 @@ a {
 	border-right: none;
 	/* margin: 5% 10% 20% 6%; */
 	overflow: hidden;
-	/* float: left; */
+	float: left;
 	width: 100%;
-	/* margin: 100px 0 0 300px; */
 }
 
 .sxzl ul li {
@@ -368,7 +367,7 @@ a {
 	margin-right: 5px;
 	/* margin:0px auto; */
 	margin-top: 30px;
-	text-align: center;
+	text-align:center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
