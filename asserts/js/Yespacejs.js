@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function() {
 	/*
 	 * Replace all SVG images with inline SVG
