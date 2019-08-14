@@ -32,21 +32,20 @@
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
-	height:12vw;
+	height: 12vw;
 	background-color: white;
 	display: flex;
 	justify-content: center;
 	/* filter不规则图形模糊样式 */
 	filter: drop-shadow(0px -1px 11px #33333333)
 }
-.container-bar-index{
 
+.container-bar-index {
 	margin-bottom: 18vw;
 }
 
 .footer-bot:before {
 	bottom: 0;
-
 	width: 18vw;
 	height: 18vw;
 	content: "";
@@ -54,9 +53,10 @@
 	border-radius: 50%;
 	position: absolute;
 }
-input[type='checkbox']{
-	width:4vw;
-	height:4vw;
+
+input[type='checkbox'] {
+	width: 4vw;
+	height: 4vw;
 	vertical-align: bottom;
 }
 
@@ -67,14 +67,16 @@ input[type='checkbox']{
 	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 }
-.shadow-irreguler{
+
+.shadow-irreguler {
 	filter: drop-shadow(0px -1px 11px #33333333)
 }
 
 /* 顶部常驻栏样式 */
-.top-header{
+.top-header {
 	background-color: var(--fColor);
 }
+
 /* 顶栏固定 */
 .sticky-top {
 	position: sticky;
@@ -115,10 +117,11 @@ input[type='checkbox']{
 	border-radius: 3vw;
 }
 
-.float-instruction{
+.float-instruction {
 	border-radius: 3vw;
 	overflow: hidden;
 }
+
 /* Iconfont矢量图标CSS样式 */
 .icon {
 	width: 1em;
@@ -174,8 +177,6 @@ span {
 	background: var(--fColor);
 	color: white;
 }
-
-
 
 /* 通知界面Message-inform */
 .container-inform-liu {
@@ -245,7 +246,6 @@ span {
 }
 
 /* 个人对话框Message-dialog */
-
 .container-dialog-liu {
 	border: 0 solid black;
 	position: relative;
@@ -291,7 +291,6 @@ span {
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
-
 ul,
 li {
 	list-style: none;
@@ -308,9 +307,12 @@ a {
 	background-color: #CCCCCC;
 	border: solid 1px #ccc;
 	margin-bottom: 25pxs;
+	position: sticky;
 	top: 0px;
 	z-index: 1000;
 }
+
+.search {
 	background-color: white;
 }
 
@@ -334,6 +336,7 @@ a {
 	color: var(--fColor);
 	font-weight: bold;
 	margin-bottom: 20px;
+	height: 60px;
 	background: #6D6D6D14;
 	display: inline-block;
 	/*把a变成行级块*/
@@ -365,13 +368,12 @@ a {
 	margin-right: 5px;
 	/* margin:0px auto; */
 	margin-top: 30px;
-
-
 	text-align: center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
 	background: #eeeeee;
+	color: #4C51B1;
 }
 
 .sxzl ul li ul li a {
@@ -390,7 +392,6 @@ a {
 	height: 100px;
 	display: inline-block;
 	/*把a变成行级块*/
-
 }
 
 .icon .item2 a {
@@ -398,7 +399,6 @@ a {
 	height: 100px;
 	display: inline-block;
 	/*把a变成行级块*/
-
 }
 
 /*当鼠标移动会变色：*/
@@ -410,14 +410,11 @@ a {
 .icon .item1 a:hover {
 	background-color: #6D6D6D14;
 	color: #fff;
-
 }
-
 
 .icon .item2 a:hover {
 	background-color: #6D6D6D14;
 	color: #fff;
-
 }
 
 .nav::after {
@@ -428,9 +425,8 @@ a {
 }
 
 /* 最高热度搜索 和 历史搜索*/
- .list-item2 {
+.list-item2 {
 	float: left;
-	
 	list-style: none;
 	font-size: 20px;
 	/* margin-left: 20%; */
@@ -440,8 +436,6 @@ a {
 	/* border:1px solid black;显示黑色边框 */
 }
 
-
-
 .box-shadow-vertical {
 	-moz-box-shadow: 0px 6px 10px #3333333C;
 	-webkit-box-shadow: 0px 6px 10px #3333333C;
@@ -449,37 +443,24 @@ a {
 	margin-bottom: 100px;
 }
 
-
-
-
-/*#menu2 ul li a{
-	border-radius: 15px;
-}*/
 b {
 	position: absolute;
 	top: 90px;
 	right: 20px;
-	/*width: 10px;
-	height: 10px;*/
 	border-width: 20px;
 	border-style: solid dashed dashed;
 	border-color: #FFFFFF transparent transparent;
 }
-.trf:hover{
+
+.trf:hover {
 	border-color: #4C51B1 transparent transparent;
 	transform: rotate(180deg);
 	transform-origin: 50% 25%;
 	transition: transform .2s ease-in;
-		display: block;
+	display: block;
 }
 
-	background-color: #4C51B1;
-	color: #FFFFFF;
-	border-right: 4px solid #4C51B1;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-#lowers:hover{
+#sortout:hover {
 	background-color: #4C51B1;
 	color: #FFFFFF;
 	border-right: 4px solid #4C51B1;
@@ -487,14 +468,28 @@ b {
 	border-top-right-radius: 10px;
 }
 
+#lowers:hover {
+	background-color: #4C51B1;
+	color: #FFFFFF;
+	border-right: 4px solid #4C51B1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#food,
+#botm {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 
 #menu1 ul li a {
 	background: #4C51B1;
+	color: #FFFFFF;
 	position: relative;
 }
+
+#menu1 ul li a:hover {
+	background: #FFFFFF;
 	color: #4C51B1;
 }
 
@@ -507,11 +502,8 @@ b {
 	float: none;
 }
 
-
-
 .sxzl ul li:hover ul {
 	display: block;
-	
 }
 
 .sxzl ul li ul li:hover ul {
@@ -520,145 +512,126 @@ b {
 
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	/* 去除滑块的默认样式 */
-	/* margin-top: 300px; */
 	height: 100%;
 	width: 100px;
 	background: var(--fColor);
 	border-radius: 50 %;
 }
 
-
 #menus ul li ul li ul {
 	display: none;
 	border-bottom: none;
 	position: relative;
-	/*left: 100px;*/
 	top: 0px;
 	width: 100px;
-	/*margin-left: 80px;
-	margin-top: 70px;*/
 }
 
 #menus ul li:hover ul li ul {
 	display: none;
 }
 
-/* #menus ul li:hover ul {
-	display: block;
-} */
-
 #menus ul li ul li:hover ul {
 	display: block;
 }
 
 /* 搜索结果为电脑展开前的界面 */
+.centerarea {
 	border: 1px solid #ccc;
-	/* position: relative; */
-	/* float: left; */
-	margin:100px auto;
-	/* margin-top: 100px; */
+	/* margin: 100px auto; */
 	width: 70%;
 	border-radius: 80px;
-	margin: 5% 5% 5% 5% ;
+	margin:5%;
 	overflow: hidden;
 }
 
 .leftfu {
 	position: absolute;
-	width:20%;
+	width: 20%;
 	margin-left: 10px;
-	background:#fff;
+	background: #fff;
 	height: 280px;
 	border-radius: 80px;
 	margin-top: 40px;
 }
-.leftfu ul li svg{
-	color:var(--fColor); 
-	float:left;
-	opacity:1; 
-	font-size:50px;
-	/* margin-top: 20px; */
+
+.leftfu ul li svg {
+	color: var(--fColor);
+	float: left;
+	opacity: 1;
+	font-size: 50px;
 }
 
 .middlefu {
 	position: absolute;
-	/* left:500px; */
-	width:40%;
-	margin-left:150px;
+	width: 40%;
+	margin-left: 150px;
 }
-.middlefu img{
-	height:200px ;
+
+.middlefu img {
+	height: 200px;
 	width: 300px;
-	margin-top:90px ;
+	margin-top: 90px;
 }
-.rightfu{
+
+.rightfu {
 	position: absolute;
 	margin-top: 90px;
-	left:920px;
+	left: 920px;
 	height: 200px;
 	width: 40%;
-	/* background:#666; */
-	margin-left:10px;
-	font-size:30px;
+	margin-left: 10px;
+	font-size: 30px;
 }
-.chakanfu{
+
+.chakanfu {
 	font-size: 20px;
-	background:#666;
+	background: #666;
 	border-radius: 80px;
 }
-.centerarea2{
-	
+
+.centerarea2 {
 	border: 1px solid #ccc;
 	position: relative;
 	float: left;
-    left: 20%;
-	margin:100px auto;
-	/* margin-top: 100px; */
+	left: 20%;
+	margin: 100px auto;
 	width: 70%;
-	min-height:500px;
+	min-height: 500px;
 	height: 1100px;
 	border-radius: 80px;
-	/* margin: 5% 5% 5% 5% ; */
 	overflow: hidden;
-	/* height:auto; */
 }
+
 .leftfu2 {
 	position: absolute;
-	width:20%;
+	width: 20%;
 	margin-left: 10px;
-	background:#fff;
+	background: #fff;
 	height: 280px;
 	border-radius: 80px;
 	margin-top: 40px;
 }
-.leftfu2 ul li svg{
-	color:var(--fColor); 
-	float:left;
-	opacity:1; 
-	font-size:50px;
+
+.leftfu2 ul li svg {
+	color: var(--fColor);
+	float: left;
+	opacity: 1;
+	font-size: 50px;
 	margin-left: 10px;
 	margin-top: 20px;
 }
 
 .middlefu2 {
 	position: absolute;
-	/* left:500px; */
-	width:60%;
-	margin-left:150px;
+	width: 60%;
+	margin-left: 150px;
 	margin-top: 90px;
 	font-size: 30px;
-	height:80%;
-	
+	height: 80%;
 }
-.middlefu2 img{
-	height:28% ;
-	width: 90%;
-	/* margin-top:90px ; */
-	margin-bottom: 10px;
-	
-/* }改变多选框大小 */
-input[type=checkbox] {
--webkit-transform: scale(1.5); /* Safari and Chrome */
 
+.middlefu2 img {
+	height: 28%;
+	width: 90%;
+	margin-bottom: 10px;
 }
