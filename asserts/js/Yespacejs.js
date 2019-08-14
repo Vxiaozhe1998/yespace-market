@@ -43,7 +43,7 @@ function open_instruction(canshu) {
 };
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
-	var area = "曲阜师范大学";
+	var area = "曲阜师1范大学";
 	var div_pay_way = document.getElementById("pay-way");
 	if (area_true(area)) {
 		// alert("成功");
@@ -95,3 +95,35 @@ function area_true(area) {
 		return false;
 	}
 };
+/*个人对话框添加图片语音上拉弹出框MEssage-dialog*/
+var content_liu = 1;
+function show_liu() {
+	var markliu = document.getElementsByClassName('mark-liu')[0];
+	var bottomliu = document.getElementsByClassName('bottom-liu')[0];
+	// var cdliu = document.getElementsByClassName('container-dialog-liu')[0];
+	if (content_liu) {
+		markliu.style.display = "none";
+		bottomliu.style.height = "16vw";
+		// cdliu.style.margin-bottom = "16vw";
+		content_liu = 0;
+	} else {
+		markliu.style.display = "";
+		bottomliu.style.height = "26vw";
+		// cdliu.style.margin-bottom = "26vw";
+		content_liu = 1;
+	}
+};
+/*长按出现语音条*/
+
+function liudown(){
+	var vliu = document.getElementsByClassName("voice-liu")[0];
+	vliu.style.display = " ";
+}
+function liuup(){
+	vliu.style.display = "none";
+}
+function myFunction(elmnt,clr){
+	var vliu = document.getElementsByClassName("voice-liu")[0];
+	elmnt.style.color=clr;
+}
+
