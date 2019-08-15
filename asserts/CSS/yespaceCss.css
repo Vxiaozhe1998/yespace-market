@@ -15,6 +15,28 @@
 	z-index: 9999;
 }
 
+/* 多选框样式 */
+.custom-checkbox {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-image: paint(checkbox);
+	outline: 0;
+	--status: unchecked;
+	--border-color: #dcdfe6;
+	border-radius: 1vw;
+	--bg-color: #f00;
+	--line-color: #f00;
+	transition: --border-color 500ms, --bg-color 500ms, --line-color 500ms;
+}
+
+.custom-checkbox:checked {
+	--status: checked;
+	--bg-color: var(--fColor);
+	--line-color: #fff;
+	--border-color: var(--fColor);
+}
+
 /* 加载中默认颜色 */
 .progress-zhe {
 	fill: var(--fColor);
@@ -135,7 +157,7 @@ input[type='checkbox'] {
 }
 
 .box6 {
-	overflow-y: scroll;
+	overflow-y:overlay;
 }
 
 .box6::-webkit-scrollbar {
@@ -152,8 +174,6 @@ input[type='checkbox'] {
 	border-radius: 5px;
 	background: var(--fColor);
 }
-
-
 
 .index-zhe {
 	background-color: white;
@@ -333,12 +353,13 @@ span {
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
-ul,li {
+ul,
+li {
 	list-style: none;
 }
 
 a {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 /* 搜索框设置 */
@@ -408,7 +429,7 @@ a {
 	margin-right: 5px;
 	/* margin:0px auto; */
 	margin-top: 30px;
-	text-align:center;
+	text-align: center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
@@ -675,159 +696,175 @@ input[type=range]::-webkit-slider-thumb {
 	width: 90%;
 	margin-bottom: 10px;
 }
+
 /*宋慧*/
-	.container-sh {
-		border: 0 solid black;
-		position: relative;
-		left: auto;
-		right: auto;
-		margin-left: 90px;
-		margin-right: 90px;
-	}
-	
-	.dialog-box-sh {
-		border: 0 solid black;
-		width: 100%;
-		/*height: 400px;*/ 
-		border-radius: 75px;
-		margin-top: 100px;
-		display: inline-block;
-		-moz-box-shadow: 0px 8px 20px #3333333a;
-		-webkit-box-shadow: 0px 8px 20px #3333333a;
-		box-shadow: 0px 8px 20px #3333333a;
-		position:relative;
-	}
-	.order-open{
-		border: 0 solid black;
-		width: 100%;
-		height: 500px; 
-		border-radius: 75px;
-		margin-top: 100px;
-		display: inline-block;
-		-moz-box-shadow: 0px 8px 20px #3333333a;
-		-webkit-box-shadow: 0px 8px 20px #3333333a;
-		box-shadow: 0px 8px 20px #3333333a;
-		position:relative;
-	}
-	.inner-order-dialog-box{
-		border: 0 solid black;
-		border-radius: 75px;
-		-moz-box-shadow: 0px 8px 20px #3333333a;
-		-webkit-box-shadow: 0px 8px 20px #3333333a;
-		box-shadow: 0px 8px 20px #3333333a;
-		position:absolute;
-		height:240px;
-		width: auto;
-		left:10%;
-		bottom:20%;
-	}
-	
-	.circle-sh {
-		width: 150px;
-		height: 150px;
-		background-color: #fff;
-		border-radius: 50%;
-		-moz-border-radius: 50%;
-		-webkit-border-radius: 50%;
-		position: relative;
-		float: left;
-	}
-	
-	.head-photo-sh{
-		position: absolute;
-		float: left;
-		z-index: 1;
-	}
-	.head-photo-right{
-		position: absolute;
-		float:left;
-	}
-	.icon-sh {
-		width: 150px;
-		height: 150px;
-		fill: currentColor;
-		background-size:100% 100%; 
-		border-radius: 50%;
-	}
-	.id_img-sh{
-		width: 100%;
-		height: 100%;
-		background-size:100% 100%; 
-		fill: currentColor;
-		border-radius: 50%;
-	}
-	.icon-right{
-		width: 100%;
-		height: 100%;
-		fill: currentColor;
-		background-size:100% 100%; 
-	}
-	.word-sh{
-		float: left;
-		width:auto;
-		margin: 50px 50px 50px 50px;
-		font-size: 45px;
-		line-height: 50px;
-		position: relative;
-		font-weight: 900;
-		letter-spacing: 5px;
-	}
-	
-	.word-sh::after{
-		content: "";
-		display: block;
-		clear: both;
-	}
-	
-	.form_s{
-		float: left;
-		width: auto;
-		/* height: 300px; */
-		margin: 20px 50px 20px 50px;
-		font-size: xx-large;
-		position: relative;
-	}
-	.form_s::after {
-		content: "";
-		display: block;
-		clear: both;
-	}	
-	.button_sure{
-		background-color: var(--fColor);
-		border: none;
-		color: white;
-		padding: 5px 10px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 10px;
-		cursor: pointer;
-		border-radius: 25px;
-		outline:none;//button后不出现边框
-	}
-	.button_sure:hover {
-    	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24),0 5px 10px 0 rgba(0,0,0,0.19);
-	}
-	a:visited{
-		color:rgb(0, 0, 0);
-	}
-	.smaller-word{
-		font-size: 30px;
-		line-height: 50px;
-		font-weight: 900;
-		letter-spacing: 2px;
-		position: absolute;
-	}
-	.order-second-line{
-		left:30%;
-		top:30%;
-	}
-	.order-third-line{
-		left:10%;
-		top:70%;
-	}
-	.order-third-line::after{
-		content: "";
-		display: block;
-		clear: both;
-	}
+.container-sh {
+	border: 0 solid black;
+	position: relative;
+	left: auto;
+	right: auto;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.dialog-box-sh {
+	border: 0 solid black;
+	width: 100%;
+	/*height: 400px;*/
+	border-radius: 75px;
+	margin-top: 100px;
+	display: inline-block;
+	-moz-box-shadow: 0px 8px 20px #3333333a;
+	-webkit-box-shadow: 0px 8px 20px #3333333a;
+	box-shadow: 0px 8px 20px #3333333a;
+	position: relative;
+}
+
+.order-open {
+	border: 0 solid black;
+	width: 100%;
+	height: 500px;
+	border-radius: 75px;
+	margin-top: 100px;
+	display: inline-block;
+	-moz-box-shadow: 0px 8px 20px #3333333a;
+	-webkit-box-shadow: 0px 8px 20px #3333333a;
+	box-shadow: 0px 8px 20px #3333333a;
+	position: relative;
+}
+
+.inner-order-dialog-box {
+	border: 0 solid black;
+	border-radius: 75px;
+	-moz-box-shadow: 0px 8px 20px #3333333a;
+	-webkit-box-shadow: 0px 8px 20px #3333333a;
+	box-shadow: 0px 8px 20px #3333333a;
+	position: absolute;
+	height: 240px;
+	width: auto;
+	left: 10%;
+	bottom: 20%;
+}
+
+.circle-sh {
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	position: relative;
+	float: left;
+}
+
+.head-photo-sh {
+	position: absolute;
+	float: left;
+	z-index: 1;
+}
+
+.head-photo-right {
+	position: absolute;
+	float: left;
+}
+
+.icon-sh {
+	width: 150px;
+	height: 150px;
+	fill: currentColor;
+	background-size: 100% 100%;
+	border-radius: 50%;
+}
+
+.id_img-sh {
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	fill: currentColor;
+	border-radius: 50%;
+}
+
+.icon-right {
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
+	background-size: 100% 100%;
+}
+
+.word-sh {
+	float: left;
+	width: auto;
+	margin: 50px 50px 50px 50px;
+	font-size: 45px;
+	line-height: 50px;
+	position: relative;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+.word-sh::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.form_s {
+	float: left;
+	width: auto;
+	/* height: 300px; */
+	margin: 20px 50px 20px 50px;
+	font-size: xx-large;
+	position: relative;
+}
+
+.form_s::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.button_sure {
+	background-color: var(--fColor);
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	cursor: pointer;
+	border-radius: 25px;
+	outline: none; //button后不出现边框
+}
+
+.button_sure:hover {
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:visited {
+	color: rgb(0, 0, 0);
+}
+
+.smaller-word {
+	font-size: 30px;
+	line-height: 50px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	position: absolute;
+}
+
+.order-second-line {
+	left: 30%;
+	top: 30%;
+}
+
+.order-third-line {
+	left: 10%;
+	top: 70%;
+}
+
+.order-third-line::after {
+	content: "";
+	display: block;
+	clear: both;
+}
