@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+				<!-- CSS库 -->
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css" />
+		<!-- JS库 -->
+		<script src="asserts/js/Yespacejs.js" type="text/javascript"></script>
+		<script src="asserts/js/jquery.min.js" type="text/javascript"></script>
+		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!--<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_d5trwbvsb05.js"></script>-->
+		<div class="container-sh">
+			<div class="dialog-box-sh" >
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<img class = "id_img-sh" src="asserts/img/miemie.jpg" alt="头像" >
+					</div>
+				</div>				
+				<div style="color:var(--fColor);" class="word-sh">name</div> <!--文字部分-->
+			</div>
+			<!--我的订单-->
+	<!--		<a href="myOrder.html"> -->
+				<div class="order-open" >
+	
+	<!--左上方图片-->
+					<div class="circle-sh">
+						<div class="head-photo-sh">
+							<svg style="color:var(--fColor);" class="icon-sh"  aria-hidden="true" style="color: var(--sColor);" alt="订单的图标">
+								<use xlink:href="#icon-wodedingdan"></use>
+							</svg>
+						</div>
+					</div>
+					<div style="color:var(--fColor);" class="word-sh">我的订单</div> <!--文字部分-->
+				<!--内部div-->
+					<div class="inner-order-dialog-box" >
+						<div class="circle-sh">
+							<div class="head-photo-sh">
+								<img class = "id_img-sh" src="asserts/img/miemie.jpg" alt="头像" >
+							</div>
+						</div>
+			
+						<form class = "form_s">
+			        		<label style="color: var(--sColor);" ><input type="radio" name="deal" checked="checked"> 当面交易</label>
+							<label style="color: var(--sColor);"><input type="radio" name="deal"> 平台交易</label>
+		    			</form>
+		    			
+		    				<p style="color:var(--fColor);" class="smaller-word order-second-line">您选择当面交易</p>
+		    				<div style="color: var(--sColor);" class="smaller-word order-third-line">
+		    					惠普笔记本-6成新-¥3333
+		    					<button class="button_sure">确认收货</button>
+		    				</div>
+		    				
+					</div>
+					
+				</div>
+		<!--	</a> -->
+			<!--我发布的-->
+			<a href="release.html">
+				<div class="dialog-box-sh" >
+					<div class="circle-sh">
+						<div class="head-photo-sh">
+							<svg class="icon-sh" aria-hidden="true" alt="发布的图标">
+								<use xlink:href="#icon-fabu"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="word-sh">我发布的</div> <!--文字部分-->
+				</div>
+			</a>
+		</div>
+    		<input id="radio-1" name="radio" type="radio" checked>
+    		<label for="radio-1" class="radio-label">Checked</label>
+	</body>
+</html>
