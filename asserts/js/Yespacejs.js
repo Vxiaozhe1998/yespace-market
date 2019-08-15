@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function() {
 	/*
 	 * Replace all SVG images with inline SVG
@@ -43,7 +42,7 @@ function open_instruction(canshu) {
 }
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
-	var area = "曲阜师范大学";
+	var area = "曲阜师范1大学";
 	var div_pay_way = document.getElementById("pay-way");
 	if (area_true(area)) {
 		// alert("成功");
