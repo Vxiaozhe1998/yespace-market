@@ -2,229 +2,308 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>搜索结果为电脑🔍展开</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>搜索结果为电脑展开</title>
 		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css">
-		<!-- <link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" /> -->
+		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
+		<script type="text/javascript">
+			startList = function() {
+				if (document.all && document.getElementById) {
+					navRoot = document.getElementById("menu2");
+					var allli = navRoot.getElementsByTagName("li")
+					for (i = 0; i < allli.length; i++) {
+						node = allli[i];
+						node.onmouseover = function() {
+							this.className += " current";
+						}
+						node.onmouseout = function() {
+							this.className = this.className.replace(" current", "");
+						}
+					}
+				}
+
+			}
+			window.onload = startList;
+		</script>
 		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_cayoehnv9o.js"></script>
 		<base target="_blank">
+
 	</head>
 	<body>
-		<div id="searchtop">
-		<div class="box-shadow-vertical" style="position: static fixed;width:100%;height: 300px;">
-					<table width="100%" height="" border="0" cellpadding="0" cellspacing="0">
-						<!-- 搜索-->
-						<div>
-									<div class="searcontent clearfix">
-						<tr>
-							<td style="text-align:center;" ;>
-								<input type="text" style="padding-left:20px;  font-size:50px;" placeholder="电脑">
-							</td>
-							<td class="item1">
-								<a href="#">
-									<svg class="icon" aria-hidden="true" style="margin-left:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
-										<use xlink:href="#icon-sousuo"></use>
-										<!--添加图库的图  -->
-									</svg>
-								</a>
-							</td>
-							<td class="item2">
-								<a href="#">
-									<svg class="icon" aria-hidden="true" style="margin-right:5%;margin-top: 10%;font-size: 65px;color:#4C51B1;">
-										<use xlink:href="#icon-zhankai"></use>
-									</svg>
-								</a>
-							</td>
-						</tr>
-					</table>
-					<div class="sxzl" id="menus">
-						<div class="sxzl" id="menus" >
-						<ul id="menu1">
-							<li><a href="#" style="font-size: 40px;" id="sortout"><span style="margin:0px; border: 0;padding: 0px;  
-		}">类别&nbsp;&nbsp;&nbsp;▼</span></a>
-								<ul id="menu2">
-									<li><a href="#">无</a></li>
-									<li><a class="seconds" href="#">学习&nbsp;&nbsp;&nbsp;▶<b class="trf"></b></a>
-										<ul id="menu3">
-											<li><a href="#">文具</a></li>
-											<li><a href="#">课本</a></li>
-											<li><a href="#">习题</a></li>
-										</ul>
-									</li>
-									<li><a class="seconds" href="#">数码&nbsp;&nbsp;&nbsp;▶</a>
-										<ul id="menu3">
-											<li><a href="#">电脑</a></li>
-											<li><a href="#">手机</a></li>
-											<li><a href="#">配饰</a></li>
-										</ul>
-									</li>
-									<li><a class="seconds" href="#">日用&nbsp;&nbsp;&nbsp;▶</a>
-										<ul id="menu3">
-											<li><a href="#">洗护</a></li>
-											<li><a href="#">清洁</a></li>
-											<li><a href="#">护理</a></li>
-										</ul>
-									</li>
-									<li><a class="seconds" href="#">运动&nbsp;&nbsp;&nbsp;▶</a>
-										<ul id="menu3">
-											<li><a href="#">运动服饰</a></li>
-											<li><a href="#">运动器械</a></li>
-											<li><a href="#">运动装备</a></li>
-										</ul>
-									</li>
-									<li><a class="seconds" href="#">服饰&nbsp;&nbsp;&nbsp;▶</a>
-										<ul id="menu3">
-											<li><a href="#">女装</a></li>
-											<li><a href="#">男装</a></li>
-											<li><a href="#">童装</a></li>
-										</ul>
-									</li>
-									<li><a class="seconds" href="#" id="food" >食品&nbsp;&nbsp;&nbsp;▶</a>
-										<ul id="menu3">
-											<li><a href="#">坚果</a></li>
-											<li><a href="#">熟食</a></li>
-											<li><a href="#">饮品</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="#" style="font-size: 40px;" id="lowers">折旧度▼</a>
-								<ul>
-									<li><a href="#">九成</a></li>
-									<li><a href="#">八成</a></li>
-									<li><a href="#">七成</a></li>
-									<li><a href="#">六成</a></li>
-									<li><a href="#">五成</a></li>
-									<li><a href="#">四成</a></li>
-									<li><a href="#">三成</a></li>
-									<li><a href="#">二成</a></li>
-									<li><a href="#" id="botm">一成</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="font-size: 40px;">最低价</a>
-								<ul>
-									<li><input type="text" style="list-style: none;border-bottom-left-radius: 0px;
-			border-top-left-radius: 0px;
-			border-bottom-right-radius: 0px;
-			border-top-right-radius: 0px;
-		"></li>
-								</ul>
-							</li>
-							<li><a href="#" style="font-size: 40px;">最高价</a></li>
-						</ul>
 		
-						<p>
-							<div class="suoxiao">
-								<a href="search.html">
-								<svg class="icon" aria-hidden="true" style="color:#4C51B1;margin-left:800px;opacity:0.8; font-size:50px;">
-									<use xlink:href="#icon-shousuo"></use>
-									<!--添加图库的图标-->
+			<nav class="searcontent shadow sticky-top search" style="width: 100%;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-8"><input type="text" style="padding-left:5vw; font-size:5vw;margin: 1vw 0rem;height: 11vw;width: 100%;"
+							 placeholder="您想找点啥呢"></div>
+						<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
+								<use xlink:href="#icon-sousuo"></use>
+							</svg></div>
+						<div class="col-2"><a href="searchsx.html">
+								<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
+									<use xlink:href="#icon-zhankai"></use>
 								</svg>
-								</a>
-							</div>
-						</p>
-		
+							</a></div>
 					</div>
 				</div>
+				<div class="sxzl" id="menus">
+					<div class="sxzl" style="width: 100%;position:absolute;height: 700px;">
+						<div class="container-fluid">
+							<ul id="menu1">
+								<div class="row">
+									<div class="col-3">
+										<li><a href="#" style="font-size: 40px;" id="sortout"><span style="margin:0px; border: 0;padding: 0px;">类别&nbsp;&nbsp;&nbsp;▼</span></a>
+											<ul id="menu2" style="float: left;left:8.5%;margin-top:-5%;">
+												<li><a href="#">无</a></li>
+												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→<b class="trf"></b></a>
+													<ul style="left:-7.25%;">
+														<li><a href="#">文具</a></li>
+														<li><a href="#">课本</a></li>
+														<li><a href="#">习题</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">数码&nbsp;&nbsp;&nbsp;→</a>
+													<ul style="left:-7.25%;">
+														<li><a href="#">电脑</a></li>
+														<li><a href="#">手机</a></li>
+														<li><a href="#">配饰</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">日用&nbsp;&nbsp;&nbsp;→</a>
+													<ul style="left:-7.25%;">
+														<li><a href="#">洗护</a></li>
+														<li><a href="#">清洁</a></li>
+														<li><a href="#">护理</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">运动&nbsp;&nbsp;&nbsp;→</a>
+													<ul style="left:-7.25%;">
+														<li><a href="#">运动服饰</a></li>
+														<li><a href="#">运动器械</a></li>
+														<li><a href="#">运动装备</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">服饰&nbsp;&nbsp;&nbsp;→</a>
+													<ul style="left:-7.25%;">
+														<li><a href="#">女装</a></li>
+														<li><a href="#">男装</a></li>
+														<li><a href="#">童装</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#" id="food">食品&nbsp;&nbsp;&nbsp;→</a>
+													<ul style="left:-7.25%;">
+														<li><a href="#">坚果</a></li>
+														<li><a href="#">熟食</a></li>
+														<li><a href="#">饮品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</div>
+									<div class="col-3">
+										<li><a href="#" style="font-size: 40px;" id="lowers">折旧度▼</a>
+											<ul style="left:8.5%">
+												<li><a href="#">九成</a></li>
+												<li><a href="#">八成</a></li>
+												<li><a href="#">七成</a></li>
+												<li><a href="#">六成</a></li>
+												<li><a href="#">五成</a></li>
+												<li><a href="#">四成</a></li>
+												<li><a href="#">三成</a></li>
+												<li><a href="#">二成</a></li>
+												<li><a href="#" id="botm">一成</a></li>
+											</ul>
+										</li>
+									</div>
+									<div class="col-3">
+										<li><a href="#" style="font-size: 40px;">最低价</a>
+											<ul>
+												<li><input type="text" style="list-style: none;border-bottom-left-radius: 0px;
+											border-top-left-radius: 0px;
+											border-bottom-right-radius: 0px;
+											border-top-right-radius: 0px;
+										"></li>
+											</ul>
+										</li>
+									</div>
+									<div class="col-3">
+										<li><a href="#" style="font-size: 40px;">最高价</a></li>
+									</div>
+								</div>
+							</ul>
+						</div>
 
-		<div class="searchresult">
-			<div class="container">
-				<div class="centerarea2" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
-					<div class="row">
-						<div class="col-3">
-							<div class="leftfu2">
-								<ul>
-									<li>
-										<div class="touxiang" style="margin-top: 10px; ">
-											<a href="#">
-												<img src="../asserts/typing.svg" />
-											</a>
 
-										</div>
-									</li>
-									<li>
-										<div class="guanzhu" style="margin-top: 10px;display: inline-block;font-size:30px;">
-											<a href="#">
-												<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
-													<use xlink:href="#icon-shoucang"></use>
-												</svg><br>关注</br></a>
-										</div>
-									</li>
-									<li>
-										<div class="siliao" style="margin-top: 10px;display:inline-block;font-size:30px;">
-											<a href="#">
-												<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
-													<use xlink:href="#icon-siliao"></use>
-												</svg><br>私聊</br></a>
-										</div>
-									</li>
-									<li>
-										<div class="fenxiang" style="margin-top: 10px;display:inline-block;font-size:30px;">
-											<p>
+
+						<div class="suoxiao">
+							<a href="search.html">
+								<svg class="icon" aria-hidden="true" style="color:#4C51B1;margin-left:90%;opacity:0.8; font-size:50px;">
+									<use xlink:href="#icon-shousuo"></use>
+									<!--添加图库的图片-->
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+				</div>
+			</nav>
+
+			<div class="searchresult">
+				<div class="container-fluid">
+					<div class="centerarea2" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
+						<div class="row">
+							<div class="col-2">
+								<div class="leftfu2">
+									<ul>
+										
+										<li>
+											<div class="circlefu" >
+												<div class="head-photo">
+													<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
+												</div>
+												
+											</div>
+										</li>
+										<li>
+											<div class="guanzhu" style="margin-top: 10px;display: inline-block;font-size:30px;">
 												<a href="#">
 													<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
-														<use xlink:href="#icon-fenxiang"></use>
-													</svg><br>分享</br></a>
-										</div>
-									</li>
-								</ul>
+														<use xlink:href="#icon-shoucang"></use>
+													</svg><br>关注</br></a>
+											</div>
+										</li>
+										<li>
+											<div class="siliao" style="margin-top: 10px;display:inline-block;font-size:30px;">
+												<a href="#">
+													<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+														<use xlink:href="#icon-siliao"></use>
+													</svg><br>私聊</br></a>
+											</div>
+										</li>
+										<li>
+											<div class="fenxiang" style="margin-top: 10px;display:inline-block;font-size:30px;">
+												<p>
+													<a href="#">
+														<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+															<use xlink:href="#icon-fenxiang"></use>
+														</svg><br>分享</br></a>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-						<div class="col-4">
-							<div class="middlefu2">
-								<table>
-									<tr>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
-											 alt="computer">
-										</td>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
-											 alt="computer">
-										</td>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
-											 alt="computer">
-										</td>
-									</tr>
-									<tr>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
-											 alt="computer">
-										</td>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
-											alt="computer">
-										</td>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
-											 alt="computer">
-										</td>
-										
-									</tr>
-									<tr>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
-											alt="computer">
-										</td>
-										<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
-											 alt="computer">
-										</td>
-									</tr>
-								</table>
-					
-								<form action="" method="get">
-									<label><input name="xuanze" type="checkbox" value=""/>&nbsp;&nbsp;&nbsp;&nbsp;惠普笔记本-6成新-￥3320</label><br />
-									<label><input name="xuanze" type="checkbox" value=""/>&nbsp;&nbsp;&nbsp;&nbsp;戴尔笔记本-7成新-￥5620</label><br />
-									<label><input name="xuanze" type="checkbox" value=""/>&nbsp;&nbsp;&nbsp;&nbsp;联想笔记本-7成新-￥3380</label><br />
-								</form><br />
-								<a href="#" style="font-color:#4C51B1">设备 &nbsp;</a>
-								<form action="" method="get">
-									<label><input name="jiaoyi" type="checkbox" value=""/>&nbsp;&nbsp;平台交易</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<label><input name="jiaoyi" type="checkbox" value=""/>&nbsp;&nbsp;当面交易</label>
-								</form>
+							<div class="col-10">
+								<div class="middlefu2">
+									<div class="container-fluid">
+										<div class="row" style="margin-top: -40px;"> 
+											<div class="col-2"  align="left" id="" onclick=""style="font-size:90%;">
+												李四
+											</div>	
+											<div class="col-6"  align="left" id="home" onclick="">
+												<svg class="icon"
+													 aria-hidden="true" style="color: var(--fColor);">
+														<use xlink:href="#icon-weizhi"></use>
+													</svg><a style="color: var(--fColor);">东升园</a>
+											</div>
+											<div class="col-4"  align="right" id="home" onclick=""style="font-size: 50%;margin-top: 10px;color: var(--fColor);">
+												9分钟前
+											</div>
+										</div>	
+									</div>
+									<table>
+										<tr>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+												 alt="computer">
+											</td>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+												 alt="computer">
+											</td>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+												 alt="computer">
+											</td>
+										</tr>
+										<tr>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+												 alt="computer">
+											</td>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+												 alt="computer">
+											</td>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+												 alt="computer">
+											</td>
+
+										</tr>
+										<tr>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+												 alt="computer">
+											</td>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+												 alt="computer">
+											</td>
+										</tr>
+									</table>
+
+									<form action="" method="get">
+										<label><input name="xuanze" type="checkbox" value="" />&nbsp;&nbsp;&nbsp;&nbsp;惠普笔记本-6成新-￥3320</label><br />
+										<label><input name="xuanze" type="checkbox" value="" />&nbsp;&nbsp;&nbsp;&nbsp;戴尔笔记本-7成新-￥5620</label><br />
+										<label><input name="xuanze" type="checkbox" value="" />&nbsp;&nbsp;&nbsp;&nbsp;联想笔记本-7成新-￥3380</label><br />
+									</form><br />
+									<a href="#" style="font-color:#4C51B1">设备 &nbsp;</a>
+									<form action="" method="get">
+										<label><input name="jiaoyi" type="checkbox" value="" />&nbsp;&nbsp;平台交易</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<label><input name="jiaoyi" type="checkbox" value="" />&nbsp;&nbsp;当面交易</label>
+									</form>
+									<div class="suoxiao" style="margin-bottom: 5%;">
+										<br />
+										<br />
+										<a href="#">
+											<svg class="icon" aria-hidden="true" style="color:#4C51B1;margin-left:50%;opacity:0.8; font-size:50px;">
+												<use xlink:href="#icon-shousuo"></use>
+											</svg>&nbsp;&nbsp;&nbsp;
+										</a>
+										<a href="#">立即购买</a>
+									</div>
+								</div>
 								
 							</div>
 						</div>
-						
-
 					</div>
 				</div>
 			</div>
-		</div>
-
+			<div class="footer-bot">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-2" align="center" id="home" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;color: black;">
+								<use xlink:href="#icon-zhuye"></use>
+							</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
+						</div>
+						<div class="col-2" align="center" id="search" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+								<use xlink:href="#icon-sousuo"></use>
+							 </svg><!--<a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
+						</div>
+						<div class="col-4"></div>
+						<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish"
+						 onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+								<use xlink:href="#icon-xinzeng"></use>
+							</svg>
+						</div>
+						<div class="col-2" align="center" id="message" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+								<use xlink:href="#icon-xiaoxi"></use>
+							</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
+						</div>
+						<div class="col-2" align="center" id="mine" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+								<use xlink:href="#icon-wode"></use>
+							</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>

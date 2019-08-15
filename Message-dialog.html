@@ -96,18 +96,16 @@
 			<div class="bottom-liu shadow-irreguler">
 				<div class="container-fluid">
 					<div class="row mark-liu" style="display: none;">
-						<div class="col-2"><svg class="icon" id="tupian" aria-hidden="true" style="font-size: 13vw;">
+						<div class="col-2"><svg class="icon" id="tupian" aria-hidden="true" style="font-size: 13vw;" >
 								<use xlink:href="#icon-tupian"></use>
 							</svg></div>
 						<div class="col-2" style="margin-top: 1vw;"><svg class="icon" id="yuyin" aria-hidden="true" style="font-size: 10vw;color: var(--sColor);"
-							 onmousedown="myFunction(vliu,'red')" onmouseup="myFunction(vliu,'green')">
+							onmousedown="liudown(this)" onmouseup="liuup(this)">
 								<use xlink:href="#icon-yuyin"></use>
 							</svg></div>
 						<div class="col-2">
-							<div style="display: none;">
-								<img onmousedown="myFunction(vliu,'red')" onmouseup="myFunction(vliu,'green')" class="voice-liu" src="asserts/img/spinner.svg"
-								 style="height: 8vw;margin-top: 2vw;">
-							</div>
+							<img class="voice-liu" src="asserts/img/spinner.svg" style="height: 8vw;margin-top: 2vw;display:none;"
+								onmousedown="liudown(this)" onmouseup="liuup(this)">
 						</div>
 						<div class="col-6"></div>
 					</div>

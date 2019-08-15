@@ -1,13 +1,10 @@
-/* 主题色 */
-
+﻿/* 主题色 */
 :root {
 	--fColor: #4C51B1;
 	--sColor: #6D6D6D;
 }
 
-
 /* 使用方法var(--fColor); */
-
 .footer-zhe {
 	position: sticky;
 	left: 0px;
@@ -18,9 +15,29 @@
 	z-index: 9999;
 }
 
+/* 多选框样式 */
+.custom-checkbox {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-image: paint(checkbox);
+	outline: 0;
+	--status: unchecked;
+	--border-color: #dcdfe6;
+	border-radius: 1vw;
+	--bg-color: #f00;
+	--line-color: #f00;
+	transition: --border-color 500ms, --bg-color 500ms, --line-color 500ms;
+}
+
+.custom-checkbox:checked {
+	--status: checked;
+	--bg-color: var(--fColor);
+	--line-color: #fff;
+	--border-color: var(--fColor);
+}
 
 /* 加载中默认颜色 */
-
 .progress-zhe {
 	fill: var(--fColor);
 	width: 100%;
@@ -36,9 +53,7 @@
 	background-color: white;
 }
 
-
 /* 底部样式 */
-
 .footer-bot {
 	position: fixed;
 	left: 0px;
@@ -72,9 +87,7 @@ input[type='checkbox'] {
 	vertical-align: bottom;
 }
 
-
 /* 通知样式 */
-
 .tip-css {
 	color: var(--fColor);
 	font-size: 3vw;
@@ -82,9 +95,7 @@ input[type='checkbox'] {
 	overflow: auto;
 }
 
-
 /* 阴影 */
-
 .shadow {
 	-moz-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
 	-webkit-box-shadow: 0px 3px 11px -6px #333333, 0px -3px 11px -6px #333333;
@@ -95,16 +106,12 @@ input[type='checkbox'] {
 	filter: drop-shadow(0px -1px 11px #33333333)
 }
 
-
 /* 顶部常驻栏样式 */
-
 .top-header {
 	background-color: var(--fColor);
 }
 
-
 /* 顶栏固定 */
-
 .sticky-top {
 	position: sticky;
 	top: 0;
@@ -118,12 +125,8 @@ input[type='checkbox'] {
 	fill: white;
 }
 
-
 /* 布局CSS */
-
-
 /* Div水平垂直居中 */
-
 .father {
 	position: fixed;
 	width: 100%;
@@ -143,9 +146,7 @@ input[type='checkbox'] {
 	margin: auto;
 }
 
-
 /* 自定义滚动条 */
-
 .box {
 	float: left;
 	width: 150px;
@@ -155,7 +156,6 @@ input[type='checkbox'] {
 }
 
 .box6 {
-	overflow-y: scroll;
 }
 
 .box6::-webkit-scrollbar {
@@ -173,6 +173,7 @@ input[type='checkbox'] {
 	background: var(--fColor);
 }
 
+
 .index-zhe {
 	background-color: white;
 	border-radius: 3vw;
@@ -183,9 +184,7 @@ input[type='checkbox'] {
 	overflow: hidden;
 }
 
-
 /* Iconfont矢量图标CSS样式 */
-
 .icon {
 	width: 1em;
 	height: 1em;
@@ -195,24 +194,19 @@ input[type='checkbox'] {
 	color: var(--fColor);
 }
 
-
 /* 		<!-- Iconfont矢量图标库 -->
 		<script src="http://at.alicdn.com/t/font_1306353_exkcfta643.js" type="text/javascript"></script>
 		 <svg class="icon" aria-hidden="true">
 		 	<use xlink:href="#icon-logo"></use>
 		 </svg>*/
 
-
 /*刘楠*/
-
 * {
 	margin: 0;
 	padding: 0;
 }
 
-
 /* 消息总界面 Message-index*/
-
 .container-index-liu {
 	width: 100%;
 	height: 100%;
@@ -246,9 +240,7 @@ span {
 	color: white;
 }
 
-
 /* 通知界面Message-inform */
-
 .container-inform-liu {
 	border: 0 solid black;
 	position: relative;
@@ -315,9 +307,7 @@ span {
 	clear: both;
 }
 
-
 /* 个人对话框Message-dialog */
-
 .container-dialog-liu {
 	border: 0 solid black;
 	position: relative;
@@ -361,21 +351,16 @@ span {
 	/* margin-top: 100px; */
 }
 
-
 /* 搜索页面 这里是傅文雅的CSS!*/
-
-ul,
-li {
+ul,li {
 	list-style: none;
 }
 
 a {
-	text-decoration: none;
+	text-decoration:none;
 }
 
-
 /* 搜索框设置 */
-
 .searcontent clearfix {
 	width: 100%;
 	height: 100px;
@@ -391,9 +376,7 @@ a {
 	background-color: white;
 }
 
-
 /* 搜索框设置 */
-
 [type="text"] {
 	width: 85%;
 	height: 80px;
@@ -423,9 +406,7 @@ a {
 	line-height: 60px;
 }
 
-
 /* 筛选种类 设置*/
-
 .sxzl {
 	border: 0px solid #ccc;
 	border-right: none;
@@ -446,7 +427,7 @@ a {
 	margin-right: 5px;
 	/* margin:0px auto; */
 	margin-top: 30px;
-	text-align: center;
+	text-align:center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
@@ -464,9 +445,7 @@ a {
 	position: relative;
 }
 
-
 /* 引入按钮 设置 */
-
 .icon .item1 a {
 	padding: 25px 10px 0 10px;
 	height: 100px;
@@ -481,9 +460,7 @@ a {
 	/*把a变成行级块*/
 }
 
-
 /*当鼠标移动会变色：*/
-
 .list-item2 a:hover {
 	background-color: var(--fColor);
 	color: #fff;
@@ -506,9 +483,7 @@ a {
 	clear: both;
 }
 
-
 /* 最高热度搜索 和 历史搜索*/
-
 .list-item2 {
 	float: left;
 	list-style: none;
@@ -618,16 +593,15 @@ input[type=range]::-webkit-slider-thumb {
 	display: block;
 }
 
-
 /* 搜索结果为电脑展开前的界面 */
-
 .centerarea {
 	border: 1px solid #ccc;
 	/* margin: 100px auto; */
-	width: 70%;
+	width: 80%;
 	border-radius: 80px;
 	margin: 5%;
 	overflow: hidden;
+	height: 500px;
 }
 
 .leftfu {
@@ -645,18 +619,15 @@ input[type=range]::-webkit-slider-thumb {
 	float: left;
 	opacity: 1;
 	font-size: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
 }
 
 .middlefu {
 	position: absolute;
-	width: 40%;
+/* 	width: 40%; */
+    height: 80%;
 	margin-left: 150px;
-}
-
-.middlefu img {
-	height: 200px;
-	width: 300px;
-	margin-top: 90px;
 }
 
 .rightfu {
@@ -679,11 +650,11 @@ input[type=range]::-webkit-slider-thumb {
 	border: 1px solid #ccc;
 	position: relative;
 	float: left;
-	left: 20%;
-	margin: 100px auto;
-	width: 70%;
-	min-height: 500px;
-	height: 1100px;
+	left: 10%;
+	margin: 150px auto;
+	width: 80%;
+	min-height: 1100px;
+	/* height: 1100px; */
 	border-radius: 80px;
 	overflow: hidden;
 }
@@ -709,22 +680,29 @@ input[type=range]::-webkit-slider-thumb {
 
 .middlefu2 {
 	position: absolute;
-	width: 60%;
-	margin-left: 150px;
+	width: 80%;
+	/* margin-left: 150px; */
 	margin-top: 90px;
 	font-size: 30px;
-	height: 80%;
+	/* height: 80%; */
 }
 
 .middlefu2 img {
-	height: 28%;
+	/* height: 28%; */
 	width: 90%;
 	margin-bottom: 10px;
 }
-
-
+.circlefu {
+	width: 100px;
+	height: 120px;
+	margin-top: -30px;
+	background-color: #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	position: relative;
+}
 /*宋慧*/
-
 .container-sh {
 	border: 0 solid black;
 	position: relative;
