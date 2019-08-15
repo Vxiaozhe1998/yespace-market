@@ -1,9 +1,43 @@
+
+jQuery(document).ready(function() {
+	/*
+	 * Replace all SVG images with inline SVG
+	 */
+	jQuery('img.svg').each(function() {
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		jQuery.get(imgURL, function(data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = jQuery(data).find('svg');
+
+			// Add replaced image's ID to the new SVG
+			if (typeof imgID !== 'undefined') {
+				$svg = $svg.attr('id', imgID);
+			}
+			// Add replaced image's classes to the new SVG
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			}
+
+			// Remove any invalid XML tags as per http://validator.w3.org
+			$svg = $svg.removeAttr('xmlns:a');
+
+			// Replace image with new SVG
+			$img.replaceWith($svg);
+		});
+
+	});
+})
+
 /*关闭提示框*/
 function close_instruction(instruction_id) {
 	var div_first = document.getElementById(instruction_id);
 	div_first.style.display = "none";
 }
-function open_instruction(canshu){
+function open_instruction(canshu) {
 	var div_first = document.getElementById(canshu);
 	div_first.style.display = "block";
 }
@@ -60,5 +94,43 @@ function area_true(area) {
 	} else {
 		return false;
 	}
+}
+/*个人对话框添加图片语音上拉弹出框MEssage-dialog*/
+var content_liu = false;
+function show_liu() {
+	// alert(content_liu);
+	var xinzeng=document.getElementById("xinzeng-liu");
+	var markliu = document.getElementsByClassName('mark-liu')[0];
+	var bottomliu = document.getElementsByClassName('bottom-liu')[0];
+	var fColor=document.getElementById("tupian").style.color;
+	var sColor=document.getElementById("yuyin").style.color;
+	// alert(fColor);
+	// alert(sColor);
+	// var cdliu = document.getElementsByClassName('container-dialog-liu')[0];
+	if (content_liu) {
+		markliu.style.display = "none";
+		// bottomliu.style.height = "16vw";
+		// cdliu.style.margin-bottom = "16vw";
+		xinzeng.style.color=sColor;
+		content_liu = false;
+	} else {
+		markliu.style.display = "";
+		// bottomliu.style.height = "26vw";
+		// cdliu.style.margin-bottom = "26vw";
+		xinzeng.style.color=fColor;
+		content_liu = true;
+	}
+}
+/*长按出现语音条*/
 
+function liudown(){
+	var vliu = document.getElementsByClassName("voice-liu")[0];
+	vliu.style.display = " ";
+}
+function liuup(){
+	vliu.style.display = "none";
+}
+function myFunction(elmnt,clr){
+	var vliu = document.getElementsByClassName("voice-liu")[0];
+	elmnt.style.color=clr;
 }
