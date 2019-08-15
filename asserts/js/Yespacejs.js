@@ -108,28 +108,25 @@ function show_liu() {
 	// var cdliu = document.getElementsByClassName('container-dialog-liu')[0];
 	if (content_liu) {
 		markliu.style.display = "none";
-		// bottomliu.style.height = "16vw";
-		// cdliu.style.margin-bottom = "16vw";
 		xinzeng.style.color=sColor;
 		content_liu = false;
 	} else {
 		markliu.style.display = "";
-		// bottomliu.style.height = "26vw";
-		// cdliu.style.margin-bottom = "26vw";
 		xinzeng.style.color=fColor;
 		content_liu = true;
 	}
 }
 /*长按出现语音条*/
-
-function liudown(){
+function liudown(elmnt){
 	var vliu = document.getElementsByClassName("voice-liu")[0];
-	vliu.style.display = " ";
+	vliu.style.display = "";
 }
-function liuup(){
+function liuup(elmnt){
+	var vliu = document.getElementsByClassName("voice-liu")[0];
 	vliu.style.display = "none";
 }
-function myFunction(elmnt,clr){
-	var vliu = document.getElementsByClassName("voice-liu")[0];
-	elmnt.style.color=clr;
-}
+// var vliu = document.getElementsByClassName("voice-liu")[0];
+// function myFunction(elmnt,clr){
+// 	var yyliu = document.getElementById('yuyin');
+// 	elmnt.style.display= "clr";
+// }
