@@ -578,10 +578,11 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea {
 	border: 1px solid #ccc;
 	/* margin: 100px auto; */
-	width: 70%;
+	width: 80%;
 	border-radius: 80px;
 	margin: 5%;
 	overflow: hidden;
+	height: 500px;
 }
 
 .leftfu {
@@ -599,18 +600,15 @@ input[type=range]::-webkit-slider-thumb {
 	float: left;
 	opacity: 1;
 	font-size: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
 }
 
 .middlefu {
 	position: absolute;
-	width: 40%;
+/* 	width: 40%; */
+    height: 80%;
 	margin-left: 150px;
-}
-
-.middlefu img {
-	height: 200px;
-	width: 300px;
-	margin-top: 90px;
 }
 
 .rightfu {
@@ -633,11 +631,11 @@ input[type=range]::-webkit-slider-thumb {
 	border: 1px solid #ccc;
 	position: relative;
 	float: left;
-	left: 20%;
-	margin: 100px auto;
-	width: 70%;
-	min-height: 500px;
-	height: 1100px;
+	left: 10%;
+	margin: 150px auto;
+	width: 80%;
+	min-height: 1100px;
+	/* height: 1100px; */
 	border-radius: 80px;
 	overflow: hidden;
 }
@@ -663,15 +661,25 @@ input[type=range]::-webkit-slider-thumb {
 
 .middlefu2 {
 	position: absolute;
-	width: 60%;
-	margin-left: 150px;
+	width: 80%;
+	/* margin-left: 150px; */
 	margin-top: 90px;
 	font-size: 30px;
-	height: 80%;
+	/* height: 80%; */
 }
 
 .middlefu2 img {
-	height: 28%;
+	/* height: 28%; */
 	width: 90%;
 	margin-bottom: 10px;
+}
+.circlefu {
+	width: 100px;
+	height: 120px;
+	margin-top: -30px;
+	background-color: #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	position: relative;
 }
