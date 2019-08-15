@@ -16,6 +16,13 @@
 
 	</head>
 	<body>
+		<!-- 顶栏 -->
+		<nav class="top-header sticky-top shadow">
+			<div style="height: 0 auto;color: white;font-size: 6vw;font-weight: bold;justify-content: center;"
+			 align="center">
+				消息通知
+			</div>
+		</nav>
 		<div class="container-index-liu">
 			<div>
 				<div class="list-header" style="background-color:#4C51B11E;border: 0px solid #4C51B11E;">
@@ -60,39 +67,39 @@
 				</ul>
 			</div>
 		</div>
-		<div class="footer-bot">
-			<div class="container-fluid" >
-				<div class="row" >
-					<div class="col-2" style="height:8vw" align="center" id="home" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top: 1vw;">
-							<use xlink:href="#icon-zhuye"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
-					</div>
-					<div class="col-2" style="height:8vw" align="center" id="search" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top:1vw;">
-							<use xlink:href="#icon-sousuo"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
-					</div>
-					<div class="col-4"></div>
-					<div style="height:8vw;position: fixed;width: 100%; bottom:4vw;justify-content: center;" align="center" id="publish" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 12vw;">
-							<use xlink:href="#icon-xinzeng"></use>
-						</svg>
-					</div>
-					<div class="col-2" style="height:8vw" align="center" id="message" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top:1vw;color: black;">
-							<use xlink:href="#icon-xiaoxi"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
-					</div>
-					<div class="col-2" style="height:8vw" align="center" id="mine" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 6vw;margin-top:1vw;">
-							<use xlink:href="#icon-wode"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
-					</div>
+	<!-- 固定底栏 -->
+	<div class="footer-bot">
+		<div class="container-fluid" >
+			<div class="row" >
+				<div class="col-2"  align="center" id="home" onclick="">
+					<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;">							
+					<use xlink:href="#icon-zhuye"></use>
+					</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
+				</div>
+				<div class="col-2" align="center" id="search" onclick="">
+					<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+						<use xlink:href="#icon-sousuo"></use>
+					</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
+				</div>
+				<div class="col-4"></div>
+				<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish" onclick="">
+					<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+						<use xlink:href="#icon-xinzeng"></use>
+					</svg>
+				</div>
+				<div class="col-2"  align="center" id="message" onclick="">
+					<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;">
+						<use xlink:href="#icon-xiaoxi"></use>
+					</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
+				</div>
+				<div class="col-2" align="center" id="mine" onclick="">
+					<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+						<use xlink:href="#icon-wode"></use>
+					</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
 				</div>
 			</div>
 		</div>
+	</div>
 		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_d5trwbvsb05.js"></script>
 	</body>
 </html>
-

@@ -30,68 +30,64 @@
 
 	</head>
 	<body>
-		
-			<nav class="searcontent shadow sticky-top search" style="width: 100%;">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-8"><input type="text" style="padding-left:5vw; font-size:5vw;margin: 1vw 0rem;height: 11vw;width: 100%;"
-							 placeholder="您想找点啥呢"></div>
-						<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
-								<use xlink:href="#icon-sousuo"></use>
-							</svg></div>
-						<div class="col-2"><a href="searchsx.html">
-								<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
-									<use xlink:href="#icon-zhankai"></use>
-								</svg>
-							</a></div>
-					</div>
-				</div>
-				<div class="sxzl" id="menus">
-					<div class="sxzl" style="width: 100%;position:absolute;height: 700px;">
-						<div class="container-fluid">
+		<nav class="shadow sticky-top" style="background-color: white;position: fixed;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-8" align="center"><input type="text" class="index-zhe shadow" style="padding-left: 2vw;margin: 0;font-size: 6vw;margin-top:2vw;margin-bottom: 2vw;border-style: none;width: 100%; height: auto;"
+						 name="position" id="position" placeholder="你要找点儿啥呢？" /></div>
+					<div class="col-2" align="center"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
+							<use xlink:href="#icon-sousuo"></use>
+						</svg></div>
+					<div class="col-2" align="center"><a href="searchsx.html">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
+								<use xlink:href="#icon-zhankai"></use>
+							</svg>
+						</a></div>
+					<div class="sxzl" id="menus">
+						<div class="sxzl">
 							<ul id="menu1">
 								<div class="row">
-									<div class="col-3">
-										<li><a href="#" style="font-size: 40px;" id="sortout"><span style="margin:0px; border: 0;padding: 0px;">类别&nbsp;&nbsp;&nbsp;▼</span></a>
-											<ul id="menu2" style="float: left;left:8.5%;margin-top:-5%;">
+									<div class="col-3 " align="center">
+										<li><a href="#" id="sortout" style="font-size: 3.8vw;">类别&nbsp;&nbsp;&nbsp;▼</a>
+											<ul id="menu2">
 												<li><a href="#">无</a></li>
-												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→<b class="trf"></b></a>
-													<ul style="left:-7.25%;">
+												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→</a>
+													<ul style="padding-left: 0;">
 														<li><a href="#">文具</a></li>
 														<li><a href="#">课本</a></li>
 														<li><a href="#">习题</a></li>
 													</ul>
 												</li>
 												<li><a class="seconds" href="#">数码&nbsp;&nbsp;&nbsp;→</a>
-													<ul style="left:-7.25%;">
+													<ul>
 														<li><a href="#">电脑</a></li>
 														<li><a href="#">手机</a></li>
 														<li><a href="#">配饰</a></li>
 													</ul>
 												</li>
 												<li><a class="seconds" href="#">日用&nbsp;&nbsp;&nbsp;→</a>
-													<ul style="left:-7.25%;">
+													<ul>
 														<li><a href="#">洗护</a></li>
 														<li><a href="#">清洁</a></li>
 														<li><a href="#">护理</a></li>
 													</ul>
 												</li>
 												<li><a class="seconds" href="#">运动&nbsp;&nbsp;&nbsp;→</a>
-													<ul style="left:-7.25%;">
+													<ul>
 														<li><a href="#">运动服饰</a></li>
 														<li><a href="#">运动器械</a></li>
 														<li><a href="#">运动装备</a></li>
 													</ul>
 												</li>
 												<li><a class="seconds" href="#">服饰&nbsp;&nbsp;&nbsp;→</a>
-													<ul style="left:-7.25%;">
+													<ul>
 														<li><a href="#">女装</a></li>
 														<li><a href="#">男装</a></li>
 														<li><a href="#">童装</a></li>
 													</ul>
 												</li>
 												<li><a class="seconds" href="#" id="food">食品&nbsp;&nbsp;&nbsp;→</a>
-													<ul style="left:-7.25%;">
+													<ul>
 														<li><a href="#">坚果</a></li>
 														<li><a href="#">熟食</a></li>
 														<li><a href="#">饮品</a></li>
@@ -100,9 +96,9 @@
 											</ul>
 										</li>
 									</div>
-									<div class="col-3">
-										<li><a href="#" style="font-size: 40px;" id="lowers">折旧度▼</a>
-											<ul style="left:8.5%">
+									<div class="col-3 " align="center">
+										<li><a href="#" id="lowers" style="font-size: 3.8vw;">折旧度▼</a>
+											<ul style="padding-left: 0;">
 												<li><a href="#">九成</a></li>
 												<li><a href="#">八成</a></li>
 												<li><a href="#">七成</a></li>
@@ -115,8 +111,8 @@
 											</ul>
 										</li>
 									</div>
-									<div class="col-3">
-										<li><a href="#" style="font-size: 40px;">最低价</a>
+									<div class="col-3 " align="center">
+										<li><a href="#" style="font-size: 3.8vw;">最低价</a>
 											<ul>
 												<li><input type="text" style="list-style: none;border-bottom-left-radius: 0px;
 											border-top-left-radius: 0px;
@@ -126,30 +122,25 @@
 											</ul>
 										</li>
 									</div>
-									<div class="col-3">
-										<li><a href="#" style="font-size: 40px;">最高价</a></li>
+									<div class="col-3 " align="center">
+										<li><a href="#" style="font-size: 3.8vw;">最高价</a></li>
 									</div>
 								</div>
 							</ul>
 						</div>
-
-
-
-						<div class="suoxiao">
+						<div class="suoxiao" align="right">
 							<a href="search.html">
-								<svg class="icon" aria-hidden="true" style="color:#4C51B1;margin-left:90%;opacity:0.8; font-size:50px;">
+								<svg class="icon" aria-hidden="true" style="color:#4C51B1;opacity:0.8; font-size:8vw;">
 									<use xlink:href="#icon-shousuo"></use>
-									<!--添加图库的图片-->
 								</svg>
 							</a>
 						</div>
-
-
 					</div>
 				</div>
-			</nav>
+			</div>
+		</nav>
 
-			<div class="searchresult">
+			<div class="searchresult bot-nav-fixed-body">
 				<div class="container-fluid">
 					<div class="centerarea2" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
 						<div class="row">
