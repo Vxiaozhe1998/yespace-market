@@ -1,4 +1,4 @@
-/* 主题色 */
+﻿/* 主题色 */
 :root {
 	--fColor: #4C51B1;
 	--sColor: #6D6D6D;
@@ -352,10 +352,12 @@ span {
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
+ul,li {
 	list-style: none;
 }
 
 a {
+	text-decoration:none;
 }
 
 /* 搜索框设置 */
@@ -425,6 +427,7 @@ a {
 	margin-right: 5px;
 	/* margin:0px auto; */
 	margin-top: 30px;
+	text-align:center;
 	line-height: 65px;
 	display: inline-block;
 	border-right: 4px solid #EEEEEE;
@@ -594,6 +597,7 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea {
 	border: 1px solid #ccc;
 	/* margin: 100px auto; */
+	width: 80%;
 	border-radius: 80px;
 	margin: 5%;
 	overflow: hidden;
@@ -646,7 +650,6 @@ input[type=range]::-webkit-slider-thumb {
 	border: 1px solid #ccc;
 	position: relative;
 	float: left;
-
 	left: 10%;
 	margin: 150px auto;
 	width: 80%;
@@ -677,22 +680,18 @@ input[type=range]::-webkit-slider-thumb {
 
 .middlefu2 {
 	position: absolute;
-
 	width: 80%;
 	/* margin-left: 150px; */
 	margin-top: 90px;
 	font-size: 30px;
-
 	/* height: 80%; */
 }
 
 .middlefu2 img {
-
 	/* height: 28%; */
 	width: 90%;
 	margin-bottom: 10px;
 }
-
 .circlefu {
 	width: 100px;
 	height: 120px;
