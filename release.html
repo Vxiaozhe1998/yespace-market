@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>我发布的</title>
-				<!-- CSS库 -->
+		<!-- CSS库 -->
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css" />
@@ -13,6 +14,137 @@
 		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
 	</head>
+
 	<body>
+		<div class="container-sh">
+			<!--名字-->
+			<div class="dialog-box-sh">
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<img class="id_img-sh" src="asserts/img/miemie.jpg" alt="miemie rock">
+					</div>
+				</div>
+				<div style="color:var(--fColor);" class="word-sh">name</div>
+				<!--文字部分-->
+				<span class="span-right">
+					<svg class="icon-right" aria-hidden="true" alt="设置图标">
+						<use xlink:href="#icon-shezhi"></use>
+					</svg>
+				</span>
+			</div>
+			<!--我的订单-->
+			<a href="myOrder.html">
+				<div class="dialog-box-sh">
+					<div class="circle-sh">
+						<div class="head-photo-sh">
+							<svg class="icon-sh" aria-hidden="true" alt="订单的图标">
+								<use xlink:href="#icon-wodedingdan"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="word-sh">我的订单</div>
+					<!--文字部分-->
+				</div>
+			</a>
+		<!--我发布的部分-->
+		<div class="order-open">
+
+				<!--左上方图片-->
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<svg style="color:var(--fColor);" class="icon-sh" aria-hidden="true" style="color: var(--sColor);" alt="订单的图标">
+							<use xlink:href="#icon-fabu"></use>
+						</svg>
+					</div>
+				</div>
+				<!--文字部分-->
+				<div style="color:var(--fColor);" class="word-sh">我发布的</div>
+				<!--右侧收起图标-->
+				<a href="initial.html">
+					<span class="span-right">
+						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+							<use xlink:href="#icon-shousuo"></use>
+						</svg>
+					</span>
+				</a>
+				<!--内部div-->
+				<div class="inner-order-dialog-box">
+					<!--<div class="circle-sh">
+						<div class="head-photo-sh">
+							<img class="id_img-sh" src="asserts/img/miemie.jpg" alt="头像">
+						</div>
+					</div>-->
+					<div class="checkbox">
+						<div>
+							<input id="item1" type="checkbox" name="物品" >
+							<label for="item1" class="checkbox-label">惠普笔记本-6成新-¥3200</label>
+							<button class="button_sure">改价</button>
+						</div>
+						<div>
+							<input id="item2" type="checkbox" name="物品">
+							<label for="item2" class="checkbox-label">戴尔笔记本-7成新-¥3300</label>
+							<button class="button_sure">改价</button>
+						</div>
+						<div>
+							<input id="item3" type="checkbox" name="物品">
+							<label for="item3" class="checkbox-label">联想笔记本-8成新-¥3400</label>
+							<button class="button_sure">改价</button>
+						</div>
+					</div>
+					<button class="button_sure">编辑</button>
+				</div>
+			</div>
+		</div>
+		<!--加回车 防止底栏将内容遮挡-->
+		<p>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</p>
+		<!-- 固定底栏 -->
+		<div class="footer-bot" style="z-index: 9999;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" align="center" id="home" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;">
+							<use xlink:href="#icon-zhuye"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
+					</div>
+					<div class="col-2" align="center" id="search" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+							<use xlink:href="#icon-sousuo"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
+					</div>
+					<div class="col-4"></div>
+					<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+							<use xlink:href="#icon-xinzeng"></use>
+						</svg>
+					</div>
+					<div class="col-2" align="center" id="message" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+							<use xlink:href="#icon-xiaoxi"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
+					</div>
+					<div class="col-2" align="center" id="mine" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;">
+							<use xlink:href="#icon-wode"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
+
 </html>

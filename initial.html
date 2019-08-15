@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<title>我的mine</title>
-				<!-- CSS库 -->
+		<!-- CSS库 -->
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="asserts/CSS/yespaceCss.css" />
@@ -13,34 +14,42 @@
 		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
 	</head>
+
 	<body>
 		<!--<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_d5trwbvsb05.js"></script>-->
 		<div class="container-sh">
 			<!--名字-->
-			<div class="dialog-box-sh" >
+			<div class="dialog-box-sh">
 				<div class="circle-sh">
 					<div class="head-photo-sh">
-						<img class = "id_img-sh" src="asserts/img/miemie.jpg" alt="miemie rock" >
+						<img class="id_img-sh" src="asserts/img/miemie.jpg" alt="miemie rock">
 					</div>
 				</div>
-				<div style="color:var(--fColor);" class="word-sh">name</div> <!--文字部分-->
+				<div style="color:var(--fColor);" class="word-sh">name</div>
+				<!--文字部分-->
+				<span class="span-right">
+					<svg class="icon-right" aria-hidden="true" alt="设置图标">
+						<use xlink:href="#icon-shezhi"></use>
+					</svg>
+				</span>
 			</div>
 			<!--我的订单-->
 			<a href="myOrder.html">
-				<div class="dialog-box-sh" >
+				<div class="dialog-box-sh">
 					<div class="circle-sh">
 						<div class="head-photo-sh">
-							<svg class="icon-sh"  aria-hidden="true" alt="订单的图标">
+							<svg class="icon-sh" aria-hidden="true" alt="订单的图标">
 								<use xlink:href="#icon-wodedingdan"></use>
 							</svg>
 						</div>
 					</div>
-					<div class="word-sh">我的订单</div> <!--文字部分-->
+					<div class="word-sh">我的订单</div>
+					<!--文字部分-->
 				</div>
 			</a>
 			<!--我发布的-->
 			<a href="release.html">
-				<div class="dialog-box-sh" >
+				<div class="dialog-box-sh">
 					<div class="circle-sh">
 						<div class="head-photo-sh">
 							<svg class="icon-sh" aria-hidden="true" alt="发布的图标">
@@ -48,11 +57,61 @@
 							</svg>
 						</div>
 					</div>
-					<div class="word-sh">我发布的</div> <!--文字部分-->
+					<div class="word-sh">我发布的</div>
+					<!--文字部分-->
 				</div>
 			</a>
 		</div>
-		
+		<!--加回车 防止底栏将内容遮挡-->
+		<p>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</p>
+		<!-- 固定底栏 -->
+		<div class="footer-bot" style="z-index: 9999;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" align="center" id="home" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;">
+							<use xlink:href="#icon-zhuye"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
+					</div>
+					<div class="col-2" align="center" id="search" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+							<use xlink:href="#icon-sousuo"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
+					</div>
+					<div class="col-4"></div>
+					<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+							<use xlink:href="#icon-xinzeng"></use>
+						</svg>
+					</div>
+					<div class="col-2" align="center" id="message" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+							<use xlink:href="#icon-xiaoxi"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
+					</div>
+					<div class="col-2" align="center" id="mine" onclick="">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;">
+							<use xlink:href="#icon-wode"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
-</html>
 
+</html>
