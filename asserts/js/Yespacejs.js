@@ -42,20 +42,21 @@ function open_instruction(canshu) {
 }
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
-	var area = "曲阜师范1大学";
+	var area = "曲阜师范大学";
 	var div_pay_way = document.getElementById("pay-way");
 	if (area_true(area)) {
 		// alert("成功");
 		var strHTML = "<div class='row' style='margin-bottom: 2.5vw;'>";
 		strHTML += "<div class='col-6' style='margin-top: 2.5vw;'>";
 		strHTML += "<label>";
-		strHTML += "<input type='checkbox' name='platform' />";
+		// <input type="checkbox" class="custom-checkbox">
+		strHTML += "<input type='checkbox' name='platform' class='custom-checkbox'/>";
 		strHTML += "<a style='color: var(--sColor);font-size: 3vw;font-weight: bold;'>平台交易</a>";
 		strHTML += "</label>";
 		strHTML += "</div>";
 		strHTML += "<div class='col-6' style='margin-top: 2.5vw;'>";
 		strHTML += "<label>";
-		strHTML += "<input type='checkbox' name='f2f'/>";
+		strHTML += "<input type='checkbox' name='f2f' class='custom-checkbox'/>";
 		strHTML += "<a style='color: var(--sColor);font-size: 3vw;font-weight: bold;'>当面交易</a>";
 		strHTML += "</label>";
 		strHTML += "</div>";
@@ -77,7 +78,7 @@ window.onload = function() {
 		strHTML += "</div>";
 		strHTML += "<div class='col-6' style='margin-top: 2.5vw;'>";
 		strHTML += "<label>";
-		strHTML += "<input type='checkbox' name='f2f'/>";
+		strHTML += "<input type='checkbox' name='f2f' class='custom-checkbox'/>";
 		strHTML += "<a style='color: var(--sColor);font-size: 3vw;font-weight: bold;'>当面交易</a>";
 		strHTML += "</label>";
 		strHTML += "</div>";
