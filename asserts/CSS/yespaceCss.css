@@ -39,7 +39,7 @@
 
 /* 加载中默认颜色 */
 .progress-zhe {
-	fill: var(--fColor);
+	fill: var(--fColor);/*在此修改颜色*/
 	width: 100%;
 }
 
