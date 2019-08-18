@@ -337,17 +337,13 @@ span {
 }
 
 .input-liu {
-	/* position: absolute; */
-	/* bottom: 0; */
-	/* left: 45%; */
-	/* transform: translate(-50%, -50%); */
 	width: 100%;
 	height: 8vw;
 	background-color: white;
 	border: 0 solid black;
 	border-radius: 100px;
 	display: inline-block;
-	/* margin-top: 100px; */
+	padding: 20px;
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
