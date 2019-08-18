@@ -117,17 +117,26 @@ function show_liu() {
 		content_liu = true;
 	}
 }
-/*长按出现语音条*/
+/*网页端长按出现语音条*/
 function liudown(elmnt){
 	var vliu = document.getElementsByClassName("voice-liu")[0];
+	var yyliu = document.getElementById('yuyin');
 	vliu.style.display = "";
+	yyliu.style.color = 'var(--fColor)';
 }
 function liuup(elmnt){
 	var vliu = document.getElementsByClassName("voice-liu")[0];
+	var yyliu = document.getElementById('yuyin');
 	vliu.style.display = "none";
+	yyliu.style.color = 'var(--sColor)';
 }
-// var vliu = document.getElementsByClassName("voice-liu")[0];
-// function myFunction(elmnt,clr){
-// 	var yyliu = document.getElementById('yuyin');
-// 	elmnt.style.display= "clr";
-// }
+/*判断输入框是否为空以确定发布按钮是否出现*/
+function liuinput(ojb){art(123);
+	var fbl = document.getElementById('fabu-liu');
+	var xzl = document.getElementById('xinzeng-liu');
+	if(document.getElementById(obj).calue.length !==0){
+		xzl.style.display = "none";
+		fbl.style.display = "";
+		
+	}
+};
