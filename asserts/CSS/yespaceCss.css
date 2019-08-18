@@ -876,15 +876,16 @@ a:visited {
 	line-height: 50px;
 	font-weight: 900;
 	letter-spacing: 2px;
-	position: absolute;
 }
 
 .order-second-line {
 	left: 30%;
 	top: 30%;
+	position: absolute;
 }
 
 .order-third-line {
+	position: absolute;
 	left: 10%;
 	top: 70%;
 }
@@ -894,6 +895,27 @@ a:visited {
 	display: block;
 	clear: both;
 }
+/*.checkbox-size{
+	width: 1.4em;
+  	height: 1.4em;
+}*/
+.item-font{
+	/*position:absolute;*/
+	font-size: 30px;
+	line-height: 50px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color:var(--sColor);
+}
+.item-framework{
+	position: relative;
+	top: 2vw;
+}
+/*.release-item::after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
 /* 假如顶栏都使用了Fixed定位请引用该属性 */
 .bot-nav-fixed-body{
 	margin-bottom: 18vw;

@@ -46,8 +46,8 @@
 					<!--文字部分-->
 				</div>
 			</a>
-		<!--我发布的部分-->
-		<div class="order-open shadow">
+			<!--我发布的部分-->
+			<div class="order-open shadow">
 
 				<!--左上方图片-->
 				<div class="circle-sh">
@@ -69,31 +69,27 @@
 				</a>
 				<!--内部div-->
 				<div class="inner-order-dialog-box shadow">
-					<!--<div class="circle-sh">
-						<div class="head-photo-sh">
-							<img class="id_img-sh" src="asserts/img/miemie.jpg" alt="头像">
-						</div>
-					</div>-->
-					<div class="checkbox">
-						<div>
-							<input id="item1" type="checkbox" name="物品" >
-							<label for="item1" class="checkbox-label">惠普笔记本-6成新-¥3200</label>
+					<ul class="item-framework">
+						<li class="item-font">
+							<input id="item1" type="checkbox" name="物品" class="custom-checkbox">惠普笔记本-6成新-¥3200
 							<button class="button_sure">改价</button>
-						</div>
-						<div>
-							<input id="item2" type="checkbox" name="物品">
-							<label for="item2" class="checkbox-label">戴尔笔记本-7成新-¥3300</label>
+						</li>
+						<li class="item-font">
+							<input id="item2" type="checkbox" name="物品" class="custom-checkbox">戴尔笔记本-7成新-¥3300
 							<button class="button_sure">改价</button>
-						</div>
-						<div>
-							<input id="item3" type="checkbox" name="物品">
-							<label for="item3" class="checkbox-label">联想笔记本-8成新-¥3400</label>
+						</li>
+						<li class="item-font">
+							<input id="item3" type="checkbox" name="物品" class="custom-checkbox">联想笔记本-8成新-¥3400
 							<button class="button_sure">改价</button>
-						</div>
-					</div>
+						</li>
+					</ul>
+					<!--<div class="release-item">
+						</div>-->
 					<button class="button_sure">编辑</button>
 				</div>
+				
 			</div>
+		</div>
 		</div>
 		<!-- 固定底栏 -->
 		<div class="footer-bot" style="z-index: 9999;">
@@ -132,6 +128,33 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			CSS.paintWorklet.addModule('asserts/js/Checkbox.js')
+			CSS.registerProperty({
+				name: "--bg-color",
+				syntax: "<color>",
+				initialValue: "#fff"
+			});
+			CSS.registerProperty({
+				name: "--border-color",
+				syntax: "<color>",
+				initialValue: "#fff"
+			});
+			CSS.registerProperty({
+				name: "--line-color",
+				syntax: "<color>",
+				initialValue: "#fff"
+			});
+			const changeIndeterminate = document.querySelector('#changeIndeterminate')
+			const checkbox = document.querySelectorAll('.custom-checkbox')[0]
+			const checkbox1 = document.querySelectorAll('.custom-checkbox')[1]
+			checkbox.indeterminate = true
+			checkbox1.indeterminate = true
+			changeIndeterminate.addEventListener('click', () => {
+				checkbox.indeterminate = !checkbox.indeterminate
+				checkbox1.indeterminate = !checkbox1.indeterminate
+			})
+		</script>
 	</body>
 
 </html>
