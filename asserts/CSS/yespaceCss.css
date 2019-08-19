@@ -486,8 +486,8 @@ li {
 	font-size: 20px;
 	/* margin-left: 20%; */
 	margin: 10px 0px 50px 30px;
-	height: 30px;
-	line-height: 30px;
+	height: 3.5vw;
+	line-height: 3.5vw;
 	/* border:1px solid black;显示黑色边框 */
 }
 
@@ -560,11 +560,21 @@ input[type=range]::-webkit-slider-thumb {
 	display: block;
 }
 
-/* 搜索结果为电脑展开前的界面 */
+/* 拖动条 */
+/* .progress{position: absolute; width:300px;margin:100px auto;}
+.progress_bg{height: 10px;width:300px; border: 1px solid #ddd; border-radius: 5px;overflow: hidden;background-color:#f2f2f2;}/**/
+/* .progress_bar{ width: 0; height: 10px; border-radius: 5px;background: #5FB878;position: absolute; top:1px;} position: absolute;
+.progress_btn{width: 20px; height: 20px; border-radius: 5px; position: absolute;background:#fff; left: 20px; margin-left: -10px; top:-5px; cursor: pointer;border:1px #ddd solid;box-sizing:border-box;}
+.progress_btn:hover{border-color:#F7B824;} */
+ ::-webkit-input-placeholder { 
+ 				color: #4C51B1;
+ 			}
+ 
+/* 搜索结果为电脑展开前的界面*/
 .centerarea {
-	border: 1px solid #ccc;
+	border: 0.1vw solid #ccc;
 	/* margin: 100px auto; */
-	width: 80%;
+	width: 74%;
 	border-radius: 80px;
 	margin: 5%;
 	overflow: hidden;
