@@ -219,7 +219,7 @@ input[type='checkbox'] {
 	margin-bottom: 16vw;
 }
 
-.list-header {
+.list-header-liu {
 	width: 100%;
 	border: 1px solid 0;
 	height: 125px;
@@ -238,6 +238,13 @@ input[type='checkbox'] {
 	color: white;
 }
 
+.text-liu{
+	line-height: 125px;
+	font-weight: bold;
+	font-size: 40px;
+	margin-left: 20px;
+	vertical-align: 20px;
+}
 /* 通知界面Message-inform */
 .container-inform-liu {
 	border: 0 solid black;
