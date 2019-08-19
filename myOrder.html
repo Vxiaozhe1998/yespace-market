@@ -70,11 +70,11 @@
 					<div class="radio">
 						<input id="radio-1" name="order" type="radio" checked="checked">
 						<label for="radio-1" class="radio-label">当面交易</label> &nbsp;&nbsp;
-						<input id="radio-2" name="order" type="radio">
+						<input id="radio-2" name="order" type="radio" onclick="radioFuction()">
 						<label for="radio-2" class="radio-label">平台交易</label>
 					</div>
 
-					<p style="color:var(--fColor);" class="smaller-word order-second-line">您选择当面交易</p>
+					<p style="color:var(--fColor);" class="smaller-word order-second-line" id="chose-p">您选择当面交易</p>
 					<div style="color: var(--sColor);" class="smaller-word order-third-line">
 						惠普笔记本-6成新-¥3333
 						<button class="button_sure">确认收货</button>
@@ -98,6 +98,18 @@
 					<!--文字部分-->
 				</div>
 			</a>
+			<!--我的关注-->
+			<div class="dialog-box-sh shadow">
+				<div class="circle-sh">
+					<div class="head-photo-sh head-photo-size">
+							<svg style="color:white;" class="icon-star" aria-hidden="true" alt="关注的图标">
+								<use xlink:href="#icon-shoucang"></use>
+							</svg>
+					</div>
+				</div>
+				<div class="word-sh">我的关注</div>
+				<!--文字部分-->
+			</div>
 		</div>
 		<!-- 固定底栏 -->
 		<div class="footer-bot" style="z-index: 9999;">
@@ -136,6 +148,12 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			function radioFuction(){
+				a = document.getElementById("chose-p");
+				a.innerHTML = "分配的柜子（图书馆**柜）";
+			}
+		</script>
 	</body>
 
 </html>
