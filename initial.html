@@ -35,10 +35,10 @@
 			</div>
 			<!--我的订单-->
 			<a href="myOrder.html">
-				<div class="dialog-box-sh shadow">
+				<div class="dialog-box-sh shadow" id="order" onclick="openOrder()">
 					<div class="circle-sh">
 						<div class="head-photo-sh">
-							<svg class="icon-sh" aria-hidden="true" alt="订单的图标">
+							<svg id="order_icon" class="icon-sh" aria-hidden="true" alt="订单的图标">
 								<use xlink:href="#icon-wodedingdan"></use>
 							</svg>
 						</div>
@@ -61,6 +61,51 @@
 					<!--文字部分-->
 				</div>
 			</a>
+			<!--我的关注-->
+			<div class="dialog-box-sh shadow">
+				<div class="circle-sh">
+					<div class="head-photo-sh head-photo-size">
+						<svg style="color:white;" class="icon-star" aria-hidden="true" alt="关注的图标">
+							<use xlink:href="#icon-shoucang"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="word-sh">我的关注</div>
+				<!--文字部分-->
+			</div>
+			<!--关注展开后-->
+			<div class="order-open shadow">
+				<div class="circle-sh">
+					<div class="head-photo-sh head-photo-size" style="background-color:var(--fColor);">
+						<svg style="color:white;" class="icon-star" aria-hidden="true" alt="关注的图标">
+							<use xlink:href="#icon-shoucang"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="word-sh">我的关注</div>
+				<!--文字部分-->
+				<span class="span-right">
+						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+							<use xlink:href="#icon-shousuo"></use>
+						</svg>
+				</span>
+				<div class="inner-order-dialog-box">
+					<div class="following_div">
+						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
+						张三
+					</div>
+					<div class="following_div">
+						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
+						李四
+					</div>
+					<div class="following_div">
+						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
+						王二麻
+					</div>
+				</div>
+
+				</div>
+			</div>
 		</div>
 		<!-- 固定底栏 -->
 		<div class="footer-bot" style="z-index: 9999;">
@@ -99,6 +144,12 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			function openOrder() {
+				a = document.getElementsById("order_icon");
+				a.style.fill = red;
+			}
+		</script>
 	</body>
 
 </html>
