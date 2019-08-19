@@ -117,61 +117,26 @@ function show_liu() {
 		content_liu = true;
 	}
 }
-/*长按出现语音条*/
+/*网页端长按出现语音条*/
 function liudown(elmnt){
 	var vliu = document.getElementsByClassName("voice-liu")[0];
+	var yyliu = document.getElementById('yuyin');
 	vliu.style.display = "";
+	yyliu.style.color = 'var(--fColor)';
 }
 function liuup(elmnt){
 	var vliu = document.getElementsByClassName("voice-liu")[0];
+	var yyliu = document.getElementById('yuyin');
 	vliu.style.display = "none";
+	yyliu.style.color = 'var(--sColor)';
 }
-// var vliu = document.getElementsByClassName("voice-liu")[0];
-// function myFunction(elmnt,clr){
-// 	var yyliu = document.getElementById('yuyin');
-// 	elmnt.style.display= "clr";
-// }
-
-
-// 滑动块
-
-// $(document).ready(function(){
-//  var tag = false,dx = 0,left = 0,bgleft = 0;
-//  $('.progress_btn').mousedown(function(e) {
-//   dx = e.pageX - left;
-//   tag = true;
-//  });
-//  $(document).mouseup(function(e) {
-//   tag = false;
-//  });
-//  $('.progress_btn').mousemove(function(e) {//鼠标移动
-//   if (tag) {
-//    left = e.pageX - dx;
-//    if (left <= 0) {
-//     left = 0;
-//    }else if (left > 300) {
-//     left = 300;
-//    }
-//    $('.progress_btn').css('left', left);
-//    $('.progress_bar').animate({width:left},1);
-//    $('.text').html(parseInt((left/300)*100) + '%');
-//   }
-//  });
-//  $('.progress_bg').click(function(e) {//鼠标点击
-//   if (!tag) {
-//    bgleft = $('.progress_bg').offset().left;
-//    left = e.pageX - bgleft;
-//    if (left <= 0) {
-// left=0;
-//    }else if (left > 300) {
-//     left = 300;
-//    }
-//    $('.progress_btn').css('left', left);
-//    $('.progress_bar').animate({width:left},300);//
-//    $('.text').html(parseInt((left/300)*100) + '%');
-//   }
-// //  alert(left);
-//  });
-//  
-// });
-// 
+/*判断输入框是否为空以确定发布按钮是否出现*/
+function liuinput(ojb){art(123);
+	var fbl = document.getElementById('fabu-liu');
+	var xzl = document.getElementById('xinzeng-liu');
+	if(document.getElementById(obj).calue.length !==0){
+		xzl.style.display = "none";
+		fbl.style.display = "";
+		
+	}
+};
