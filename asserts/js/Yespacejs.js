@@ -42,7 +42,7 @@ function open_instruction(canshu) {
 }
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
-	var area = "曲阜师范?大学";
+	var area = "曲阜师范大学";
 	var div_pay_way = document.getElementById("pay-way");
 	if (area_true(area)) {
 		// alert("成功");
@@ -85,6 +85,19 @@ window.onload = function() {
 		strHTML += "</div>";
 		strHTML += "</label>";
 		div_pay_way.innerHTML = strHTML;
+	}
+	if (document.all && document.getElementById) {
+		navRoot = document.getElementById("menu2");
+		var allli = navRoot.getElementsByTagName("li")
+		for (i = 0; i < allli.length; i++) {
+			node = allli[i];
+			node.onmouseover = function() {
+				this.className += " current";
+			}
+			node.onmouseout = function() {
+				this.className = this.className.replace(" current", "");
+			}
+		}
 	}
 }
 /*区域判定函数*/

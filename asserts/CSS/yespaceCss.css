@@ -3,7 +3,9 @@
 	--fColor: #4C51B1;
 	--sColor: #6D6D6D;
 }
-
+.btn-zhe{
+	background-color: var(--fColor);
+}
 /* 使用方法var(--fColor); */
 .footer-zhe {
 	position: sticky;
@@ -183,6 +185,11 @@ input[type='checkbox'] {
 	overflow: hidden;
 }
 
+.hide-zhe{
+    visibility: hidden;
+    position: absolute;
+    z-index: -100;
+  }
 /* Iconfont矢量图标CSS样式 */
 .icon {
 	width: 1em;
@@ -210,14 +217,6 @@ input[type='checkbox'] {
 	width: 100%;
 	height: 100%;
 	margin-bottom: 16vw;
-}
-
-span {
-	/* line-height: 125px; */
-	font-weight: bold;
-	font-size: 40px;
-	/* margin-left: 30px; */
-	vertical-align: 20px;
 }
 
 .list-header {
@@ -494,15 +493,6 @@ li {
 	height: 30px;
 	line-height: 30px;
 	/* border:1px solid black;显示黑色边框 */
-}
-
-b {
-	position: absolute;
-	top: 90px;
-	right: 20px;
-	border-width: 20px;
-	border-style: solid dashed dashed;
-	border-color: #FFFFFF transparent transparent;
 }
 
 .trf:hover {
