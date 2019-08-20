@@ -711,7 +711,14 @@ input[type=range]::-webkit-slider-thumb {
 	left: 10%;
 	bottom: 20%;
 }
-
+.inner-release-box{
+	border: 0 solid black;
+	border-radius: 75px;
+	position: absolute;
+	width: auto;
+	left: 10%;
+	bottom: 20%;
+}
 .circle-sh {
 	width: 150px;
 	height: 150px;
@@ -770,7 +777,7 @@ input[type=range]::-webkit-slider-thumb {
 	width:150px;
 	height:150px;
 	border-radius:50%;
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 }
 .following_div{
 	float: left;
@@ -875,7 +882,9 @@ input[type=range]::-webkit-slider-thumb {
 	margin-left: 40px;
 	/*点击button后不出现边框*/
 }
-
+.button_inner_padding{
+	padding-left: 0px 20px;
+}
 .button_sure:hover {
 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -924,11 +933,14 @@ a:visited {
 	position: relative;
 	top: 2vw;
 }
-/*.release-item::after{
-	content: "";
-	display: block;
-	clear: both;
-}*/
+.name-position{
+	margin-left:40px;
+}
+.button-line{
+	margin-bottom: 10px;
+	margin-left:50px;
+	margin-right:50px;
+}
 /* 假如顶栏都使用了Fixed定位请引用该属性 */
 .bot-nav-fixed-body{
 	margin-bottom: 18vw;

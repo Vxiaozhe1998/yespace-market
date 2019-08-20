@@ -16,7 +16,6 @@
 	</head>
 
 	<body>
-		<!--<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_d5trwbvsb05.js"></script>-->
 		<div class="container-sh">
 			<!--名字-->
 			<div class="dialog-box-sh shadow">
@@ -34,8 +33,7 @@
 				</span>
 			</div>
 			<!--我的订单-->
-			<a href="myOrder.html">
-				<div class="dialog-box-sh shadow" id="order" onclick="openOrder()">
+				<div id="closed-order" class="dialog-box-sh shadow" id="order" onclick="changeOrder()">
 					<div class="circle-sh">
 						<div class="head-photo-sh">
 							<svg id="order_icon" class="icon-sh" aria-hidden="true" alt="订单的图标">
@@ -46,10 +44,47 @@
 					<div class="word-sh">我的订单</div>
 					<!--文字部分-->
 				</div>
-			</a>
+			<!--展开我的订单-->
+			<div id="opened-order" class="order-open shadow" style="display:none;">
+				<!--左上方图片-->
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<svg style="color:var(--fColor);" class="icon-sh" aria-hidden="true" style="color: var(--sColor);" alt="订单的图标">
+							<use xlink:href="#icon-wodedingdan"></use>
+						</svg>
+					</div>
+				</div>
+				<!--文字部分-->
+				<div style="color:var(--fColor);" class="word-sh">我的订单</div>
+				<!--右侧收起图标-->
+					<span class="span-right" onclick="changeOrder()">
+						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+							<use xlink:href="#icon-shousuo"></use>
+						</svg>
+					</span>
+				<!--内部div-->
+				<div class="inner-order-dialog-box shadow">
+					<div class="circle-sh">
+						<div class="head-photo-sh">
+							<img class="id_img-sh" src="asserts/img/miemie.jpg" alt="头像">
+						</div>
+					</div>
+					<div class="radio">
+						<input id="radio-1" name="order" type="radio" checked="checked">
+						<label for="radio-1" class="radio-label">当面交易</label> &nbsp;&nbsp;
+						<input id="radio-2" name="order" type="radio" onclick="radioFuction()">
+						<label for="radio-2" class="radio-label">平台交易</label>
+					</div>
+
+					<p style="color:var(--fColor);" class="smaller-word order-second-line" id="chose-p">您选择当面交易</p>
+					<div style="color: var(--sColor);" class="smaller-word order-third-line">
+						惠普笔记本-6成新-¥3333
+						<button class="button_sure">确认收货</button>
+					</div>
+				</div>
+			</div>
 			<!--我发布的-->
-			<a href="release.html">
-				<div class="dialog-box-sh shadow">
+				<div id="closed-release" class="dialog-box-sh shadow" onclick="changeRelease()">
 					<div class="circle-sh">
 						<div class="head-photo-sh">
 							<svg class="icon-sh" aria-hidden="true" alt="发布的图标">
@@ -59,10 +94,49 @@
 					</div>
 					<div class="word-sh">我发布的</div>
 					<!--文字部分-->
+			</div>
+			<!--展开我发布的部分-->
+			<div id="opened-release" class="order-open shadow" style="display:none;">
+				<!--左上方图片-->
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<svg style="color:var(--fColor);" class="icon-sh" aria-hidden="true" style="color: var(--sColor);" alt="订单的图标">
+							<use xlink:href="#icon-fabu"></use>
+						</svg>
+					</div>
 				</div>
-			</a>
+				<!--文字部分-->
+				<div style="color:var(--fColor);" class="word-sh">我发布的</div>
+				<!--右侧收起图标-->
+					<span class="span-right" onclick="changeRelease()">
+						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+							<use xlink:href="#icon-shousuo"></use>
+						</svg>
+					</span>
+				<!--内部div-->
+				<div class="inner-release-box shadow">
+					<ul class="item-framework">
+						<li class="item-font" style="margin-top:20px;">
+							<input id="item1" type="checkbox" name="物品" class="custom-checkbox">惠普笔记本-6成新-¥3200
+						</li>
+						<li class="item-font" style="margin-top:20px;">
+							<input id="item2" type="checkbox" name="物品" class="custom-checkbox">戴尔笔记本-7成新-¥3300
+						</li>
+						<li class="item-font" style="margin-top:20px;">
+							<input id="item3" type="checkbox" name="物品" class="custom-checkbox">联想笔记本-8成新-¥3400
+						</li>
+					</ul>
+					<!--<div class="release-item">
+					</div>-->
+					<div class="smaller-word button-line">
+					<button style="padding-left: 0px 30px;" class="button_sure">详情</button>
+					<button style="padding-left: 0px 30px;" class="button_sure">下架</button>
+					<button style="padding-left: 0px 30px;" class="button_sure">改价</button>
+					</div>
+				</div>
+			</div>
 			<!--我的关注-->
-			<div class="dialog-box-sh shadow">
+			<div id="closed-following" class="dialog-box-sh shadow" onclick="changeFollowing()">
 				<div class="circle-sh">
 					<div class="head-photo-sh head-photo-size">
 						<svg style="color:white;" class="icon-star" aria-hidden="true" alt="关注的图标">
@@ -74,7 +148,7 @@
 				<!--文字部分-->
 			</div>
 			<!--关注展开后-->
-			<div class="order-open shadow">
+			<div id="opened-following" class="order-open shadow" style="display: none;">
 				<div class="circle-sh">
 					<div class="head-photo-sh head-photo-size" style="background-color:var(--fColor);">
 						<svg style="color:white;" class="icon-star" aria-hidden="true" alt="关注的图标">
@@ -84,26 +158,24 @@
 				</div>
 				<div class="word-sh">我的关注</div>
 				<!--文字部分-->
-				<span class="span-right">
-						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
-							<use xlink:href="#icon-shousuo"></use>
-						</svg>
-				</span>
+					<span class="span-right" onclick="changeFollowing()">
+							<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+								<use xlink:href="#icon-shousuo"></use>
+							</svg>
+					</span>
 				<div class="inner-order-dialog-box">
 					<div class="following_div">
 						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
-						张三
+						<p class="smaller-word name-position">张三</p>
 					</div>
 					<div class="following_div">
 						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
-						李四
+						<p class="smaller-word name-position">李三</p>
 					</div>
 					<div class="following_div">
 						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
-						王二麻
+						<p class="smaller-word name-position">宋三</p>
 					</div>
-				</div>
-
 				</div>
 			</div>
 		</div>
@@ -144,12 +216,6 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			function openOrder() {
-				a = document.getElementsById("order_icon");
-				a.style.fill = red;
-			}
-		</script>
 	</body>
 
 </html>
