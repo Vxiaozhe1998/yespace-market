@@ -143,3 +143,113 @@ function liuup(elmnt){
 	vliu.style.display = "none";
 	yyliu.style.color = 'var(--sColor)';
 }
+/*判断输入框是否为空以确定发布按钮是否出现*/
+function liuinput(ojb){art(123);
+	var fbl = document.getElementById('fabu-liu');
+	var xzl = document.getElementById('xinzeng-liu');
+	if(document.getElementById(obj).calue.length !==0){
+		xzl.style.display = "none";
+		fbl.style.display = "";
+		
+	}
+};
+//展开和收缩 我的订单 我的发布 我的关注
+var order=false;
+var release=false;
+var following=false;
+//改变我的订单 状态
+function changeOrder(){
+	var openOrder = document.getElementById("opened-order");
+	var closeOrder = document.getElementById("closed-order");
+	var openRelease = document.getElementById("opened-release");
+	var closeRelease = document.getElementById("closed-release");
+	var openFollowing = document.getElementById("opened-following");
+	var closeFollowing = document.getElementById("closed-following");
+	if (order) {
+		closeOrder.style.display="";
+		openOrder.style.display= "none";
+		order = false;
+	}else{
+		closeOrder.style.display="none";
+		openOrder.style.display="";
+		order = true;
+		closeRelease.style.display="";
+		openRelease.style.display= "none";
+		release = false;
+		closeFollowing.style.display="";
+		openFollowing.style.display= "none";
+		following = false;
+	}
+}
+//改变我的发布状态
+function changeRelease(){
+	var openOrder = document.getElementById("opened-order");
+	var closeOrder = document.getElementById("closed-order");
+	var openRelease = document.getElementById("opened-release");
+	var closeRelease = document.getElementById("closed-release");
+	var openFollowing = document.getElementById("opened-following");
+	var closeFollowing = document.getElementById("closed-following");
+	if (release) {
+		closeRelease.style.display="";
+		openRelease.style.display= "none";
+		release = false;
+	}else{
+		closeRelease.style.display="none";
+		openRelease.style.display="";
+		release = true;
+		closeOrder.style.display="";
+		openOrder.style.display= "none";
+		order = false;
+		closeFollowing.style.display="";
+		openFollowing.style.display= "none";
+		following = false;
+	}
+}
+//改变 我的关注状态
+function changeFollowing(){
+	var openOrder = document.getElementById("opened-order");
+	var closeOrder = document.getElementById("closed-order");
+	var openRelease = document.getElementById("opened-release");
+	var closeRelease = document.getElementById("closed-release");
+	var openFollowing = document.getElementById("opened-following");
+	var closeFollowing = document.getElementById("closed-following");
+	if (following) {
+		closeFollowing.style.display="";
+		openFollowing.style.display= "none";
+		following = false;
+	}else{
+		closeFollowing.style.display="none";
+		openFollowing.style.display="";
+		following = true;
+		closeOrder.style.display="";
+		openOrder.style.display= "none";
+		order = false;
+		closeRelease.style.display="";
+		openRelease.style.display= "none";
+		release = false;
+	}
+}
+//点击物品checkbox 详情 下架 改价 button颜色改变
+//function changeButtonColor(){
+//	var checkBox=document.getElementsByClassName("test-checkbox");
+//	var buttonTest=document.getElementsByClassName("button-test");
+//	if(checkBox.checked == true){
+//		buttonTest.style.backgroundColor:var(--fColor);
+//	}
+//}
+//展开搜索界面（利用符号）
+ var zhankai=false;
+ function changezhankai(){
+	 alert(123);
+ 	var openzhankai = document.getElementById("zhankaibefore");
+ 	var closezhankai = document.getElementById("zhankaiafter");
+ 	if (zhankai) {
+ 		closezhankai.style.display="none";
+ 		openzhankai.style.display= "";
+ 		zhankai = false;
+ 	}else{
+ 		closezhankai.style.display="";
+ 		openzhankai.style.display="none";
+ 		zhankai = true;
+ 	}
+ }

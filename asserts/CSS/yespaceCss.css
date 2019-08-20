@@ -729,7 +729,7 @@ input[type=range]::-webkit-slider-thumb {
 	margin-right: 8vw;
 	margin-bottom: 18vw;
 }
-
+/*未点开始时的样式*/
 .dialog-box-sh {
 	border: 0 solid black;
 	width: 100%;
@@ -739,27 +739,45 @@ input[type=range]::-webkit-slider-thumb {
 	display: inline-block;
 	position: relative;
 }
-
-.order-open {
+/*展开后外部div样式*/
+.order-open,
+.release-open{
 	border: 0 solid black;
 	width: 100%;
-	height: 500px;
 	border-radius: 75px;
 	margin-top: 100px;
 	display: inline-block;
 	position: relative;
 }
-
-.inner-order-dialog-box {
+.order-open {
+	height: 500px;
+}
+.release-open{
+}
+/*我的订单和我的关注展开后内部div样式*/
+.inner-order-box,
+.inner-release-box{
 	border: 0 solid black;
 	border-radius: 75px;
-	position: absolute;
-	height: 240px;
-	width: auto;
-	left: 10%;
-	bottom: 20%;
 }
-
+.inner-order-box {
+	left: 10%;
+	width: auto;
+	height: 240px;
+	bottom: 20%;
+	position: absolute;
+}
+/*我的发布展开后内部div的样式*/
+.inner-release-box{
+	position:relative;
+	margin: 13vw 8vw 8vw 8vw;
+	/*上右下左*/
+}
+.inner-release-box::after{
+	content: "";
+	display: block;
+	clear: both;
+}
 .circle-sh {
 	width: 150px;
 	height: 150px;
@@ -822,7 +840,7 @@ input[type=range]::-webkit-slider-thumb {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 }
 
 .following_div {
@@ -870,7 +888,7 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 	/*margin: 0.5rem;*/
 }
-
+/*设置radio点击后的变化*/
 .radio input[type="radio"] {
 	position: absolute;
 	opacity: 0;
@@ -929,7 +947,9 @@ input[type=range]::-webkit-slider-thumb {
 	margin-left: 40px;
 	/*点击button后不出现边框*/
 }
-
+.button_inner_padding{
+	padding-left: 0px 20px;
+}
 .button_sure:hover {
 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -975,17 +995,37 @@ a:visited {
 	letter-spacing: 2px;
 	color: var(--sColor);
 }
-
-.item-framework {
-	position: relative;
-	top: 2vw;
-}
-
-/*.release-item::after{
+/*清除浮动元素 否则ul内的首行缩进*/
+.item-framework::before{
 	content: "";
 	display: block;
 	clear: both;
-}*/
+}
+/*发布物品ul的框架*/
+.item-framework {
+	position: relative;
+	margin:2vw 5vw;
+}
+.name-position{
+	margin-left:40px;
+}
+.button-line{
+	position: relative;
+	margin-bottom:20px;
+	margin-left:50px;
+	margin-right:50px;
+}
+.button-line::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.test-checkbox{
+	
+}
+.button-test{
+	
+}
 /* 假如顶栏都使用了Fixed定位请引用该属性 */
 .bot-nav-fixed-body {
 	margin-bottom: 18vw;
