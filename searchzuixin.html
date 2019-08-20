@@ -53,7 +53,7 @@
 							<ul id="menu1">
 								<div class="row">
 									<div class="col-3 " align="center">
-										<li><a href="#" id="sortout" style="font-size: 3.8vw;">类别&nbsp;&nbsp;&nbsp;▼</a>
+										<li><a href="#" id="sortout" style="font-size: 3.8vw;padding: 1vw;">类别&nbsp;&nbsp;&nbsp;▼</a>
 											<ul id="menu2">
 												<li><a href="#">无</a></li>
 												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→</a>
@@ -102,27 +102,19 @@
 										</li>
 									</div>
 									<div class="col-3 " align="center">
-										<li><a href="#" id="lowers" style="font-size: 3.8vw;">折旧度▼</a>
-											<ul style="padding-left: 0;">
-												<li><a href="#">九成</a></li>
-												<li><a href="#">八成</a></li>
-												<li><a href="#">七成</a></li>
-												<li><a href="#">六成</a></li>
-												<li><a href="#">五成</a></li>
-												<li><a href="#">四成</a></li>
-												<li><a href="#">三成</a></li>
-												<li><a href="#">二成</a></li>
-												<li><a href="#" id="botm">一成</a></li>
-											</ul>
+										<li><a href="#" style="font-size: 3.8vw;padding: 1vw;"><input type="number" style="border-style: none;width: 80%; height: auto;color:#4C51B1;"
+												 name="position" id="positionfu" placeholder="折旧度" style="number-align: center;" oninput="if(value.length>2)value=value.slice(0,2)"
+												 onkeyup="inputfu('positionfu')" /><span id="baifenhao" style="color: var(--sColor);">%</span></a>
 										</li>
+										
 									</div>
 									<div class="col-3 " align="center">
-										<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
-												 name="position" id="position" placeholder="最低价" /></a></li>
+										<li><a href="#" style="font-size: 3.8vw;padding: 1vw;"><input type="text" style="border-style: none;width: 70%; height: auto;color:#4C51B1;"
+												 name="position" id="position" placeholder="最低价" maxlength="5"/></a></li>
 									</div>
 									<div class="col-3 " align="center">
-										<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
-												 name="position" id="position" placeholder="最高价" /></a></li>
+										<li><a href="#" style="font-size: 3.8vw;padding: 1vw;"><input type="text" style="border-style: none;width: 70%; height: auto;color:#4C51B1;"
+												 name="position" id="position" placeholder="最高价" maxlength="5" /></a></li>
 										</li>
 									</div>
 								</div>
@@ -216,25 +208,84 @@
 							</div>
 						</div>
 						<div class="col-3" align="left" id="left" onclick="" style="color: var(--fColor);margin-top: 30px;">
-							<div  class="rifhtfu" >
-							<br />
-							9分钟前
-							<div class="miaoshu" align="left" style="color: #000;font-size:25px;">
-								<br /><br />
-								惠普笔记本-6成新-￥3320
+							<div class="rifhtfu">
 								<br />
-								戴尔笔记本-7成新-￥8850
-							</div>
-							<div>
-								<a href="#" style="color: var(--fColor);">
+								9分钟前
+								<div class="miaoshu" align="left" style="color: #000;font-size:25px;">
+									<br /><br />
+									惠普笔记本-6成新-￥3320
 									<br />
-									设备
-								</a>
+									戴尔笔记本-7成新-￥8850
+								</div>
+								<div>
+									<a href="#" style="color: var(--fColor);">
+										<br />
+										设备
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="footer-bot">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-2" align="center" id="home" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;">
+								<use xlink:href="#icon-zhuye"></use>
+							</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
+						</div>
+						<div class="col-2" align="center" id="search" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;">
+								<use xlink:href="#icon-sousuo"></use>
+							</svg>
+							<!--<a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
+						</div>
+						<div class="col-4"></div>
+						<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish"
+						 onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+								<use xlink:href="#icon-xinzeng"></use>
+							</svg>
+						</div>
+						<div class="col-2" align="center" id="message" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+								<use xlink:href="#icon-xiaoxi"></use>
+							</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
+						</div>
+						<div class="col-2" align="center" id="mine" onclick="">
+							<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+								<use xlink:href="#icon-wode"></use>
+							</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- JS区域 -->
+			<script>
+				function inputfu(obj) {
+					// alert(123);
+					var bfh = document.getElementById('baifenhao');
+					
+					if (document.getElementById(obj).value.length !== 0) {
+						bfh.style.color = 'var(--fColor)';
+						
+					} else {
+						bfh.style.color='var(--sColor)';
+					}
+				};
+			</script>
+			<style>
+			    input::-webkit-outer-spin-button,
+			    input::-webkit-inner-spin-button {
+			        -webkit-appearance: none;
+			    }
+			    input[type="number"]{
+			        -moz-appearance: textfield;
+			    }
+			</style>
+
 	</body>
+
 </html>

@@ -10,12 +10,36 @@
 		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
 		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_cayoehnv9o.js"></script>
 		<!-- <base target="_blank"> -->
+		<!-- JS库 -->
+		<script src="asserts/js/Yespacejs.js" type="text/javascript"></script>
+		<script src="asserts/js/jquery.min.js" type="text/javascript"></script>
+		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			startList = function() {
+				if (document.all && document.getElementById) {
+					navRoot = document.getElementById("menu2");
+					var allli = navRoot.getElementsByTagName("li")
+					for (i = 0; i < allli.length; i++) {
+						node = allli[i];
+						node.onmouseover = function() {
+							this.className += " current";
+						}
+						node.onmouseout = function() {
+							this.className = this.className.replace(" current", "");
+						}
+					}
+				}
+			}
+			window.onload = startList;
+		</script>
 
 
 	</head>
 
 	<body>
 		<!-- 搜索框 -->
+		<div id="zhankaibefore" >
 		<nav class="searcontent shadow sticky-top search" style="width: 100%;">
 			<div class="container-fluid">
 				<div class="row" >
@@ -24,17 +48,17 @@
 					<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
 							<use xlink:href="#icon-sousuo"></use>
 						</svg></div>
-					<div class="col-2"><a href="searchsx.html">
+					<div class="col-2"id="zhankai" onclick="changezhankai()">
 							<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
 								<use xlink:href="#icon-zhankai"></use>
 							</svg>
-						</a></div>
+					</div>
 				</div>
 			</div>
 		</nav>
-
-		<table style="width: 100%;" align="center">
-			<tr>
+		
+		<table style="width: 100%;" align="center" >
+			<tr >
 				<td>
 					<div class="history">
 						<ul>
@@ -54,7 +78,7 @@
 					</div>
 				</td>
 			</tr>
-			<tr>
+			<tr >
 				<td>
 					<div class="tophot">
 						<!-- 最高搜索热度 -->
@@ -86,8 +110,116 @@
 					</div>
 				</td>
 			</tr>
-
 		</table>
+		</div>
+		<div id="zhankaiafter" style="display: none;">
+		<nav class="shadow sticky-top" id="zhankaiafter" style="background-color: white;position: fixed;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-8" align="center"><input type="text" class="index-zhe shadow" style="padding-left: 2vw;margin: 0;font-size: 6vw;margin-top:2vw;margin-bottom: 2vw;border-style: none;width: 100%; height: auto;"
+						 name="position" id="position" placeholder="你要找点儿啥呢？" /></div>
+					<div class="col-2" align="center"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
+							<use xlink:href="#icon-sousuo"></use>
+						</svg></div>
+					<div class="col-2" align="center"><a href="searchsx.html">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
+								<use xlink:href="#icon-zhankai"></use>
+							</svg>
+						</a></div>
+					<div class="sxzl" id="menus" >
+						<div class="sxzl">
+							<ul id="menu1">
+								<div class="row">
+									<div class="col-3 " align="center">
+										<li><a href="#" id="sortout" style="font-size: 3.8vw;">类别&nbsp;&nbsp;&nbsp;▼</a>
+											<ul id="menu2">
+												<li><a href="#">无</a></li>
+												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→</a>
+													<ul style="padding-left: 0;">
+														<li><a href="#">文具</a></li>
+														<li><a href="#">课本</a></li>
+														<li><a href="#">习题</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">数码&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">电脑</a></li>
+														<li><a href="#">手机</a></li>
+														<li><a href="#">配饰</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">日用&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">洗护</a></li>
+														<li><a href="#">清洁</a></li>
+														<li><a href="#">护理</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">运动&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">运动服饰</a></li>
+														<li><a href="#">运动器械</a></li>
+														<li><a href="#">运动装备</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">服饰&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">女装</a></li>
+														<li><a href="#">男装</a></li>
+														<li><a href="#">童装</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#" id="food">食品&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">坚果</a></li>
+														<li><a href="#">熟食</a></li>
+														<li><a href="#">饮品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</div>
+									<div class="col-3 " align="center">
+										<li><a href="#" style="font-size: 3.8vw;padding-left: 1vw;"><input type="number" style="border-style: none;width: 70%; height: auto;color:#4C51B1;"
+												 name="position" id="positionfu" placeholder="折旧度"  oninput="if(value.length>2)value=value.slice(0,2)"
+												 onkeyup="inputfu('positionfu')" /><span id="baifenhao" style="color: var(--sColor);">%</span></a>
+										</li>
+										
+									</div>
+									<div class="col-3 " align="center">
+										<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
+						 name="position" id="position" placeholder="最低价" /></a></li> 
+									</div>
+									<div class="col-3 " align="center">
+										<li><li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
+						 name="position" id="position" placeholder="最高价" /></a></li>
+										</li>
+									</div>
+								</div>
+							</ul>
+						</div>
+						<div class="suoxiao" align="right">
+							<a href="search.html">
+								<svg class="icon" aria-hidden="true" style="color:#4C51B1;opacity:0.8; font-size:8vw;">
+									<use xlink:href="#icon-shousuo"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="bot-nav-fixed-body"></div>
+		<div class="logo" style="justify-content: center;width: 100%;" align="center">
+			<!-- logo -->
+			<svg class="icon" aria-hidden="true" style="color:#666666;opacity:0.2; font-size:48vw;">
+				<use xlink:href="#icon-logo"></use>
+				<!--添加图库的图片-->
+			</svg>
+		</div>
+		</div>
+	</div>
+		<!-- 底栏 -->
 		<div class="footer-bot">
 			<div class="container-fluid" >
 				<div class="row" >
@@ -120,6 +252,46 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			// 展开后变成有菜单的界面
+			var zhankai=false;
+			function changezhankai(){
+				 // alert(123);
+				var openzhankai = document.getElementById("zhankaibefore");
+				var closezhankai = document.getElementById("zhankaiafter");
+				if (zhankai) {
+					closezhankai.style.display="none";
+					openzhankai.style.display= "";
+					zhankai = false;
+				}else{
+					closezhankai.style.display="";
+					openzhankai.style.display="none";
+					zhankai = true;
+				}
+			}
+			// 对折旧度进行编辑
+			function inputfu(obj) {
+				// alert(123);
+				var bfh = document.getElementById('baifenhao');
+				
+				if (document.getElementById(obj).value.length !== 0) {
+					bfh.style.color = 'var(--fColor)';
+					
+				} else {
+					bfh.style.color='var(--sColor)';
+				}
+			};
+		</script>
+		<style>
+			/* 去掉 加减条 */
+		    input::-webkit-outer-spin-button,
+		    input::-webkit-inner-spin-button {
+		        -webkit-appearance: none;
+		    }
+		    input[type="number"]{
+		        -moz-appearance: textfield;
+		    }
+		</style>
 
 
 
