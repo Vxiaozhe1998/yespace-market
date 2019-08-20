@@ -229,3 +229,19 @@ function changeFollowing(){
 		release = false;
 	}
 }
+//展开搜索界面（利用符号）
+ var zhankai=false;
+ function changezhankai(){
+	 alert(123);
+ 	var openzhankai = document.getElementById("zhankaibefore");
+ 	var closezhankai = document.getElementById("zhankaiafter");
+ 	if (zhankai) {
+ 		closezhankai.style.display="none";
+ 		openzhankai.style.display= "";
+ 		zhankai = false;
+ 	}else{
+ 		closezhankai.style.display="";
+ 		openzhankai.style.display="none";
+ 		zhankai = true;
+ 	}
+ }
