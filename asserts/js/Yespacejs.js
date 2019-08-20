@@ -143,13 +143,3 @@ function liuup(elmnt){
 	vliu.style.display = "none";
 	yyliu.style.color = 'var(--sColor)';
 }
-/*判断输入框是否为空以确定发布按钮是否出现*/
-function liuinput(ojb){art(123);
-	var fbl = document.getElementById('fabu-liu');
-	var xzl = document.getElementById('xinzeng-liu');
-	if(document.getElementById(obj).calue.length !==0){
-		xzl.style.display = "none";
-		fbl.style.display = "";
-		
-	}
-};

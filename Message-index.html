@@ -23,49 +23,56 @@
 				消息通知
 			</div>
 		</nav>
-		<div class="container-index-liu">
-			<div>
-				<div class="list-header" style="background-color:#4C51B11E;border: 0px solid #4C51B11E;">
+		<!-- 除顶栏外的 -->
+		<div class="container-index-liu" id="container-index-liu">
+				<!-- 置顶通知消息 -->
+				<div class="list-header-liu" id="list-top-liu" style="background-color:#4C51B11E;border: 0px solid #4C51B11E;">
+					<!-- 铃铛头像 -->
 					<svg class="icon" aria-hidden="true" style="font-size: 90px;margin: 8px 30px;">
 						<use xlink:href="#icon-iconbell"></use>
 					</svg>
-					<span>
-						您的交易已完成
-					</span>
+					<!-- 文本 -->
+					<span class="text-liu" id="top-text-liu">您的交易已完成</span>
 				</div>
-				<ul class="ul-liu">
-					<li class="list-item">
+				<!-- 非置顶消息 -->
+				<ul class="ul-liu" id="ul-liu">
+					<!-- 一条消息 -->
+					<li class="list-item" id="list-item1">
+						<!-- 头像 -->
 						<div class="circle" style="float: left;width: 90px;height: 90px;margin: 8px 30px;background-color:rgba(0,0,0,0);">
 							<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
 						</div>
-						<span>你觉得这个怎么样</span>
+						<!-- 文本 -->
+						<span class="text-liu" id="list-item-text1">你觉得这个怎么样</span>
 					</li>
-					<li class="list-item">
+					<!-- 一条消息 -->
+					<li class="list-item" id="list-item2">
+						<!-- 头像 -->
 						<div class="circle" style="float: left;width: 90px;height: 90px;margin: 8px 30px;background-color:rgba(0,0,0,0);">
 							<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
 						</div>
-						<span>你喜欢就下单吧</span>
+						<!-- 文本 -->
+						<span class="text-liu" id="list-item-text2">你喜欢就下单吧</span>
 					</li>
-					<li class="list-item">
+					<li class="list-item" id="list-item3">
 						<div class="circle" style="float: left;width: 90px;height: 90px;margin: 8px 30px;background-color:rgba(0,0,0,0);">
 							<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
 						</div>
-						<span>明天行吗</span>
+						<span class="text-liu" id="list-item-text3">明天行吗</span>
 					</li>
-					<li class="list-item">
+					<li class="list-item" id="list-item4">
 						<div class="circle" style="float: left;width: 90px;height: 90px;margin: 8px 30px;background-color:rgba(0,0,0,0);">
 							<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
 						</div>
-						<span>[图片]</span>
+						<span class="text-liu" id="list-item-text4">[图片]</span>
 					</li>
-					<li class="list-item">
+					<li class="list-item" id="list-item5">
 						<div class="circle" style="float: left;width: 90px;height: 90px;margin: 8px 30px;background-color:rgba(0,0,0,0);">
 							<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
 						</div>
-						<span>[语音]</span>
+						<span class="text-liu" id="list-item-text5">[语音]</span>
 					</li>
 				</ul>
-			</div>
 		</div>
 	<!-- 固定底栏 -->
 	<div class="footer-bot">
