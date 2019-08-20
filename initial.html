@@ -33,17 +33,17 @@
 				</span>
 			</div>
 			<!--我的订单-->
-				<div id="closed-order" class="dialog-box-sh shadow" id="order" onclick="changeOrder()">
-					<div class="circle-sh">
-						<div class="head-photo-sh">
-							<svg id="order_icon" class="icon-sh" aria-hidden="true" alt="订单的图标">
-								<use xlink:href="#icon-wodedingdan"></use>
-							</svg>
-						</div>
+			<div id="closed-order" class="dialog-box-sh shadow" id="order" onclick="changeOrder()">
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<svg id="order_icon" class="icon-sh" aria-hidden="true" alt="订单的图标">
+							<use xlink:href="#icon-wodedingdan"></use>
+						</svg>
 					</div>
-					<div class="word-sh">我的订单</div>
-					<!--文字部分-->
 				</div>
+				<div class="word-sh">我的订单</div>
+				<!--文字部分-->
+			</div>
 			<!--展开我的订单-->
 			<div id="opened-order" class="order-open shadow" style="display:none;">
 				<!--左上方图片-->
@@ -57,13 +57,13 @@
 				<!--文字部分-->
 				<div style="color:var(--fColor);" class="word-sh">我的订单</div>
 				<!--右侧收起图标-->
-					<span class="span-right" onclick="changeOrder()">
+				<span class="span-right" onclick="changeOrder()">
 						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
 							<use xlink:href="#icon-shousuo"></use>
 						</svg>
 					</span>
 				<!--内部div-->
-				<div class="inner-order-dialog-box shadow">
+				<div class="inner-order-box shadow">
 					<div class="circle-sh">
 						<div class="head-photo-sh">
 							<img class="id_img-sh" src="asserts/img/miemie.jpg" alt="头像">
@@ -72,31 +72,31 @@
 					<div class="radio">
 						<input id="radio-1" name="order" type="radio" checked="checked">
 						<label for="radio-1" class="radio-label">当面交易</label> &nbsp;&nbsp;
-						<input id="radio-2" name="order" type="radio" onclick="radioFuction()">
+						<input id="radio-2" name="order" type="radio" disabled="disabled">
 						<label for="radio-2" class="radio-label">平台交易</label>
 					</div>
 
 					<p style="color:var(--fColor);" class="smaller-word order-second-line" id="chose-p">您选择当面交易</p>
-					<div style="color: var(--sColor);" class="smaller-word order-third-line">
+					<div id="order-item" style="color: var(--sColor);" class="smaller-word order-third-line">
 						惠普笔记本-6成新-¥3333
-						<button class="button_sure">确认收货</button>
+						<button class="button_sure" onclick="confirmGoods()">确认收货</button>
 					</div>
 				</div>
 			</div>
 			<!--我发布的-->
-				<div id="closed-release" class="dialog-box-sh shadow" onclick="changeRelease()">
-					<div class="circle-sh">
-						<div class="head-photo-sh">
-							<svg class="icon-sh" aria-hidden="true" alt="发布的图标">
-								<use xlink:href="#icon-fabu"></use>
-							</svg>
-						</div>
+			<div id="closed-release" class="dialog-box-sh shadow" onclick="changeRelease()">
+				<div class="circle-sh">
+					<div class="head-photo-sh">
+						<svg class="icon-sh" aria-hidden="true" alt="发布的图标">
+							<use xlink:href="#icon-fabu"></use>
+						</svg>
 					</div>
-					<div class="word-sh">我发布的</div>
-					<!--文字部分-->
+				</div>
+				<div class="word-sh">我发布的</div>
+				<!--文字部分-->
 			</div>
 			<!--展开我发布的部分-->
-			<div id="opened-release" class="order-open shadow" style="display:none;">
+			<div id="opened-release" class="release-open shadow" style="display:none;">
 				<!--左上方图片-->
 				<div class="circle-sh">
 					<div class="head-photo-sh">
@@ -108,14 +108,15 @@
 				<!--文字部分-->
 				<div style="color:var(--fColor);" class="word-sh">我发布的</div>
 				<!--右侧收起图标-->
-					<span class="span-right" onclick="changeRelease()">
+				<span class="span-right" onclick="changeRelease()">
 						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
 							<use xlink:href="#icon-shousuo"></use>
 						</svg>
 					</span>
 				<!--内部div-->
 				<div class="inner-release-box shadow">
-					<ul class="item-framework">
+					<p></p>
+					<ul class="item-framework" style="list-style-type:none; padding-left:0px;">
 						<li class="item-font" style="margin-top:20px;">
 							<input id="item1" type="checkbox" name="物品" class="custom-checkbox">惠普笔记本-6成新-¥3200
 						</li>
@@ -129,9 +130,31 @@
 					<!--<div class="release-item">
 					</div>-->
 					<div class="smaller-word button-line">
-					<button style="padding-left: 0px 30px;" class="button_sure">详情</button>
-					<button style="padding-left: 0px 30px;" class="button_sure">下架</button>
-					<button style="padding-left: 0px 30px;" class="button_sure">改价</button>
+						<button style="padding-left: 0px 30px;" class="button_sure">详情</button>
+						<button style="padding-left: 0px 30px;" class="button_sure" onclick="open_instruction("off-shelves")">下架</button>
+						<button style="padding-left: 0px 30px;" class="button_sure">改价</button>
+					</div>
+					<!--提示弹出框-->
+					<div class="father" style="z-index: 9999; display: none;" id="off-shelves">
+						<div style="background: white;" class="son float-instruction shadow-irreguler">
+							<div style="width: 100%;height: 0 auto; background-color: var(--fColor);">
+								<div class="container-fluid" style="padding: 0rem;">
+									<div class="row" style="padding: 0rem;margin: 0;">
+										<div class="col-10" align="center" style="padding:0rem;color: white;font-weight: bold;font-size: 4vw;">
+											在此添加标题
+										</div>
+										<div class="col-2" align="right" style="padding-right: 3vw">
+											<svg class="icon" aria-hidden="true" style="font-size: 6vw;color: white;" onclick="close_instruction('在此添加ID')">
+												<use xlink:href="#icon-guanbi"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="height: 50%;width: 90%;margin-top: 6vw;" class="son box6 tip-css">
+								在此添加内容
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -158,12 +181,13 @@
 				</div>
 				<div class="word-sh">我的关注</div>
 				<!--文字部分-->
-					<span class="span-right" onclick="changeFollowing()">
+				<span class="span-right" onclick="changeFollowing()">
 							<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
 								<use xlink:href="#icon-shousuo"></use>
 							</svg>
 					</span>
-				<div class="inner-order-dialog-box">
+				<!--内部div-->
+				<div class="inner-order-box">
 					<div class="following_div">
 						<img class="following_img" src="asserts/img/miemie.jpg" alt="头像">
 						<p class="smaller-word name-position">张三</p>
@@ -216,6 +240,33 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			CSS.paintWorklet.addModule('asserts/js/Checkbox.js')
+			CSS.registerProperty({
+				name: "--bg-color",
+				syntax: "<color>",
+				initialValue: "#fff"
+			});
+			CSS.registerProperty({
+				name: "--border-color",
+				syntax: "<color>",
+				initialValue: "#fff"
+			});
+			CSS.registerProperty({
+				name: "--line-color",
+				syntax: "<color>",
+				initialValue: "#fff"
+			});
+			const changeIndeterminate = document.querySelector('#changeIndeterminate')
+			const checkbox = document.querySelectorAll('.custom-checkbox')[0]
+			const checkbox1 = document.querySelectorAll('.custom-checkbox')[1]
+			checkbox.indeterminate = true
+			checkbox1.indeterminate = true
+			changeIndeterminate.addEventListener('click', () => {
+				checkbox.indeterminate = !checkbox.indeterminate
+				checkbox1.indeterminate = !checkbox1.indeterminate
+			})
+		</script>
 	</body>
 
 </html>
