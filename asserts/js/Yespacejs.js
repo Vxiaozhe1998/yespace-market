@@ -143,3 +143,56 @@ function liuup(elmnt){
 	vliu.style.display = "none";
 	yyliu.style.color = 'var(--sColor)';
 }
+/*判断输入框是否为空以确定发布按钮是否出现*/
+function liuinput(ojb){art(123);
+	var fbl = document.getElementById('fabu-liu');
+	var xzl = document.getElementById('xinzeng-liu');
+	if(document.getElementById(obj).calue.length !==0){
+		xzl.style.display = "none";
+		fbl.style.display = "";
+		
+	}
+};
+//展开和收缩 我的订单 我的发布 我的关注
+var following = false;
+var order=false;
+var release=false;
+function changeFollowing(){
+	var openFollowing = document.getElementById("opened-following");
+	var closeFollowing = document.getElementById("closed-following");
+	if (following) {
+		closeFollowing.style.display="";
+		openFollowing.style.display= "none";
+		following = false;
+	}else{
+		closeFollowing.style.display="none";
+		openFollowing.style.display="";
+		following = true;
+	}
+}
+function changeOrder(){
+	var openOrder = document.getElementById("opened-order");
+	var closeOrder = document.getElementById("closed-order");
+	if (order) {
+		closeOrder.style.display="";
+		openOrder.style.display= "none";
+		order = false;
+	}else{
+		closeOrder.style.display="none";
+		openOrder.style.display="";
+		order = true;
+	}
+}
+function changeRelease(){
+	var openRelease = document.getElementById("opened-release");
+	var closeRelease = document.getElementById("closed-release");
+	if (release) {
+		closeRelease.style.display="";
+		openRelease.style.display= "none";
+		release = false;
+	}else{
+		closeRelease.style.display="none";
+		openRelease.style.display="";
+		release = true;
+	}
+}
