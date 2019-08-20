@@ -3,9 +3,11 @@
 	--fColor: #4C51B1;
 	--sColor: #6D6D6D;
 }
-.btn-zhe{
+
+.btn-zhe {
 	background-color: var(--fColor);
 }
+
 /* 使用方法var(--fColor); */
 .footer-zhe {
 	position: sticky;
@@ -41,7 +43,8 @@
 
 /* 加载中默认颜色 */
 .progress-zhe {
-	fill: var(--fColor);/*在此修改颜色*/
+	fill: var(--fColor);
+	/*在此修改颜色*/
 	width: 100%;
 }
 
@@ -185,11 +188,12 @@ input[type='checkbox'] {
 	overflow: hidden;
 }
 
-.hide-zhe{
-    visibility: hidden;
-    position: absolute;
-    z-index: -100;
-  }
+.hide-zhe {
+	visibility: hidden;
+	position: absolute;
+	z-index: -100;
+}
+
 /* Iconfont矢量图标CSS样式 */
 .icon {
 	width: 1em;
@@ -238,13 +242,14 @@ input[type='checkbox'] {
 	color: white;
 }
 
-.text-liu{
+.text-liu {
 	line-height: 125px;
 	font-weight: bold;
 	font-size: 40px;
 	margin-left: 20px;
 	vertical-align: 20px;
 }
+
 /* 通知界面Message-inform */
 .container-inform-liu {
 	border: 0 solid black;
@@ -350,6 +355,32 @@ input[type='checkbox'] {
 	border-radius: 100px;
 	display: inline-block;
 	padding: 20px;
+}
+
+/* 地点Address */
+.Address-liu {
+	float: left;
+	margin: 2.5vw 5vw 2.5vw 11vw;
+	font-size: 5vw;
+	line-height: 6vw;
+	position: relative;
+	color: #fff;
+	/* font-weight: 900; */
+}
+
+.address-icon-liu {
+	color: white;
+	font-size: 8vw;
+	margin: 2vw;
+}
+
+.button-gaoxiao-liu {
+	position: relative;
+	top: 40px;
+	background: white;
+	color: var(--fColor);
+	border-radius: 100px;
+	padding: 10px 20px;
 }
 
 /* 搜索页面 这里是傅文雅的CSS!*/
@@ -556,7 +587,7 @@ input[type=range]::-webkit-slider-thumb {
 	display: none;
 	border-bottom: none;
 	position: relative;
-/* 	width: 100px; */
+	/* 	width: 100px; */
 }
 
 #menus ul li:hover ul li ul {
@@ -573,10 +604,10 @@ input[type=range]::-webkit-slider-thumb {
 /* .progress_bar{ width: 0; height: 10px; border-radius: 5px;background: #5FB878;position: absolute; top:1px;} position: absolute;
 .progress_btn{width: 20px; height: 20px; border-radius: 5px; position: absolute;background:#fff; left: 20px; margin-left: -10px; top:-5px; cursor: pointer;border:1px #ddd solid;box-sizing:border-box;}
 .progress_btn:hover{border-color:#F7B824;} */
- ::-webkit-input-placeholder { 
- 				color: #4C51B1;
- 			}
- 
+::-webkit-input-placeholder {
+	color: #4C51B1;
+}
+
 /* 搜索结果为电脑展开前的界面*/
 .centerarea {
 	border: 0.1vw solid #ccc;
@@ -635,7 +666,7 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 	float: left;
 	left: 10%;
-	margin:auto;
+	margin: auto;
 	width: 80%;
 	min-height: 1100px;
 	/* height: 1100px; */
@@ -739,27 +770,30 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 	float: left;
 }
-.icon-star{
+
+.icon-star {
 	width: 100px;
 	height: 100px;
 	fill: currentColor;
-	background-color:transparent;
+	background-color: transparent;
 	background-size: 100% 100%;
-	border-radius:50%;
-	margin-top:15px;
-	margin-left:15px;
+	border-radius: 50%;
+	margin-top: 15px;
+	margin-left: 15px;
 }
+
 .head-photo-sh {
 	position: absolute;
 	float: left;
 	z-index: 1;
 }
-.head-photo-size{
-	width:131px;
-	height:131px;
+
+.head-photo-size {
+	width: 131px;
+	height: 131px;
 	background-color: black;
 	border-radius: 50%;
-	margin-top:9.5px;
+	margin-top: 9.5px;
 	margin-left: 9.5px;
 }
 
@@ -783,17 +817,20 @@ input[type=range]::-webkit-slider-thumb {
 	fill: currentColor;
 	border-radius: 50%;
 }
-.following_img{
-	width:150px;
-	height:150px;
-	border-radius:50%;
+
+.following_img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 	margin-left: 50px;
 }
-.following_div{
+
+.following_div {
 	float: left;
-	width:150px;
+	width: 150px;
 	margin-left: 50px;
 }
+
 .span-right {
 	position: absolute;
 	right: 7%;
@@ -925,29 +962,32 @@ a:visited {
 	display: block;
 	clear: both;
 }
+
 /*.checkbox-size{
 	width: 1.4em;
   	height: 1.4em;
 }*/
-.item-font{
+.item-font {
 	/*position:absolute;*/
 	font-size: 30px;
 	line-height: 50px;
 	font-weight: 900;
 	letter-spacing: 2px;
-	color:var(--sColor);
+	color: var(--sColor);
 }
-.item-framework{
+
+.item-framework {
 	position: relative;
 	top: 2vw;
 }
+
 /*.release-item::after{
 	content: "";
 	display: block;
 	clear: both;
 }*/
 /* 假如顶栏都使用了Fixed定位请引用该属性 */
-.bot-nav-fixed-body{
+.bot-nav-fixed-body {
 	margin-bottom: 18vw;
 	margin-top: 30vw;
 }
