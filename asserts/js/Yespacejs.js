@@ -229,6 +229,14 @@ function changeFollowing(){
 		release = false;
 	}
 }
+//点击物品checkbox 详情 下架 改价 button颜色改变
+//function changeButtonColor(){
+//	var checkBox=document.getElementsByClassName("test-checkbox");
+//	var buttonTest=document.getElementsByClassName("button-test");
+//	if(checkBox.checked == true){
+//		buttonTest.style.backgroundColor:var(--fColor);
+//	}
+//}
 //展开搜索界面（利用符号）
  var zhankai=false;
  function changezhankai(){
