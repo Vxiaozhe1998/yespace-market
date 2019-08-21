@@ -1024,6 +1024,12 @@ a:visited {
 	display: block;
 	clear: both;
 }
+.test-checkbox{
+	
+}
+.button-test{
+	
+}
 /* 假如顶栏都使用了Fixed定位请引用该属性 */
 .bot-nav-fixed-body {
 	margin-bottom: 18vw;
