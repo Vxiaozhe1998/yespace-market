@@ -35,11 +35,12 @@
 
 	</head>
 	<body>
-		<nav class="shadow sticky-top" style="background-color: white;position: fixed;">
+		<div id="afterdnzk">
+		<nav class="shadow sticky-top" style="background-color: white;position: fixed;" >
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-8" align="center"><input type="text" class="index-zhe shadow" style="padding-left: 2vw;margin: 0;font-size: 6vw;margin-top:2vw;margin-bottom: 2vw;border-style: none;width: 100%; height: auto;"
-						 name="position" id="position" placeholder="你要找点儿啥呢？" /></div>
+						 name="position" id="position" placeholder="在此搜索" /></div>
 					<div class="col-2" align="center"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
 							<use xlink:href="#icon-sousuo"></use>
 						</svg></div>
@@ -48,7 +49,7 @@
 								<use xlink:href="#icon-zhankai"></use>
 							</svg>
 						</a></div>
-					<div class="sxzl" id="menus">
+					<div class="sxzl" id="menus" >
 						<div class="sxzl">
 							<ul id="menu1">
 								<div class="row">
@@ -102,38 +103,28 @@
 										</li>
 									</div>
 									<div class="col-3 " align="center">
-										<li><a href="#" id="lowers" style="font-size: 3.8vw;">折旧度▼</a>
-											<ul style="padding-left: 0;">
-												<li><a href="#">九成</a></li>
-												<li><a href="#">八成</a></li>
-												<li><a href="#">七成</a></li>
-												<li><a href="#">六成</a></li>
-												<li><a href="#">五成</a></li>
-												<li><a href="#">四成</a></li>
-												<li><a href="#">三成</a></li>
-												<li><a href="#">二成</a></li>
-												<li><a href="#" id="botm">一成</a></li>
-											</ul>
+										<li><a href="#" style="font-size: 3.8vw;padding-left: 1vw;"><input type="number" style="border-style: none;width: 70%; height: auto;color:#4C51B1;"
+												 name="position" id="positionfu" placeholder="折旧度"  oninput="if(value.length>2)value=value.slice(0,2)"
+												 onkeyup="inputfu('positionfu')" /><span id="baifenhao" style="color: var(--sColor);">%</span></a>
 										</li>
 									</div>
 									<div class="col-3 " align="center">
-																			<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
-									name="position" id="position" placeholder="最低价" /></a></li> 
-																		</div>
-																		<div class="col-3 " align="center">
-																			<li><li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
-									name="position" id="position" placeholder="最高价" /></a></li>
-																			</li>
-																		</div>
+										<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
+						 name="position" id="position" placeholder="最低价" /></a></li> 
+									</div>
+									<div class="col-3 " align="center">
+										<li><li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
+						 name="position" id="position" placeholder="最高价"maxlength="5" /></a></li>
+										</li>‘
+									</div>
 								</div>
 							</ul>
 						</div>
-						<div class="suoxiao" align="right">
-							<a href="search.html">
+						<div class="suoxiao"id="suoxiaomain" align="right" onclick="changesuoxiaomain()" >
 								<svg class="icon" aria-hidden="true" style="color:#4C51B1;opacity:0.8; font-size:8vw;">
 									<use xlink:href="#icon-shousuo"></use>
 								</svg>
-							</a>
+							
 						</div>
 					</div>
 				</div>
@@ -262,6 +253,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 			<div class="footer-bot">
 				<div class="container-fluid">
