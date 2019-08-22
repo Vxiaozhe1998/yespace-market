@@ -361,7 +361,7 @@ input[type='checkbox'] {
 .Address-liu {
 	float: left;
 	margin: 2.5vw 5vw 2.5vw 11vw;
-	font-size: 5vw;
+	font-size: 4.5vw;
 	line-height: 6vw;
 	position: relative;
 	color: #fff;
@@ -376,12 +376,16 @@ input[type='checkbox'] {
 
 .button-gaoxiao-liu {
 	position: relative;
-	top: 40px;
+	top: 150px;
 	background: white;
 	color: var(--fColor);
 	border-radius: 100px;
-	padding: 10px 20px;
+	padding: 2vw 6vw;
+	font-size: 4.5vw;
+	font-weight: bold;
+	border-color:white;
 }
+
 
 /* 搜索页面 这里是傅文雅的CSS!*/
 ul,
