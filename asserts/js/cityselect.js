@@ -236,8 +236,8 @@ Vcity.CitySelector.prototype = {
         });
         div.className = 'citySelector';
         div.style.position = 'absolute';
-        div.style.left = inputPos.left + 'px';
-        div.style.top = inputPos.bottom + 5 + 'px';
+        // div.style.left = inputPos.left + 'px';
+        // div.style.top = inputPos.bottom + 5 + 'px';
         div.style.zIndex = 999999;
 
         // 判断是否IE6，如果是IE6需要添加iframe才能遮住SELECT框
