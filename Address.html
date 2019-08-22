@@ -12,6 +12,21 @@
 		<script src="asserts/js/jquery.min.js" type="text/javascript"></script>
 		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="http://at.alicdn.com/t/font_1306353_d5trwbvsb05.js"></script>
+		<script src="asserts/js/AllSchool.js"></script>
+
+		<style>
+		    select{
+		        width: 100%;
+		        /* border-radius: 5px; */
+		        border:0;
+		        letter-spacing: 5px;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				background: var(----fColor);
+				color: white;
+		    }
+		</style>
 	</head>
 	<body>
 		<!-- 顶栏 -->
@@ -32,37 +47,129 @@
 		</nav>
 
 		<div>
+			<!-- 省份定位 -->
+			<p>
+				<div id="cehngshi-liu" class="dialog-box shadow" style="margin: 70px 100px 20px 100px;">
+					<!-- 省份定位图标 -->
+					<div class="head-photo">
+						<svg class="icon bell-liu address-icon-liu" aria-hidden="true">
+							<use xlink:href="#icon-weizhi"></use>
+						</svg>
+					</div>
+					<!-- 省份定位文本 -->
+					<div class="Address-liu">
+						<div class="text"><select id="province" name="province"></select></div>
+					</div>
+				</div>
+			</p>
 			<!-- 城市定位 -->
 			<p>
-				<div id="cehngshi-liu" class="dialog-box shadow" style="margin: 70px 100px;">
-					<!-- 城市定位文本 -->
-					<div class="Address-liu">
-						定位中
-					</div>
+				<div id="cehngshi-liu" class="dialog-box shadow" style="margin: 20px 100px;">
 					<!-- 城市定位图标 -->
 					<div class="head-photo">
 						<svg class="icon bell-liu address-icon-liu" aria-hidden="true">
 							<use xlink:href="#icon-weizhi"></use>
 						</svg>
 					</div>
+					<!-- 城市定位文本 -->
+					<div class="Address-liu">
+						<div class="text"><select id="city" name="city"></select></div>
+					</div>
 				</div>
 			</p>
 			<!-- 高校定位 -->
 			<p>
 				<div id="gaoxiao-liu" class="dialog-box shadow" style="margin: 20px 100px;">
-					<!-- 高校定位文本 -->
-					<div class="Address-liu">
-						点击选择您的高校
-					</div>
 					<!-- 高校定位图标 -->
 					<div class="head-photo">
 						<svg class="icon bell-liu address-icon-liu" aria-hidden="true">
 							<use xlink:href="#icon-gaoxiao"></use>
 						</svg>
 					</div>
+					<!-- 高校定位文本 -->
+					<div class="Address-liu" >
+						<div class="text"><select id="school" name="school"></select></div>
+					</div>
 				</div>
 			</p>
 		</div>
+		   <script>
+		    window.onload=function(){
+		        var provinceArray = "";
+		        var provicneSelectStr = "";
+		        for(var i=0,len=province.length;i<len;i++){
+		            provinceArray = province[i];
+		            provicneSelectStr = provicneSelectStr + "<option value='"+provinceArray[0]+"'>"+provinceArray[1]+"</option>"
+		        }
+		        $("#province").html(provicneSelectStr);
+		
+		        var selectCity = $("#province").val();
+		        var citylist=city[selectCity];
+		        var cityArray = "";
+		        var citySelectStr = "";
+		        for(var i=0,len=citylist.length;i<len;i++){
+		            cityArray = citylist[i];
+		            citySelectStr = citySelectStr + "<option value='"+cityArray[0]+"'>"+cityArray[1]+"</option>"
+		        }
+		        $("#city").html(citySelectStr);
+		
+		        var selectschool = $("#city").val();
+		        var schoolUlStr = "";
+		        var schoolListStr = allschool[selectschool];
+		        for(var i=0,len=schoolListStr.length;i<len;i++){
+		            schoolUlStr = schoolUlStr + "<option >"+schoolListStr[i][2]+"</option>";
+		        }
+		        schoolUlStr = schoolUlStr + "<option value='999'>其它</option>";
+		        $("#school").html(schoolUlStr);
+		        //省切换事件
+		        $("#province").change(function(){
+		            var selectCity = $("#province").val();
+		            var citylist=city[selectCity];
+		            var cityArray = "";
+		            var citySelectStr = "";
+		            if(citylist!=null){
+		                for(var i=0,len=citylist.length;i<len;i++){
+		                    cityArray = citylist[i];
+		                    citySelectStr = citySelectStr + "<option value='"+cityArray[0]+"'>"+cityArray[1]+"</option>"
+		                }
+		            }
+		
+		            $("#city").html(citySelectStr);
+		            $("#school1").show();
+		            $("#school2").hide();
+		            var selectschool = $("#city").val();
+		            var schoolUlStr = "";
+		            var schoolListStr = allschool[selectschool];
+		            for(var i=0,len=schoolListStr.length;i<len;i++){
+		                schoolUlStr = schoolUlStr + "<option >"+schoolListStr[i][2]+"</option>";
+		            }
+		            schoolUlStr = schoolUlStr + "<option value='999'>其它</option>";
+		            $("#school").html(schoolUlStr);
+		        });
+		        //切换城市事件
+		        $("#city").change(function(){
+		            $("#school1").show();
+		            $("#school2").hide();
+		            var selectschool = $("#city").val();
+		            var schoolUlStr = "";
+		            var schoolListStr = allschool[selectschool];
+		            for(var i=0,len=schoolListStr.length;i<len;i++){
+		                schoolUlStr = schoolUlStr + "<option >"+schoolListStr[i][2]+"</option>";
+		            }
+		            schoolUlStr = schoolUlStr + "<option value='999'>其它</option>";
+		            $("#school").html(schoolUlStr);
+		        });
+		        $("#school").change(function(){
+		            if($("#school").val()=="999"){
+		                $("#school1").hide();
+		                $("#school2").show();
+		            }
+		        });
+		        $("#second").show();
+		        $("#restart").css("backgorund","url('assets/images/chongxintijiao.jpg') no-repeat");
+		    }
+		
+		</script>
 		<!-- 保存按钮 -->
 		<div align="center">
 			<input type="button" name="" id="button-gaoxiao-liu" value="保存" class="button-gaoxiao-liu shadow " />
