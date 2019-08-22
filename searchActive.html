@@ -1,10 +1,11 @@
+<!-- 这是 搜索界面为最新发布的界面 -->
 <!DOCTYPE html>
 <html>
 	<head>
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>搜索结果为电脑（带筛选框）</title>
+		<title>搜索🔍结果为最新发布</title>
 		<!-- CSS库 -->
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="asserts/plugins/bootstrap/css/bootstrap.min.css" />
@@ -35,7 +36,7 @@
 		</script>
 	</head>
 	<body>
-		<div id="beforesszk">
+		<div id="beforesszk"> 
 		<nav class="shadow sticky-top" style="background-color: white;position: fixed;">
 			<div class="container-fluid">
 				<div class="row">
@@ -132,7 +133,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="searchresult" style="margin-top: 30vw;">
+		<div class="active" style="margin-top: 30vw;">
 			<div class="container-fluid">
 				<div class="centerarea" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
 					<div class="row">
@@ -230,8 +231,106 @@
 				</div>
 			</div>
 			</div>
+			<div class="active" style="margin-top: 10vw;">
+				<div class="container-fluid">
+					<div class="centerarea" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
+						<div class="row">
+							<div class="col-2">
+								<div class="leftfu">
+									<ul>
+										<li>
+											<div class="circlefu">
+												<div class="head-photo">
+													<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
+												</div>
+			
+											</div>
+										</li>
+										<li>
+											<div class="guanzhu" style="margin-top: 10px;display: inline-block;font-size:20px;">
+												<a href="#">
+													<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+														<use xlink:href="#icon-shoucang"></use>
+													</svg><br>&nbsp;&nbsp;&nbsp;关注</br></a>
+											</div>
+										</li>
+										<li>
+											<div class="siliao" style="margin-top: 10px;display:inline-block;font-size:20px;">
+												<a href="#">
+													<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+														<use xlink:href="#icon-siliao"></use>
+													</svg><br>&nbsp;&nbsp;&nbsp;私聊</br></a>
+											</div>
+										</li>
+										<li>
+											<div class="fenxiang" style="margin-top: 10px;display:inline-block;font-size:20px;">
+												<p>
+													<a href="#">
+														<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+															<use xlink:href="#icon-fenxiang"></use>
+														</svg><br>&nbsp;&nbsp;&nbsp;分享</br></a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-7" align="left">
+								<div class="middlefu2">
+									<div class="container-fluid">
+										<div class="row" style="margin-top: -4vw;">
+											<div class="col-4" align="left" id="" onclick="" style="font-size:150%">
+												李四
+											</div>
+											<div class="col-8" align="left" id="home" onclick="" style="font-size:130%;">
+												<svg class="icon" aria-hidden="true" style="color: var(--fColor);">
+													<use xlink:href="#icon-weizhi"></use>
+												</svg><a style="color: var(--fColor);">东升园</a>
+											</div>
+			
+										</div>
+									</div>
+									<table>
+										<tr>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+												 alt="computer" style="margin-top: 100px;">
+											</td>
+											<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+												 alt="computer" style="margin-top: 100px;">
+											</td>
+										</tr>
+									</table>
+									<div>
+										<form action="" method="get">
+											<label><input name="jiaoyi" type="checkbox" value="" />平台交易</label>&nbsp;&nbsp;
+											<label><input name="jiaoyi" type="checkbox" value="" />&nbsp;&nbsp;当面交易</label>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-3" align="left" id="left" onclick="" style="color: var(--fColor);margin-top: 30px;">
+								<div class="rifhtfu">
+									<br />
+									9分钟前
+									<div class="miaoshu" align="left" style="color: #000;font-size:25px;">
+										<br /><br />
+										惠普笔记本-6成新-￥3320
+										<br />
+										戴尔笔记本-7成新-￥8850
+									</div>
+									<div>
+										<a href="#" style="color: var(--fColor);">
+											<br />
+											设备
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
 			</div>
-			<!-- 展开之后 -->
+			<!-- 展开之后  展示 最新动态的详细信息-->
 			<div id="aftersszk" style="display: none;">
 			<nav class="shadow sticky-top" style="background-color: white;position: fixed;" >
 				<div class="container-fluid">
@@ -307,7 +406,7 @@
 										</div>
 										<div class="col-3 " align="center">
 											<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
-							 name="position" id="position" placeholder="最低价" /></a></li> 
+							 name="position" id="position" placeholder="最低价"  maxlength="5" /></a></li> 
 										</div>
 										<div class="col-3 " align="center">
 											<li><li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
@@ -328,7 +427,7 @@
 				</div>
 			</nav>
 			
-				<div class="searchresult bot-nav-fixed-body">
+				<div class="active bot-nav-fixed-body">
 					<div class="container-fluid">
 						<div class="centerarea2" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044">
 							<div class="row">
@@ -451,6 +550,129 @@
 						</div>
 					</div>
 				</div>
+				<div class="active bot-nav-fixed-body" ">
+					<div class="container-fluid">
+						<div class="centerarea2" style="box-shadow: inset 5px 5px 90px white,5px 5px 20px #00000044;">
+							<div class="row">
+								<div class="col-2">
+									<div class="leftfu2">
+										<ul>
+											
+											<li>
+												<div class="circlefu" >
+													<div class="head-photo">
+														<img class="id_img-liu" src="asserts/img/20130107210933_nGz3r.jpeg" alt="miemie rock">
+													</div>
+													
+												</div>
+											</li>
+											<li>
+												<div class="guanzhu" style="margin-top: 10px;display: inline-block;font-size:30px;">
+													<a href="#">
+														<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+															<use xlink:href="#icon-shoucang"></use>
+														</svg><br>关注</br></a>
+												</div>
+											</li>
+											<li>
+												<div class="siliao" style="margin-top: 10px;display:inline-block;font-size:30px;">
+													<a href="#">
+														<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+															<use xlink:href="#icon-siliao"></use>
+														</svg><br>私聊</br></a>
+												</div>
+											</li>
+											<li>
+												<div class="fenxiang" style="margin-top: 10px;display:inline-block;font-size:30px;">
+													<p>
+														<a href="#">
+															<svg class="icon" aria-hidden="true" style="vertical-align:middle;">
+																<use xlink:href="#icon-fenxiang"></use>
+															</svg><br>分享</br></a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-10">
+									<div class="middlefu2">
+										<div class="container-fluid">
+											<div class="row" style="margin-top: -40px;"> 
+												<div class="col-2"  align="left" id="" onclick=""style="font-size:90%;">
+													李四
+												</div>	
+												<div class="col-6"  align="left" id="home" onclick="">
+													<svg class="icon"
+														 aria-hidden="true" style="color: var(--fColor);">
+															<use xlink:href="#icon-weizhi"></use>
+														</svg><a style="color: var(--fColor);">东升园</a>
+												</div>
+												<div class="col-4"  align="right" id="home" onclick=""style="font-size: 50%;margin-top: 10px;color: var(--fColor);">
+													9分钟前
+												</div>
+											</div>	
+										</div>
+										<table>
+											<tr>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+													 alt="computer">
+												</td>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+													 alt="computer">
+												</td>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+													 alt="computer">
+												</td>
+											</tr>
+											<tr>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+													 alt="computer">
+												</td>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+													 alt="computer">
+												</td>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+													 alt="computer">
+												</td>
+							
+											</tr>
+											<tr>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104807&di=2f8357fa34e51cbe685eef1e9e7dba8f&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1109%2F28%2F2544311_07.jpg"
+													 alt="computer">
+												</td>
+												<td><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565066104806&di=8473e5efba3c4f67bd2e43b42f8705e3&imgtype=0&src=http%3A%2F%2Fimage3.suning.cn%2Fuimg%2Fb2c%2Fnewcatentries%2F0070119542-000000000635831682_1_800x800.jpg"
+													 alt="computer">
+												</td>
+											</tr>
+										</table>
+							
+										<form action="" method="get">
+											<label><input name="xuanze" type="checkbox" value="" />&nbsp;&nbsp;&nbsp;&nbsp;惠普笔记本-6成新-￥3320</label><br />
+											<label><input name="xuanze" type="checkbox" value="" />&nbsp;&nbsp;&nbsp;&nbsp;戴尔笔记本-7成新-￥5620</label><br />
+											<label><input name="xuanze" type="checkbox" value="" />&nbsp;&nbsp;&nbsp;&nbsp;联想笔记本-7成新-￥3380</label><br />
+										</form><br />
+										<a href="#" style="font-color:#4C51B1">设备 &nbsp;</a>
+										<form action="" method="get">
+											<label><input name="jiaoyi" type="checkbox" value="" />&nbsp;&nbsp;平台交易</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<label><input name="jiaoyi" type="checkbox" value="" />&nbsp;&nbsp;当面交易</label>
+										</form>
+										<div class="suoxiao" style="margin-bottom: 5%;">
+											<br />
+											<br />
+											<a href="#">
+												<svg class="icon" aria-hidden="true" style="color:#4C51B1;margin-left:50%;opacity:0.8; font-size:50px;">
+													<use xlink:href="#icon-shousuo"></use>
+												</svg>&nbsp;&nbsp;&nbsp;
+											</a>
+											<a href="#">立即购买</a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				</div>
 			<!-- 底栏 -->
 			<div class="footer-bot">
@@ -503,7 +725,7 @@
 				// 展开后变成有菜单的界面
 				var sszhankai=false;
 				function sssxzhankai(){
-					 alert(123);
+					 // alert(123);
 					var openzhankai = document.getElementById("beforesszk");
 					var closezhankai = document.getElementById("aftersszk");
 					if (sszhankai) {
