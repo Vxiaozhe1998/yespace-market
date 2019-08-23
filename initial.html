@@ -13,6 +13,22 @@
 		<script src="asserts/js/jquery.min.js" type="text/javascript"></script>
 		<script src="asserts/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="http://at.alicdn.com/t/font_1306353_relcrq316p.js" type="text/javascript"></script>
+		<script>
+			$(function() {
+				var s = $("input[name='物品']");
+				var b = $("#button-test");
+				s.each(function(i) {
+					$(this).click(function() {
+						if(this.checked == true) {
+//							alert(this.value);
+							b.css("background-color","#4C51B1");
+						}else{
+							b.css("background-color","#6D6D6D");
+						}
+					});
+				});
+			})
+		</script>
 	</head>
 
 	<body>
@@ -124,13 +140,13 @@
 							<input id="item2" type="checkbox" name="物品" class="custom-checkbox">戴尔笔记本-7成新-¥3300
 						</li>
 						<li class="item-font" style="margin-top:20px;">
-							<input id="item3" type="checkbox" name="物品" class="custom-checkbox test-checkbox">联想笔记本-8成新-¥3400
+							<input id="item3" type="checkbox" name="物品" class="custom-checkbox" onclick="changeButtonColor()">联想笔记本-8成新-¥3400
 						</li>
 					</ul>
 					<!--<div class="release-item">
 					</div>-->
 					<div class="smaller-word button-line">
-						<button style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test">详情</button>
+						<button id="button-test" style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure ">详情</button>
 						<button style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure " onclick="open_instruction('off-shelves')">下架</button>
 						<button style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure ">改价</button>
 					</div>
@@ -153,8 +169,7 @@
 							</div>
 							<div style="height: 50%;width: 90%;margin-top: 6vw;" class="son box6 tip-css">
 								确定要下架如下商品吗？
-								<br/>
-								巴拉巴拉
+								<br/> 巴拉巴拉
 							</div>
 						</div>
 					</div>
