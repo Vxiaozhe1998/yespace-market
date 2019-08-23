@@ -40,6 +40,11 @@ function open_instruction(canshu) {
 	var div_first = document.getElementById(canshu);
 	div_first.style.display = "block";
 }
+/*添加物品*/
+function addNewAdd()
+{
+		alert("123");
+}
 /*交易方式判定区域显示不同界面*/
 window.onload = function() {
 	var area = "曲阜师范大学";
