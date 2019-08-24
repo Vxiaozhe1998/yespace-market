@@ -15,7 +15,7 @@
 		<script src="asserts/js/AllSchool.js"></script>
 
 		<style>
-		    select{
+			select{
 		        width: 100%;
 		        /* border-radius: 5px; */
 		        border:0;
@@ -26,6 +26,16 @@
 				background: var(----fColor);
 				color: white;
 		    }
+			option{
+				color:black;
+				background-color:var(--fColor);
+				font-size: 1vw;
+				line-height: 6vw;
+				width:1px;
+				height:50px;
+				
+			}
+
 		</style>
 	</head>
 	<body>
@@ -58,7 +68,7 @@
 					</div>
 					<!-- 省份定位文本 -->
 					<div class="Address-liu">
-						<div class="text"><select id="province" name="province"></select></div>
+						<div class="text" ><select id="province" name="province"></select></div>
 					</div>
 				</div>
 			</p>
@@ -87,14 +97,14 @@
 						</svg>
 					</div>
 					<!-- 高校定位文本 -->
-					<div class="Address-liu" >
+					<div class="Address-liu">
 						<div class="text"><select id="school" name="school"></select></div>
 					</div>
 				</div>
 			</p>
 		</div>
-		   <script>
-		    window.onload=function(){
+		<script>
+			window.onload=function(){
 		        var provinceArray = "";
 		        var provicneSelectStr = "";
 		        for(var i=0,len=province.length;i<len;i++){
