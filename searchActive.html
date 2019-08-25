@@ -55,7 +55,9 @@
 							<ul id="menu1">
 								<div class="row">
 									<div class="col-3 " align="center">
-										<li><a href="#" id="sortout" style="font-size: 3.8vw;padding: 1vw;">类别&nbsp;&nbsp;&nbsp;▼</a>
+										<li><a href="#" id="sortout" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 100%; height: 7.8vw;color:#4C51B1;border-radius: 4vw;"
+												 name="position" id="leibie" placeholder="&nbsp类别&nbsp&nbsp&nbsp&nbsp▼"  oninput="if(value.length>20)value=value.slice(0,20)"
+												 change="getResult()"/></a>
 											<ul id="menu2">
 												<li><a href="#">无</a></li>
 												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→</a>
@@ -350,7 +352,9 @@
 								<ul id="menu1">
 									<div class="row">
 										<div class="col-3 " align="center">
-											<li><a href="#" id="sortout" style="font-size: 3.8vw;">类别&nbsp;&nbsp;&nbsp;▼</a>
+											<li><a href="#" id="sortout" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 100%; height: auto;color:#4C51B1;border-radius: 2vw;"
+												 name="position" id="leibie" placeholder="类别&nbsp▼"  oninput="if(value.length>20)value=value.slice(0,20)"
+												 change="getResult()"/></a>
 												<ul id="menu2">
 													<li><a href="#">无</a></li>
 													<li><a class="seconds" href="#">学习&nbsp;&nbsp;→</a>
@@ -738,6 +742,7 @@
 						sszhankai = true;
 					}
 				}
+				getResult()
 			</script>
 			<style>
 			    input::-webkit-outer-spin-button,
