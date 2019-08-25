@@ -22,7 +22,9 @@
 					$(this).click(function() {
 						if(this.checked == true) {
 							b.css("background-color", 'var(--fColor)');
-						} else if(s[0].checked == false && s[1].checked == false && s[2].checked == false) {
+						} 
+						//检查三个都没有选中时button不变色
+						else if(s[0].checked == false && s[1].checked == false && s[2].checked == false) {
 							b.css("background-color", 'var(--sColor)');
 						}
 					});
@@ -32,7 +34,7 @@
 			function open_dialog(canshu) {
 				var div_first = document.getElementById(canshu);
 				var off_button = document.getElementById('off');
-				if(off_button.style.backgroundColor=='var(--fColor)'){
+				if(off_button.style.backgroundColor == 'var(--fColor)') {
 					div_first.style.display = "block";
 				}
 			}
@@ -159,9 +161,9 @@
 						<button id="off" style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test" onclick="open_dialog('off-shelves')">下架</button>
 						<button style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test">改价</button>
 					</div>
-					<!--提示弹出框-->
+					<!--提示弹出框 id设为off-shelves下架-->
 					<div class="father" style="z-index: 9999; display: none;" id="off-shelves">
-						<div style="background: white;" class="son float-instruction shadow-irreguler">
+						<div style="background: white; height: 40%; width: 60%" class="son float-instruction shadow-irreguler">
 							<div style="width: 100%;height: 0 auto; background-color: var(--fColor);">
 								<div class="container-fluid" style="padding: 0rem;">
 									<div class="row" style="padding: 0rem;margin: 0;">
@@ -176,10 +178,16 @@
 									</div>
 								</div>
 							</div>
-							<div style="height: 50%;width: 90%;margin-top: 6vw;" class="son box6 tip-css">
+							<div style="height: 80%;width: 90%;margin-top: 6vw;" class="son box6 tip-css">
 								<p1>确定要下架如下商品吗？</p1>
 								<br/>
-								<p2>巴拉巴拉</p2> 
+								<p2>巴拉巴拉</p2>
+								<br/>
+							</div>
+							<div style="height:30px; position:absolute;bottom: 5vw; right:3vw;" >
+								<!--点击取消或确认会关闭提示框-->
+								<button class="button_sure" onclick="close_instruction('off-shelves')">取消</button>
+								<button class="button_sure" onclick="close_instruction('off-shelves')">确认</button>
 							</div>
 						</div>
 					</div>
