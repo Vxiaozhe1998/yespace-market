@@ -82,10 +82,10 @@
 				<div style="color:var(--fColor);" class="word-sh">我的订单</div>
 				<!--右侧收起图标-->
 				<span class="span-right" onclick="changeOrder()">
-						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
-							<use xlink:href="#icon-shousuo"></use>
-						</svg>
-					</span>
+					<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+						<use xlink:href="#icon-shousuo"></use>
+					</svg>
+				</span>
 				<!--内部div-->
 				<div class="inner-order-box shadow">
 					<div class="circle-sh">
@@ -133,10 +133,10 @@
 				<div style="color:var(--fColor);" class="word-sh">我发布的</div>
 				<!--右侧收起图标-->
 				<span class="span-right" onclick="changeRelease()">
-						<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
-							<use xlink:href="#icon-shousuo"></use>
-						</svg>
-					</span>
+					<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+						<use xlink:href="#icon-shousuo"></use>
+					</svg>
+				</span>
 				<!--内部div-->
 				<div class="inner-release-box shadow">
 					<p></p>
@@ -156,7 +156,8 @@
 					<div class="smaller-word button-line">
 						<!--button-test用于点击物品变色 js-->
 						<button style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test">详情</button>
-						<button id="off" style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test" onclick="open_dialog('off-shelves')">下架</button>
+						<button id="off" style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test"
+						 onclick="open_dialog('off-shelves')">下架</button>
 						<button style="padding-left: 0px 30px; background-color:var(--sColor);" class="button_sure button-test">改价</button>
 					</div>
 					<!--提示弹出框-->
@@ -178,8 +179,8 @@
 							</div>
 							<div style="height: 50%;width: 90%;margin-top: 6vw;" class="son box6 tip-css">
 								<p1>确定要下架如下商品吗？</p1>
-								<br/>
-								<p2>巴拉巴拉</p2> 
+								<br />
+								<p2>巴拉巴拉</p2>
 							</div>
 						</div>
 					</div>
@@ -209,10 +210,10 @@
 				<div class="word-sh">我的关注</div>
 				<!--文字部分-->
 				<span class="span-right" onclick="changeFollowing()">
-							<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
-								<use xlink:href="#icon-shousuo"></use>
-							</svg>
-					</span>
+					<svg style="color:var(--fColor);" class="icon-right" aria-hidden="true" alt="设置图标">
+						<use xlink:href="#icon-shousuo"></use>
+					</svg>
+				</span>
 				<!--内部div-->
 				<div class="inner-order-box">
 					<div class="following_div">
@@ -234,32 +235,33 @@
 		<div class="footer-bot" style="z-index: 9999;">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2" align="center" id="home" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;">
+					<div class="col-2" align="center" id="home">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;" onclick="window.location.href='index.html'">
 							<use xlink:href="#icon-zhuye"></use>
 						</svg>
 						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
 					</div>
-					<div class="col-2" align="center" id="search" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+					<div class="col-2" align="center" id="search">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;" onclick="window.location.href='search.html'">
 							<use xlink:href="#icon-sousuo"></use>
 						</svg>
 						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
 					</div>
 					<div class="col-4"></div>
-					<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+					<div style="height:12vw;position: fixed;margin-left: 41vw;bottom:6vw;justify-content: center;z-index: 0;" align="center"
+					 id="publish">
+						<svg class="icon" aria-hidden="true" style="font-size: 18vw;" onclick="window.location.href='Add.html'">
 							<use xlink:href="#icon-xinzeng"></use>
 						</svg>
 					</div>
-					<div class="col-2" align="center" id="message" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+					<div class="col-2" align="center" id="message">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;" onclick="window.location.href='Message-index.html'">
 							<use xlink:href="#icon-xiaoxi"></use>
 						</svg>
 						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
 					</div>
-					<div class="col-2" align="center" id="mine" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;">
+					<div class="col-2" align="center" id="mine">
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;" onclick="window.location.href='initial.html'">
 							<use xlink:href="#icon-wode"></use>
 						</svg>
 						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->

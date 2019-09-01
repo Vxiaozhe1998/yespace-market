@@ -67,34 +67,38 @@
 			</a>
 		</div>
 		<!-- 固定底栏 -->
-		<div class="footer-bot">
-			<div class="container-fluid" >
-				<div class="row" >
-					<div class="col-2"  align="center" id="home" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;color: black;">							
-						<use xlink:href="#icon-zhuye"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
+		<div class="footer-bot" style="z-index: 1000;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-2" align="center" id="home" >
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top: 2vw;color: black;" onclick="window.location.href='index.html'">
+							<use xlink:href="#icon-zhuye"></use>
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
 					</div>
-					<div class="col-2" align="center" id="search" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+					<div class="col-2" align="center" id="search" >
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;" onclick="window.location.href='search.html'">
 							<use xlink:href="#icon-sousuo"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">搜索</a> -->
 					</div>
 					<div class="col-4"></div>
-					<div style="height:12vw;position: fixed;width: 100%; bottom:6vw;justify-content: center;" align="center" id="publish" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 18vw;">
+					<div style="height:12vw;position: fixed;margin-left: 41vw;bottom:6vw;justify-content: center;z-index: 0;" align="center" id="publish">
+						<svg class="icon" aria-hidden="true" style="font-size: 18vw;"  onclick="window.location.href='Add.html'">
 							<use xlink:href="#icon-xinzeng"></use>
 						</svg>
 					</div>
-					<div class="col-2"  align="center" id="message" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+					<div class="col-2" align="center" id="message" >
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;" onclick="window.location.href='Message-index.html'">
 							<use xlink:href="#icon-xiaoxi"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">消息</a> -->
 					</div>
-					<div class="col-2" align="center" id="mine" onclick="">
-						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;">
+					<div class="col-2" align="center" id="mine" >
+						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;" onclick="window.location.href='initial.html'">
 							<use xlink:href="#icon-wode"></use>
-						</svg><!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
+						</svg>
+						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">我的</a> -->
 					</div>
 				</div>
 			</div>
