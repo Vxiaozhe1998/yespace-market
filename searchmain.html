@@ -39,76 +39,171 @@
 
 	<body>
 		<!-- 搜索框 -->
-		<div id="zhankaibefore">
-			<nav class="searcontent shadow sticky-top search" style="width: 100%;">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-8"><input type="text" class="index-zhe shadow" style="padding-left: 2vw;margin: 0;font-size: 6vw;margin-top:2vw;margin-bottom: 2vw;border-style: none;width: 100%; height: auto;"
-							 name="position" id="position" placeholder="你要找点儿啥呢？" /></div>
-						<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
-								<use xlink:href="#icon-sousuo"></use>
-							</svg></div>
-						<div class="col-2" id="zhankai" onclick="changezhankai()">
+		<div id="zhankaibefore" >
+		<nav class="searcontent shadow sticky-top search" style="width: 100%;">
+			<div class="container-fluid">
+				<div class="row" >
+					<div class="col-8"><input type="text" class="index-zhe shadow" style="padding-left: 2vw;margin: 0;font-size: 6vw;margin-top:2vw;margin-bottom: 2vw;border-style: none;width: 100%; height: auto;"
+						 name="position" id="position" placeholder="你要找点儿啥呢？" /></div>
+					<div class="col-2"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
+							<use xlink:href="#icon-sousuo"></use>
+						</svg></div>
+					<div class="col-2"id="zhankai" onclick="changezhankai()">
 							<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
 								<use xlink:href="#icon-zhankai"></use>
 							</svg>
-						</div>
 					</div>
 				</div>
 			</nav>
-
-			<table style="width: 100%;" align="center">
-				<tr>
-					<td>
-						<div class="history">
-							<ul>
-								<li style="font-size:4vw;margin-left:15%;margin-top: 5vw;">历史搜索</li><!-- 历史搜索 -->
-							</ul>
-							<ul style="margin-left:15%;margin-top: 2.5vw;">
-								<li class="list-item2">
-									<a href="#" style="font-size:3.5vw;"> 高数 </a>
-								</li>
-								<li class="list-item2">
-									<a href="#" style="font-size:3.5vw;"> 美版iphone7 </a>
-								</li>
-								<li class="list-item2">
-									<a href="#" style="font-size:3.5vw;"> 线性代数 </a>
-								</li>
+		
+		<table style="width: 100%;" align="center" >
+			<tr >
+				<td>
+					<div class="history">
+						<ul>
+							<li style="font-size:4vw;margin-left:15%;margin-top: 5vw;">历史搜索</li><!-- 历史搜索 -->
+						</ul>
+						<ul style="margin-left:15%;margin-top: 2.5vw;">
+							<li class="list-item2">
+								<a href="#" style="font-size:3.5vw;"> 高数 </a>
+							</li>
+							<li class="list-item2">
+								<a href="#" style="font-size:3.5vw;"> 美版iphone7 </a>
+							</li>
+							<li class="list-item2">
+								<a href="#" style="font-size:3.5vw;"> 线性代数 </a>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div class="tophot">
+						<!-- 最高搜索热度 -->
+						<ul>
+							<li style="font-size:4vw;margin-left:15%;margin-top: 5vw;">最高热度搜索</li>
+						</ul>
+						<ul style="margin-left:15% ;margin-top: 2.5vw;">
+							<li class="list-item2" style="font-size:3.5vw;">
+								<a href="#"> 心理学</a>
+							</li>
+							<li class="list-item2" style="font-size:3.5vw;">
+								<a href="#"> 山地自行车 </a>
+							</li>
+							<li class="list-item2" style="font-size:3.5vw;">
+								<a href="#"> 口红 </a>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="logo" align="center">
+						<a href="search.html">
+							<svg class="icon" aria-hidden="true" style="color:#666666;opacity:0.2; font-size:50vw;">
+								<use xlink:href="#icon-logo"></use>
+							</svg>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</div>
+		<div id="zhankaiafter" style="display: none;">
+		<nav class="shadow sticky-top" id="zhankaiafter" style="background-color: white;position: fixed;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-8" align="center"><input type="text" class="index-zhe shadow" style="padding-left: 2vw;margin: 0;font-size: 6vw;margin-top:2vw;margin-bottom: 2vw;border-style: none;width: 100%; height: auto;"
+						 name="position" id="position" placeholder="你要找点儿啥呢？" /></div>
+					<div class="col-2" align="center"><svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;">
+							<use xlink:href="#icon-sousuo"></use>
+						</svg></div>
+					<div class="col-2" align="center"><a href="searchsx.html">
+							<svg class="icon" aria-hidden="true" style="color:var(--fColor);margin-top:1vw;margin-bottom: 1vw;font-size: 11vw;padding: 0rem 0rem;">
+								<use xlink:href="#icon-zhankai"></use>
+							</svg>
+						</a></div>
+					<div class="sxzl" id="menus" >
+						<div class="sxzl">
+							<ul id="menu1">
+								<div class="row">
+									<div class="col-3 " align="center">
+										<li><a href="#" id="sortout" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 100%; color:#4C51B1;border-radius: 4vw;"
+												 name="position" id="leibie" placeholder="&nbsp类别&nbsp&nbsp&nbsp&nbsp▼"  oninput="if(value.length>20)value=value.slice(0,20)"
+												 change="getResult()"/></a>
+											<ul id="menu2">
+												<li><a href="#">无</a></li>
+												<li><a class="seconds" href="#">学习&nbsp;&nbsp;→</a>
+													<ul style="padding-left: 0;">
+														<li><a href="#">文具</a></li>
+														<li><a href="#">课本</a></li>
+														<li><a href="#">习题</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">数码&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">电脑</a></li>
+														<li><a href="#">手机</a></li>
+														<li><a href="#">配饰</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">日用&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">洗护</a></li>
+														<li><a href="#">清洁</a></li>
+														<li><a href="#">护理</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">运动&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">运动服饰</a></li>
+														<li><a href="#">运动器械</a></li>
+														<li><a href="#">运动装备</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#">服饰&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">女装</a></li>
+														<li><a href="#">男装</a></li>
+														<li><a href="#">童装</a></li>
+													</ul>
+												</li>
+												<li><a class="seconds" href="#" id="food">食品&nbsp;&nbsp;&nbsp;→</a>
+													<ul>
+														<li><a href="#">坚果</a></li>
+														<li><a href="#">熟食</a></li>
+														<li><a href="#">饮品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</div>
+									<div class="col-3 " align="center">
+										<li><a href="#" style="font-size: 3.8vw;padding-left: 1vw;"><input type="number" style="border-style: none;width: 70%; height: auto;color:#4C51B1;"
+												 name="position" id="positionfu" placeholder="折旧度"  oninput="if(value.length>2)value=value.slice(0,2)"
+												 onkeyup="inputfu('positionfu')" /><span id="baifenhao" style="color: var(--sColor);">%</span></a>
+										</li>
+									</div>
+									<div class="col-3 " align="center">
+										<li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
+						 name="position" id="position" placeholder="最低价" /></a></li> 
+									</div>
+									<div class="col-3 " align="center">
+										<li><li><a href="#" style="font-size: 3.8vw;"><input type="text" style="border-style: none;width: 60%; height: auto;color:#4C51B1;"
+						 name="position" id="position" placeholder="最高价"maxlength="5" /></a></li>
+										</li>‘
+									</div>
+								</div>
 							</ul>
 						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="tophot">
-							<!-- 最高搜索热度 -->
-							<ul>
-								<li style="font-size:4vw;margin-left:15%;margin-top: 5vw;">最高热度搜索</li>
-							</ul>
-							<ul style="margin-left:15% ;margin-top: 2.5vw;">
-								<li class="list-item2" style="font-size:3.5vw;">
-									<a href="#"> 心理学</a>
-								</li>
-								<li class="list-item2" style="font-size:3.5vw;">
-									<a href="#"> 山地自行车 </a>
-								</li>
-								<li class="list-item2" style="font-size:3.5vw;">
-									<a href="#"> 口红 </a>
-								</li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="logo" align="center">
-							<a href="search.html">
-								<svg class="icon" aria-hidden="true" style="color:#666666;opacity:0.2; font-size:50vw;">
-									<use xlink:href="#icon-logo"></use>
+						<div class="suoxiao"id="suoxiaomain" align="right" onclick="changesuoxiaomain()" >
+								<svg class="icon" aria-hidden="true" style="color:#4C51B1;opacity:0.8; font-size:8vw;">
+									<use xlink:href="#icon-shousuo"></use>
 								</svg>
-							</a>
+							
 						</div>
-					</td>
 				</tr>
 			</table>
 		</div>
@@ -221,6 +316,7 @@
 		</div>
 		</div>
 		<!-- 底栏 -->
+
 		<div class="footer-bot" style="z-index: 9999;">
 			<div class="container-fluid">
 				<div class="row">
@@ -230,6 +326,7 @@
 						</svg>
 						<!-- <a style="color: var(--fColor);font-size: 2vw;margin-bottom: 1vw">主页</a> -->
 					</div>
+
 					<div class="col-2" align="center" id="search">
 						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;color: black;" onclick="window.location.href='search.html'">
 							<use xlink:href="#icon-sousuo"></use>
@@ -243,6 +340,7 @@
 							<use xlink:href="#icon-xinzeng"></use>
 						</svg>
 					</div>
+
 					<div class="col-2" align="center" id="message">
 						<svg class="icon" aria-hidden="true" style="font-size: 9vw;margin-top:2vw;" onclick="window.location.href='Message-index.html'">
 							<use xlink:href="#icon-xiaoxi"></use>
@@ -276,6 +374,22 @@
 					zhankai = true;
 				}
 			}
+			// 点击缩小变回主界面
+			var suoxiaomain=false;
+			function changesuoxiaomain(){
+				 // alert(123);
+				var opensuoxiaomain = document.getElementById("zhankaiafter");
+				var closesuoxiaomain = document.getElementById("zhankaibefore");
+				if (suoxiaomain) {
+					closesuoxiaomain.style.display="";
+					opensuoxiaomain.style.display= "none";
+					suoxiaomain = false;
+				}else{
+					closesuoxiaomain.style.display="none";
+					opensuoxiaomain.style.display="";
+					suoxiaomain = true;
+				}
+			}
 			// 对折旧度进行编辑
 			function inputfu(obj) {
 				// alert(123);
@@ -284,10 +398,12 @@
 				if (document.getElementById(obj).value.length !== 0) {
 					bfh.style.color = 'var(--fColor)';
 
-				} else {
+
+				} else 
 					bfh.style.color = 'var(--sColor)';
 				}
 			};
+			
 		</script>
 		<style>
 			/* 去掉 加减条 */

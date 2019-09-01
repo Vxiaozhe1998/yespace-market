@@ -22,7 +22,9 @@
 					$(this).click(function() {
 						if(this.checked == true) {
 							b.css("background-color", 'var(--fColor)');
-						} else if(s[0].checked == false && s[1].checked == false && s[2].checked == false) {
+						} 
+						//检查三个都没有选中时button不变色
+						else if(s[0].checked == false && s[1].checked == false && s[2].checked == false) {
 							b.css("background-color", 'var(--sColor)');
 						}
 					});
@@ -32,7 +34,7 @@
 			function open_dialog(canshu) {
 				var div_first = document.getElementById(canshu);
 				var off_button = document.getElementById('off');
-				if(off_button.style.backgroundColor=='var(--fColor)'){
+				if(off_button.style.backgroundColor == 'var(--fColor)') {
 					div_first.style.display = "block";
 				}
 			}
@@ -179,8 +181,11 @@
 							</div>
 							<div style="height: 50%;width: 90%;margin-top: 6vw;" class="son box6 tip-css">
 								<p1>确定要下架如下商品吗？</p1>
-								<br />
-								<p2>巴拉巴拉</p2>
+								<p2>巴拉巴拉</p2> 							</div>
+							<div style="height:30px; position:absolute;bottom: 5vw; right:3vw;" >
+								<!--点击取消或确认会关闭提示框-->
+								<button class="button_sure" onclick="close_instruction('off-shelves')">取消</button>
+								<button class="button_sure" onclick="close_instruction('off-shelves')">确认</button>
 							</div>
 						</div>
 					</div>
@@ -297,5 +302,4 @@
 			})
 		</script>
 	</body>
-
 </html>
