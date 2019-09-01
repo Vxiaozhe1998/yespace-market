@@ -19,11 +19,12 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2" align="center" style="vertical-align:bottom;">
+						<a href="javascript:history.go(-1);">
 						<svg class="icon" aria-hidden="true" style="font-size: 10vw;color: white;">
 							<use xlink:href="#icon-fanhui"></use>
-						</svg>
+						</svg></a>
 					</div>
-					<div class="col-8" style="height: 0 auto;color: white;font-size: 6vw;font-weight: bold;justify-content: center;">
+					<div class="col-8" style="height: 0 auto;color: white;font-size: 6vw;font-weight: bold;justify-content: center;" >
 						请选择您的高校
 					</div>
 					<div class="col-2"></div>
@@ -34,7 +35,7 @@
 		<div>
 			<!-- 城市定位 -->
 			<p>
-				<div id="cehngshi-liu" class="dialog-box shadow" style="margin: 70px 100px 20px 100px;">
+				<div id="cehngshi-liu" class="dialog-box shadow" style="margin: 70px 100px 20px 100px;" onclick="window.location.href='Address-chengshi.html'">
 					<!-- 城市定位图标 -->
 					<div class="head-photo">
 						<svg class="icon bell-liu address-icon-liu" aria-hidden="true">
@@ -49,7 +50,7 @@
 			</p>
 			<!-- 高校定位 -->
 			<p>
-				<div id="gaoxiao-liu" class="dialog-box shadow" style="margin: 20px 100px;">
+				<div id="gaoxiao-liu" class="dialog-box shadow" style="margin: 20px 100px;" onclick="window.location.href='Address-university.html'">
 					<!-- 高校定位图标 -->
 					<div class="head-photo">
 						<svg class="icon bell-liu address-icon-liu" aria-hidden="true">
@@ -57,11 +58,12 @@
 						</svg>
 					</div>
 					<!-- 高校定位文本 -->
-					<div class="Address-liu">
+					<div class="Address-liu" >
 						请选择您的高校
 					</div>
 				</div>
 			</p>
+			
 			<!-- 保存按钮 -->
 			<div align="center">
 				<input type="button" name="" id="button-gaoxiao-liu" value="保存" class="button-gaoxiao-liu shadow " />

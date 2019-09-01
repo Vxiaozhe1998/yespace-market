@@ -615,9 +615,9 @@ input[type=range]::-webkit-slider-thumb {
 .centerarea {
 	border: 0.1vw solid #ccc;
 	/* margin: 100px auto; */
-	width: 74%;
+	width: 76%;
 	border-radius: 80px;
-	margin: 5%;
+	margin: 12%;
 	overflow: hidden;
 	height: 500px;
 }
