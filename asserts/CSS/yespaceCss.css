@@ -697,7 +697,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .middlefu2 {
-	position: absolute;
+	/* position: absolute; */
 	width: 80%;
 	/* margin-left: 150px; */
 	margin-top: 90px;
